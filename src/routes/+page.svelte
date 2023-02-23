@@ -33,7 +33,7 @@
 </script>
 
 <!--HTML Structure-->
-<title>Lucky's Website</title>
+<title>Jay is so awesome</title>
 <div>
     <h1><small>Hello</small> <i>{first_name}</i>!</h1>
 </div>
@@ -42,9 +42,9 @@
     Clicked {count} {count === 1 ? 'time' : 'times'}
 </button>
 
-<p>
-    
-</p>
+<br>
+<br>
+
 <button on:click = {Reset} style = "background-color: red">
     Reset
 </button>
