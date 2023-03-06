@@ -1,3 +1,4 @@
+<!--Navigation - List of options-->
 <nav>
     <ul>
         <li>Home</li>

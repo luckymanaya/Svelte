@@ -1,3 +1,4 @@
+<!--HTML-->
 <div class = "about-header">
 
 <h1>About Page</h1>
@@ -5,6 +6,8 @@
 
 </div>
 
+
+<!--CSS Styling-->
 <style>
 h1
 {
