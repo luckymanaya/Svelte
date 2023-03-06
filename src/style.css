@@ -4,6 +4,16 @@ body
 }
 
 /*Header*/
+h1
+{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p
+{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
 nav
 {
     width:100%;
