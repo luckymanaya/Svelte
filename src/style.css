@@ -46,7 +46,7 @@ nav ul a:last-of-type{
     right:0;
     bottom:0;
     left:0;
-    background: rgb(59, 57, 57);
+    background: rgb(82, 82, 82);
     opacity:.4;
     z-index: -1;
 }
@@ -62,7 +62,7 @@ a:link{
 }
 
 a:hover{
-    color: black;
+    color: brown;
 }
 
 /*Pictures*/
