@@ -1,6 +1,8 @@
 <!--HTML-->
 <div class = "about-header">
 
+<br><br><br><br>
+
 <h1>About Page</h1>
 <p>This is Lucky's website.</p>
 
