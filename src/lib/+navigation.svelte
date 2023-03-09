@@ -1,8 +1,12 @@
 <!--Navigation - List of options-->
+<div class = "nav-container">
 <nav>
     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact Me</li>
+        <a href = '/'>Home</a>
+        <a href = '/about'>About</a>
+        <a href = '/contact'>Contact Me</a>
     </ul>
 </nav>
+
+<div class = "nav-transparency"></div>
+</div>

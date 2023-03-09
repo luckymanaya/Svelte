@@ -1,58 +1,78 @@
-body
-{
+body{
     margin: 0;
+    background-color: black;
 }
 
-/*Header*/
-h1
-{
+/*Text Styling*/
+h1{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.90em;
+    color:white;
 }
-p
-{
+p{
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.50em;
+    color:white;
+
 }
-nav
-{
+
+/*Navigation Styling*/
+nav{
     width:100%;
 }
 
-nav ul
-{
-   
+.nav-container{
+    width:100%;
+    position: fixed;
+}
+
+nav ul{
     padding:0;
     margin: 0;
-    list-style-type: none;
     display:flex;
-    justify-content: center;
-    background-color: rgb(248, 33, 33);
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.50em;
-
-}
-nav ul li
-{
-    padding: 10px;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
 
-nav ul li:last-of-type{
+nav ul a:last-of-type{
     margin-left:auto;
 }
 
+.nav-transparency{ /*to make header transparent*/
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgb(59, 57, 57);
+    opacity:.4;
+    z-index: -1;
+}
+
+/*Link Styling*/
+a{
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(235, 107, 107);
+}
+
 /*Pictures*/
-.picture1
-{
+.picture1{
     background-image: url('images/fashion.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 900px;
 }
-.picture2
-{
+.picture2{
     background-image: url('images/shopping bags.jpg');
     background-size: cover;
     background-position: center;
@@ -60,22 +80,20 @@ nav ul li:last-of-type{
     height: 800px;
 
 }
-.picture3
-{
+.picture3{
     background-image: url('images/flower.jpg');
     background-size: cover;
     background-position: center;
     width: 45%;
     height: 800px;
     margin-left: 20px;
-
 }
 
 /*Flexbox*/
-.flex-container {
+.flex-container{
     display: flex;
-  }
-  
-  .flex-container > div {
-    margin: 0px;
-  }
+}
+
+.flex-container >div{
+    margin: 30px;
+}
