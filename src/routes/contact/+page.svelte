@@ -4,6 +4,7 @@
 <br><br><br><br>
 
 <h1>Contact Me</h1>
-<p>12345</p>
+<p>Phone Number: 12345</p>
+<p>Email: emailaddress.com</p>
 
 </div>
