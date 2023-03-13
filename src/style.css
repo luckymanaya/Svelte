@@ -77,7 +77,7 @@ a:hover{
     background-size: cover;
     background-position: center;
     width: 55%;
-    height: 800px;
+    height: 900px;
 
 }
 .picture3{
@@ -85,7 +85,7 @@ a:hover{
     background-size: cover;
     background-position: center;
     width: 45%;
-    height: 800px;
+    height: 900px;
     margin-left: 20px;
 }
 
@@ -98,7 +98,3 @@ a:hover{
     margin: 30px;
 }
 
-/*Form Styling*/
-label{
-    color: white;
-}
