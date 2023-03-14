@@ -15,15 +15,20 @@
 </div>
 
 <!--Slideshow-->
-<div class = "slideshow-container">
+<div class = "container">
 
     <!--Slides-->
     <div class = "mySlides">
-        <img src = "images/vogue.jpg">
-        <img src = "images/2 women.jpg">
         <img src = "images/runway.jpg">
     </div>
-
+    <div class = "mySlides">
+        <img src = "images/2 women.jpg">
+    </div>
+    <div class = "mySlides">
+        <img src = "images/flower.jpg">
+    </div>
+    
 </div>
+
 </body>
 
