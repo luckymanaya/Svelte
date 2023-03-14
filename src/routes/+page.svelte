@@ -14,5 +14,16 @@
     <div class = "picture3"></div>
 </div>
 
+<!--Slideshow-->
+<div class = "slideshow-container">
+
+    <!--Slides-->
+    <div class = "mySlides">
+        <img src = "images/vogue.jpg">
+        <img src = "images/2 women.jpg">
+        <img src = "images/runway.jpg">
+    </div>
+
+</div>
 </body>
 

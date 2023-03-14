@@ -86,7 +86,6 @@ a:hover{
     background-position: center;
     width: 45%;
     height: 900px;
-    margin-left: 20px;
 }
 
 /*Flexbox*/
@@ -98,3 +97,18 @@ a:hover{
     margin: 30px;
 }
 
+/*Slideshow Styling*/
+.slideshow-container{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.mySlides{
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 200px;
+}
