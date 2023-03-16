@@ -8,7 +8,7 @@
 
 <!--Text in First Page-->
 <div class = "firstPageText">
-<p style = "text-align: center"><br><br><big><q>Fashion is a form of <i>self-expression.</i></q></big></p>
+<p>Fashion is a form of <i>self-expression.</i></p>
 </div>
 
 <!--Flexbox-->

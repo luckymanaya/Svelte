@@ -19,9 +19,9 @@ p{
 
 /*Text in First Page Styling*/
 .firstPageText p{
-    text-align:justify;
+    text-align: center;
     font-family: "Arial";
-    font-size: 1.90em;
+    font-size: 2.5em;
     color:white;
 }
 /*Navigation Styling*/
@@ -105,8 +105,10 @@ a:hover{
     background-image: url('images/runway.jpg');
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 50%;
     height: 1000px;
+    margin: 30px;
+    border-radius: 50%;
 }
 
 
