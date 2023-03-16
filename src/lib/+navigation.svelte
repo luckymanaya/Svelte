@@ -1,4 +1,5 @@
 <!--Navigation - List of options-->
+
 <div class = "nav-container">
 <nav>
     <ul>
@@ -9,4 +10,5 @@
 </nav>
 
 <div class = "nav-transparency"></div>
+
 </div>
