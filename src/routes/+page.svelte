@@ -6,7 +6,7 @@
 <body>
 <div class = "picture1"></div>
 
-<!--Text in First Page-->
+<!--Text-->
 <div class = "firstPageText">
 <p>Fashion is a form of <i>self-expression.</i></p>
 </div>
