@@ -1,6 +1,6 @@
 <!--Navigation - List of options-->
 
-<div class = "nav-container">
+<section class = "nav-container">
 <nav>
     <ul>
         <a href = '/'>Home</a>
@@ -9,6 +9,6 @@
     </ul>
 </nav>
 
-<div class = "nav-transparency"></div>
+<section class = "nav-transparency"></section>
 
-</div>
+</section>

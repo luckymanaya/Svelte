@@ -1,5 +1,5 @@
 <!--HTML-->
-<div class = "contact-header">
+<section class = "contact-header">
 
 <br><br><br><br>
 
@@ -7,4 +7,4 @@
 <p>Phone Number: 12345</p>
 <p>Email: emailaddress.com</p>
 
-</div>
+</section>
