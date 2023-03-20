@@ -101,13 +101,10 @@ a:hover{
     width: 100%;
     height: 990px;
 }
-.picture5{
-    background-image: url('images/runway.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 1000px;
-    margin: 30px;
+/*Code for picture 5*/
+section img{
+    width: 50%; 
+    padding: 30px;
     border-radius: 50%;
 }
 
