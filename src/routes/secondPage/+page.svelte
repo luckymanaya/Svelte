@@ -17,11 +17,10 @@
 
   <!--Flexbox for the Bottom Details-->
   <section class="flex-container">
-    <a href="/">
-      <button>Go Back</button>
+    <a href="/thirdPage">
+      <button>Next</button>
     </a>
   </section>
-
   <p style="text-align: center; font-size: 2em">2</p>
 
 </body>
@@ -41,10 +40,14 @@
     background-image: url("images/runway.jpg");
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 990px;
+    width: 45%;
+    height: 800px;
     border-radius: 50%;
-    margin: 40px;
+    margin: 90px;
+    transition: transform 0.5s; /* Animation */
+  }
+  .picture5:hover {
+    transform: scale(1.1);
   }
   .picture5 p {
     margin-left: 140%;
