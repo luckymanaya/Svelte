@@ -6,6 +6,4 @@
   <title>Lucky's Website</title>
 </head>
 
-<Navigation/>
-
-
+<Navigation />

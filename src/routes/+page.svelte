@@ -1,72 +1,62 @@
-<script>
-    let count = 1;
-
-const increment = () => {
-    count++;
-  }
-</script>
 <!--HTML Structure-->
 <body>
-<section class = "picture1"></section>
+  <section class="picture1" />
 
-<!--Text-->
-<section class = "firstPageText">
-<p><q>Fashion is a form of <big><i>self-expression</i></big></q></p>
-</section>
+  <!--Text-->
+  <section class="firstPageText">
+    <p><q>Fashion is a form of <big><i>self-expression</i></big></q></p>
+  </section>
 
-<!--Flexbox-->
-<section class = "flex-container">
-    <section class = "picture2"></section>
-    <section class = "picture3"></section>
-</section>
+  <!--Flexbox for Picture 2 & 3-->
+  <section class="flex-container">
+    <section class="picture2" />
+    <section class="picture3" />
+  </section>
 
-<br>
+  <br />
 
-<!--Second Page Button-->
-<center>
-    <a href = '/secondPage'>
-        <button on:click={increment}>Next</button>
+  <!--Flexbox for the Bottom Details-->
+  <section class="flex-container">
+    <a href="/secondPage">
+      <button>Next</button>
     </a>
- </center>
-
- <!--Page Number-->
- <p style = "text-align: right; margin: 10px">{count}</p>
-
+  </section>
+  <p style="text-align: center; font-size: 2em">1</p>
+  
 </body>
 
 <!--CSS Styling-->
 <style>
-/*Pictures*/
-.picture1{
-    background-image: url('images/mannequins.jpg');
+  /*Pictures*/
+  .picture1 {
+    background-image: url("images/mannequins.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 900px;
-}
-.picture2{
-    background-image: url('images/castle.jpg');
+  }
+  .picture2 {
+    background-image: url("images/castle.jpg");
     background-size: cover;
     background-position: center;
     width: 55%;
     height: 990px;
-    margin: 20px;;
-
-}
-.picture3{
-    background-image: url('images/three women.jpg');
+    margin: 20px;
+  }
+  .picture3 {
+    background-image: url("images/three women.jpg");
     background-size: cover;
     background-position: center;
     width: 45%;
     height: 990px;
-    margin: 20px;;
-}
+    margin: 20px;
+  }
 
-/*Text in First Page Styling*/
-.firstPageText p{
+  /*Text in First Page Styling*/
+  .firstPageText p {
     text-align: center;
     font-family: "Arial";
     font-size: 2.5em;
-    color:white;
-}
+    color: white;
+  }
 </style>

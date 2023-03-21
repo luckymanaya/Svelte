@@ -8,20 +8,22 @@
   <section class="picture4" />
 
   <section class="picture5">
-    {#each words as w, i}
+    {#each words as w}
       <p><br /><br />{w}<br /><br /></p>
     {/each}
   </section>
 
   <br />
-  <center>
+
+  <!--Flexbox for the Bottom Details-->
+  <section class="flex-container">
     <a href="/">
       <button>Go Back</button>
     </a>
-  </center>
+  </section>
 
-  <!--Page Number-->
-  <p style="text-align: right; margin: 10px">2</p>
+  <p style="text-align: center; font-size: 2em">2</p>
+
 </body>
 
 <!--CSS Styling-->
@@ -46,6 +48,6 @@
   }
   .picture5 p {
     margin-left: 140%;
-    font-size: 2.75em;
+    font-size: 2.5em;
   }
 </style>

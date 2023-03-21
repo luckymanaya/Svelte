@@ -1,11 +1,12 @@
 <script>
-    import '../style.css';
-    import Header from '$lib/+header.svelte';
-    import Footer from '$lib/+footer.svelte';
+  import "../style.css";
+  import Header from "$lib/+header.svelte";
+  import Footer from "$lib/+footer.svelte";
 </script>
 
-<Header/>
+<Header />
 
-<slot/> <!--page specific content-->
+<slot />
+<!--page specific content-->
 
-<Footer/>
+<Footer />
