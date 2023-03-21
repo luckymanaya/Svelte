@@ -8,7 +8,7 @@
 
 <!--Text-->
 <section class = "firstPageText">
-<p>Fashion is a form of <i>self-expression.</i></p>
+<p><q>Fashion is a form of <big><i>self-expression</i></big></q></p>
 </section>
 
 <!--Flexbox-->
@@ -41,7 +41,7 @@
     background-size: cover;
     background-position: center;
     width: 55%;
-    height: 900px;
+    height: 990px;
     margin: 20px;;
 
 }
@@ -50,7 +50,7 @@
     background-size: cover;
     background-position: center;
     width: 45%;
-    height: 900px;
+    height: 990px;
     margin: 20px;;
 }
 
