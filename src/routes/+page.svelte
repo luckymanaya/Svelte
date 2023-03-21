@@ -1,8 +1,11 @@
-<!--HTML Structure-->
-<head>
-    <title>Lucky's Website</title>
-</head>
+<script>
+    let count = 1;
 
+const increment = () => {
+    count++;
+  }
+</script>
+<!--HTML Structure-->
 <body>
 <section class = "picture1"></section>
 
@@ -21,12 +24,17 @@
 
 <!--Second Page Button-->
 <center>
-<a href = '/secondPage'>
-    <button class = "nextBtn">Next</button></a>
-</center>
+    <a href = '/secondPage'>
+        <button on:click={increment}>Next</button>
+    </a>
+ </center>
+
+ <!--Page Number-->
+ <p style = "text-align: right; margin: 10px">{count}</p>
 
 </body>
 
+<!--CSS Styling-->
 <style>
 /*Pictures*/
 .picture1{
