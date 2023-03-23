@@ -5,6 +5,10 @@
   <section class="picture8" />
 </section>
 
+<section class="picture9">
+    <img src="images/red.jpg" />
+</section>
+
 <!--Flexbox for the Bottom Details-->
 <section class="flex-container">
   <a href="/">
@@ -17,33 +21,55 @@
 <style>
   /*Pictures*/
   .picture6 {
-    background-image: url("images/flower.jpg");
+    background-image: url("images/earring.jpg");
     background-size: cover;
     background-position: center;
     width: 55%;
     height: 990px;
     padding: 50px;
     border-radius: 25px;
-    margin: 10px;
+    margin: 30px;
+    margin-top: 5%;
   }
   .picture7 {
-    background-image: url("images/2 women.jpg");
+    background-image: url("images/accessories.jpg");
     background-size: cover;
     background-position: center;
     width: 55%;
     height: 990px;
     padding: 50px;
     border-radius: 25px;
-    margin: 10px;
+    margin: 30px;
+    margin-top: 5%;
   }
   .picture8 {
+    background-image: url("images/hair.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 55%;
+    height: 990px;
+    padding: 50px;
+    border-radius: 25px;
+    margin: 30px;
+    margin-top: 5%;
+  }
+  .picture9 { /*Background picture goes behind the image*/
     background-image: url("images/red.jpg");
     background-size: cover;
     background-position: center;
-    width: 55%;
-    height: 990px;
-    padding: 50px;
-    border-radius: 25px;
-    margin: 10px;
+    width: 100%;
+    height: 1700px;
+    margin-bottom: 30px;
+  }
+  .picture9 img { /*Image goes on top of the background picture*/
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 16%;
+    display: block;
+    border-radius: 35%;
+    transition: transform 0.5s; /* Animation */
+  }
+  .picture9 img:hover {
+    transform: scale(1.15);
   }
 </style>

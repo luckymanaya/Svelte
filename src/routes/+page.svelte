@@ -4,7 +4,7 @@
 
   <!--Text-->
   <section class="firstPageText">
-    <p>Fashion is a form of <big><i>self-expression</i></big></p>
+    <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <!--Adds extra information-->
     <span class="tooltipText">
       <center>
@@ -65,7 +65,7 @@
   }
 
   /*Text in First Page Styling*/
-  .firstPageText p {
+  .firstPageText h2 {
     text-align: center;
     font-family: "Arial";
     font-size: 2.5em;
@@ -78,9 +78,8 @@
     color: white;
     font-family: Arial;
     font-size: 1.6em;
-
   }
   .firstPageText:hover .tooltipText {
-    visibility: visible;
+    visibility: visible; /*extra info becomes visible*/
   }
 </style>
