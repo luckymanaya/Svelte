@@ -5,9 +5,12 @@
   <section class="picture8" />
 </section>
 
+<h2>A new do, for a new you!</h2>
+
 <section class="picture9">
-  <img src="images/red.jpg" />
+  <img src="images/red.jpg">
 </section>
+
 
 <!--Buttons-->
 <section class="flex-container">
@@ -71,7 +74,6 @@
     margin: 0 auto;
     padding: 30%;
     display: block;
-    border-radius: 35%;
     transition: transform 0.5s; /* Animation */
   }
   .picture9 img:hover {

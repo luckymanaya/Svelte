@@ -16,7 +16,7 @@
   <input
     class="nameText"
     bind:value={name}
-    placeholder="Enter Name"
+    placeholder="What is your name?"
     style="margin-top: 10%; margin-bottom: 10%"
   />
   <!--Displays the user's name with a capitalized first letter-->
