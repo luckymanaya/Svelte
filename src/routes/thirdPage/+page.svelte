@@ -6,15 +6,18 @@
 </section>
 
 <section class="picture9">
-    <img src="images/red.jpg" />
+  <img src="images/red.jpg" />
 </section>
 
-<!--Flexbox for the Bottom Details-->
 <section class="flex-container">
+  <a href="/secondPage">
+    <button>Go Back</button>
+  </a>
   <a href="/">
-    <button>Go Back to 1</button>
+    <button style="margin-left: 140vh">Go Back to 1</button>
   </a>
 </section>
+
 <p style="text-align: center; font-size: 2em">3</p>
 
 <!--CSS Styling-->
@@ -29,7 +32,7 @@
     padding: 50px;
     border-radius: 25px;
     margin: 30px;
-    margin-top: 5%;
+    margin-top: 6%;
   }
   .picture7 {
     background-image: url("images/accessories.jpg");
@@ -40,7 +43,7 @@
     padding: 50px;
     border-radius: 25px;
     margin: 30px;
-    margin-top: 5%;
+    margin-top: 6%;
   }
   .picture8 {
     background-image: url("images/hair.jpg");
@@ -51,20 +54,21 @@
     padding: 50px;
     border-radius: 25px;
     margin: 30px;
-    margin-top: 5%;
+    margin-top: 6%;
   }
-  .picture9 { /*Background picture goes behind the image*/
+  .picture9 {
+    /*Background picture goes behind the image*/
     background-image: url("images/red.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 1700px;
-    margin-bottom: 30px;
   }
-  .picture9 img { /*Image goes on top of the background picture*/
+  .picture9 img {
+    /*Image goes on top of the background picture*/
     max-width: 45%;
     margin: 0 auto;
-    padding: 16%;
+    padding: 30%;
     display: block;
     border-radius: 35%;
     transition: transform 0.5s; /* Animation */

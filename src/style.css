@@ -67,7 +67,6 @@ a:hover{
 /*Flexbox*/
 .flex-container{
     display: flex;
-    justify-content: center;
 }
 
 .flex-container >div{

@@ -10,8 +10,8 @@
       <center>
         <q
           >When you wear something that is comfortable, cute, or fancy, it makes
-          you feel good about yourself. <br>Fashion is in the clothes, but style is
-          in the person.</q
+          you feel good about yourself. <br />Fashion is in the clothes, but
+          style is in the person.</q
         >
       </center>
     </span>
@@ -25,12 +25,10 @@
 
   <br />
 
-  <!--Flexbox for the Bottom Details-->
-  <section class="flex-container">
-    <a href="/secondPage">
-      <button>Next</button>
-    </a>
-  </section>
+  <a href="/secondPage">
+    <button style = "margin-left: 85%">Next</button>
+  </a>
+
   <p style="text-align: center; font-size: 2em">1</p>
 </body>
 
@@ -61,7 +59,6 @@
     height: 990px;
     margin: 10px;
     border-radius: 25px;
-
   }
 
   /*Text in First Page Styling*/

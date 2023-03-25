@@ -15,14 +15,17 @@
 
   <br />
 
-  <!--Flexbox for the Bottom Details-->
-  <section class="flex-container">
-    <a href="/thirdPage">
-      <button>Next</button>
-    </a>
-  </section>
-  <p style="text-align: center; font-size: 2em">2</p>
+  <!--Buttons-->
+  <section class = "flex-container">
+  <a href="/">
+    <button>Go Back</button>
+  </a>
+  <a href="/thirdPage">
+    <button style="margin-left: 140vh">Next</button>
+  </a>
+</section>
 
+  <p style="text-align: center; font-size: 2em">2</p>
 </body>
 
 <!--CSS Styling-->
