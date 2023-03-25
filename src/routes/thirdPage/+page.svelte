@@ -9,6 +9,7 @@
   <img src="images/red.jpg" />
 </section>
 
+<!--Buttons-->
 <section class="flex-container">
   <a href="/secondPage">
     <button>Go Back</button>

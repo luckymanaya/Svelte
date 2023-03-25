@@ -10,6 +10,12 @@ h1{
     font-size: 1.90em;
     color:white;
 }
+h2 {
+    text-align: center;
+    font-family: "Arial";
+    font-size: 2.5em;
+    color: white;
+  }
 p{
     text-align:justify;
     font-family: "Arial";

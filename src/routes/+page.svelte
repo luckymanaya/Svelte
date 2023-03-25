@@ -1,7 +1,36 @@
-<!--HTML Structure-->
-<body>
-  <section class="picture1" />
+<!--JavaScript-->
+<script>
+  let name = "";
 
+  //Creates a smooth scrolling effect
+  function scrollFunction() {
+    document.documentElement.style.scrollBehavior = "smooth";
+
+  }
+</script>
+
+<!--HTML-->
+<body>
+  <br />
+  <!--TextBox-->
+  <input
+    class="nameText"
+    bind:value={name}
+    placeholder="Enter Name"
+    style="margin-top: 10%; margin-bottom: 10%"
+  />
+  <!--Displays the user's name with a capitalized first letter-->
+  <h2 style="margin-bottom: 10%">Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"} &#x2661</h2> 
+
+  <!--Button for Next Section-->
+  <a href="#nextSection">
+    <button
+      style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20%"
+      on:click={scrollFunction}>Continue</button
+    >
+  </a>
+
+  <section class="picture1" id="nextSection" />
   <!--Text-->
   <section class="firstPageText">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
@@ -25,8 +54,9 @@
 
   <br />
 
+  <!--Button-->
   <a href="/secondPage">
-    <button style = "margin-left: 85%">Next</button>
+    <button style="margin-left: 85%">Next</button>
   </a>
 
   <p style="text-align: center; font-size: 2em">1</p>
@@ -34,6 +64,13 @@
 
 <!--CSS Styling-->
 <style>
+  /*TextBox*/
+  .nameText {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   /*Pictures*/
   .picture1 {
     background-image: url("images/mannequins.jpg");
@@ -61,13 +98,6 @@
     border-radius: 25px;
   }
 
-  /*Text in First Page Styling*/
-  .firstPageText h2 {
-    text-align: center;
-    font-family: "Arial";
-    font-size: 2.5em;
-    color: white;
-  }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
     visibility: hidden;
