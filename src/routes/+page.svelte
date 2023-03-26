@@ -17,7 +17,7 @@
     class="nameText"
     bind:value={name}
     placeholder="What is your name?"
-    style="margin-top: 10%; margin-bottom: 10%"
+    style="margin-top: 10%; margin-bottom: 10%; font-size: 1.75em"
   />
   <!--Displays the user's name with a capitalized first letter-->
   <h2 style="margin-bottom: 10%">
@@ -80,7 +80,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 900px;
+    height: 970px;
   }
   .picture2 {
     background-image: url("images/castle.jpg");
