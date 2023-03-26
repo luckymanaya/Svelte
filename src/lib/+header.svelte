@@ -1,9 +1,11 @@
 <script>
   import Navigation from "./+navigation.svelte";
+
+  let title = "Lucky's Website";
 </script>
 
 <head>
-  <title>Lucky's Website</title>
+  <title>{title}</title>
 </head>
 
 <Navigation />

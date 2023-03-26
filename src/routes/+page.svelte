@@ -1,11 +1,11 @@
 <!--JavaScript-->
 <script>
   let name = "";
+  let title = "Lucky's Website";
 
   //Creates a smooth scrolling effect
   function scrollFunction() {
     document.documentElement.style.scrollBehavior = "smooth";
-
   }
 </script>
 
@@ -20,7 +20,10 @@
     style="margin-top: 10%; margin-bottom: 10%"
   />
   <!--Displays the user's name with a capitalized first letter-->
-  <h2 style="margin-bottom: 10%">Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"} &#x2661</h2> 
+  <h2 style="margin-bottom: 10%">
+    Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"} to {title}!
+    &#x2661
+  </h2>
 
   <!--Button for Next Section-->
   <a href="#nextSection">
