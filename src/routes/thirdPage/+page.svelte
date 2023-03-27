@@ -8,9 +8,8 @@
 <h2>A new do, for a new you!</h2>
 
 <section class="picture9">
-  <img src="images/red.jpg">
+  <img src="images/red.jpg" />
 </section>
-
 
 <!--Buttons-->
 <section class="flex-container">
@@ -60,16 +59,18 @@
     margin: 30px;
     margin-top: 6%;
   }
+
+  /*Background picture goes behind the image*/
   .picture9 {
-    /*Background picture goes behind the image*/
     background-image: url("images/red.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 1700px;
   }
+
+  /*Image goes on top of the background picture*/
   .picture9 img {
-    /*Image goes on top of the background picture*/
     max-width: 45%;
     margin: 0 auto;
     padding: 30%;

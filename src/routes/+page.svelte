@@ -34,18 +34,17 @@
   </a>
 
   <section class="picture1" id="nextSection" />
+
   <!--Text-->
-  <section class="firstPageText">
+  <section class="firstPageText" style="text-align: center">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <!--Adds extra information-->
     <span class="tooltipText">
-      <center>
-        <q
-          >When you wear something that is comfortable, cute, or fancy, it makes
-          you feel good about yourself. <br />Fashion is in the clothes, but
-          style is in the person.</q
-        >
-      </center>
+      <q
+        >When you wear something that is comfortable, cute, or fancy, it makes
+        you feel good about yourself. <br />Fashion is in the clothes, but style
+        is in the person.</q
+      >
     </span>
   </section>
 

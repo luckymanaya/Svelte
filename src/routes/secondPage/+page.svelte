@@ -1,9 +1,9 @@
-<!--Javascript Coding-->
+<!--Javascript-->
 <script>
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
 </script>
 
-<!--HTML coding-->
+<!--HTML-->
 <body>
   <section class="picture4" />
 
@@ -16,14 +16,14 @@
   <br />
 
   <!--Buttons-->
-  <section class = "flex-container">
-  <a href="/">
-    <button>Go Back</button>
-  </a>
-  <a href="/thirdPage">
-    <button style="margin-left: 140vh">Next</button>
-  </a>
-</section>
+  <section class="flex-container">
+    <a href="/">
+      <button>Go Back</button>
+    </a>
+    <a href="/thirdPage">
+      <button style="margin-left: 140vh">Next</button>
+    </a>
+  </section>
 
   <p style="text-align: center; font-size: 2em">2</p>
 </body>
