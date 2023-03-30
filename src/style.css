@@ -93,3 +93,7 @@ button {
   margin: 10px;
   width: 170px;
 }
+.button-container{
+  display:flex;
+  justify-content: center;
+}

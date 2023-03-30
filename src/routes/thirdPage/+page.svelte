@@ -12,12 +12,12 @@
 </section>
 
 <!--Buttons-->
-<section class="flex-container">
+<section class="button-container">
   <a href="/secondPage">
     <button>Go Back</button>
   </a>
   <a href="/">
-    <button style="margin-left: 140vh">Go Back to 1</button>
+    <button>Go Back to 1</button>
   </a>
 </section>
 
@@ -73,7 +73,7 @@
   .picture9 img {
     max-width: 45%;
     margin: 0 auto;
-    padding: 30%;
+    padding: 15%;
     display: block;
     transition: transform 0.5s; /* Animation */
   }

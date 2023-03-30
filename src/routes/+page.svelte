@@ -57,11 +57,13 @@
   <br />
 
   <!--Button-->
-  <a href="/secondPage">
-    <button style="margin-left: 85%">Next</button>
-  </a>
+  <section class="button-container">
+    <a href="/secondPage">
+      <button>Next</button>
+    </a>
+  </section>
 
-  <p style="text-align: center; font-size: 2em">1</p>
+    <p style="text-align: center; font-size: 2em">1</p>
 </body>
 
 <!--CSS Styling-->

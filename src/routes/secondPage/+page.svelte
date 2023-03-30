@@ -16,12 +16,12 @@
   <br />
 
   <!--Buttons-->
-  <section class="flex-container">
+  <section class="button-container">
     <a href="/">
       <button>Go Back</button>
     </a>
     <a href="/thirdPage">
-      <button style="margin-left: 140vh">Next</button>
+      <button>Next</button>
     </a>
   </section>
 
