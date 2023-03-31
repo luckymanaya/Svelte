@@ -5,7 +5,7 @@
   <section class="picture8" />
 </section>
 
-<h2>A new do, for a new you!</h2>
+<h2>A new <big>DO</big>, for a new <big>YOU</big>!</h2>
 
 <section class="picture9">
   <img src="images/red.jpg" />

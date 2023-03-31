@@ -12,14 +12,9 @@
 <!--HTML-->
 <body>
   <!--Creates a new line to separate nav bar and textbox-->
-  <br>
+  <br />
   <!--TextBox-->
-  <input
-    class="nameText"
-    bind:value={name}
-    placeholder="What is your name?"
-    style="margin-top: 10%; margin-bottom: 10%; font-size: 1.75em"
-  />
+  <input class="nameText" bind:value={name} placeholder="What is your name?" />
   <!--Displays the user's name with a capitalized first letter-->
   <h2 style="margin-bottom: 10%">
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"} to {title}!
@@ -34,10 +29,13 @@
     >
   </a>
 
-  <section class="picture1" id="nextSection" />
+  <section class="picture1" id="nextSection">
+    <h2 style="padding: 26%">Scroll Down</h2>
+  </section>
 
   <!--Text-->
-  <section class="firstPageText" style="text-align: center">
+  <section class="firstPageText">
+    <p>Hover Text Below</p>
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <!--Adds extra information-->
     <span class="tooltipText">
@@ -62,7 +60,7 @@
     </a>
   </section>
 
-    <p style="text-align: center; font-size: 2em">1</p>
+  <p style="text-align: center; font-size: 2em">1</p>
 </body>
 
 <!--CSS Styling-->
@@ -73,6 +71,9 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1.75em;
   }
   /*Pictures*/
   .picture1 {
@@ -100,7 +101,14 @@
     margin: 10px;
     border-radius: 25px;
   }
-
+  .firstPageText {
+    /*makes the tooltip text go to the center*/
+    text-align: center; 
+    margin-bottom: 5%;
+  }
+  .firstPageText p{
+    text-align: center;
+  }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
     visibility: hidden;
