@@ -11,7 +11,8 @@
 
 <!--HTML-->
 <body>
-  <br />
+  <!--Creates a new line to separate nav bar and textbox-->
+  <br>
   <!--TextBox-->
   <input
     class="nameText"
@@ -53,8 +54,6 @@
     <section class="picture2" />
     <section class="picture3" />
   </section>
-
-  <br />
 
   <!--Button-->
   <section class="button-container">
