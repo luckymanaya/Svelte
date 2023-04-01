@@ -19,13 +19,13 @@
     <!--if true, animated text is displayed-->
     {#if displayText}
       <p transition:fly={{ y: 200 }}>
-        Vogue is one of the most popular fashion magazine since 1892 and has
-        played a major role in influencing fashion industries even today! Known
+        <mark>Vogue is one of the most popular fashion magazine since 1892 and has
+        played a major role in influencing fashion industries and still even today! Known
         for its <big><q><i>high quality</i></q></big> and
         <big><q><i>sophistication</i></q></big>
-        as well as its runway shows. <br><br>
-        <center>Vogue has been a source of fashion inspiration for many fashion lovers
-        around the world &#x2661</center>
+        as well as its runway shows.</mark> <br><br>
+        <center><mark>Vogue has been a source of fashion inspiration for many fashion lovers
+        around the world &#x2661</mark></center>
       </p>
     {/if}
   </section>
@@ -62,11 +62,12 @@
     padding: 50px;
   }
   .picture4 button {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   .picture4 p {
     margin-left: 15%;
     margin-right: 15%;
+    margin-top:5%;
     font-size: 2em;
   }
   .picture5 {

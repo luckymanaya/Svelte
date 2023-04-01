@@ -11,19 +11,27 @@ h1 {
   font-size: 2.5em;
   color: white;
 }
+
 h2 {
   text-align: center;
   font-family: "Arial";
   font-size: 2em;
   color: white;
 }
+
 p {
   text-align: justify;
   font-family: "Arial";
   font-size: 1.5em;
   color: white;
-  margin-left:10px;
-  margin-right:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*Highlighted Text Styling*/
+mark {
+  background-color: black;
+  color: white;
 }
 
 /*Navigation Styling*/
@@ -79,7 +87,7 @@ a:hover {
   display: flex;
 }
 
-.flex-container > div {
+.flex-container>div {
   margin: 30px;
 }
 
@@ -94,8 +102,10 @@ button {
   border: 2px solid white;
   margin: 10px;
   width: 170px;
+  transition: transform 0.1s ease-in-out;
 }
-.button-container{
-  display:flex;
+
+.button-container {
+  display: flex;
   justify-content: center;
 }

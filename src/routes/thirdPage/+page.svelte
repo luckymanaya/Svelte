@@ -22,19 +22,26 @@
 <body>
   <!--Flexbox for Picture 6 & 7-->
   <section class="flex-container">
-    <section class="picture6" />
-    <section class="picture7" />
-    <section class="picture8" />
+    <section class="picture6">
+      <h1 class="text" style="color: white">Expressive</h1>
+    </section>
+    <section class="picture7">
+      <h1 class="text">Creative</h1>
+    </section>
+    <section class="picture8">
+      <h1 class="text" style="font-family: Times New Roman">Influential</h1>
+    </section>
   </section>
 
-  <h2>A new <big>DO</big>, for a new <big>YOU</big>!</h2>
+  <h1 style="margin-top: 5%">A new <big>DO</big>, for a new <big>YOU</big>!</h1>
 
   <section class="picture9">
     <img src="images/red.jpg" />
   </section>
 
   <h2 style="margin-top: 5%">
-    Showcase your creativity through clothing choices! And have fun with it!
+    Showcase your creativity through clothing choices<br />...and have fun with
+    it!
   </h2>
   <!--Navigation Buttons for Slideshow-->
   <section class="button-container">
@@ -99,7 +106,10 @@
     margin: 30px;
     margin-top: 6%;
   }
-
+  .text {
+    color: black;
+    margin-top: 0;
+  }
   /*Background picture goes behind the image*/
   .picture9 {
     background-image: url("images/red.jpg");
