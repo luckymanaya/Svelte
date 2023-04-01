@@ -123,7 +123,7 @@
     visibility: hidden;
     border-radius: 10px;
     color: white;
-    font-family: 'Times New Roman';
+    font-family: 'Arial';
     font-size: 1.6em;
   }
   .firstPageText:hover .tooltipText {

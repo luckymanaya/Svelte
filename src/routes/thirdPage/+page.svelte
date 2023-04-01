@@ -23,13 +23,13 @@
   <!--Flexbox for Picture 6 & 7-->
   <section class="flex-container">
     <section class="picture6">
-      <h1 class="text" style="color: white">Expressive</h1>
+      <h1 class="text">Expressive</h1>
     </section>
     <section class="picture7">
       <h1 class="text">Creative</h1>
     </section>
     <section class="picture8">
-      <h1 class="text" style="font-family: Times New Roman">Influential</h1>
+      <h1 class="text">Influential</h1>
     </section>
   </section>
 
