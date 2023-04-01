@@ -23,10 +23,7 @@
 
   <!--Button for Next Section-->
   <a href="#nextSection">
-    <button
-      style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20%"
-      on:click={scrollFunction}>Continue</button
-    >
+    <button on:click={scrollFunction}>Continue</button>
   </a>
 
   <section class="picture1" id="nextSection">
@@ -75,6 +72,13 @@
     margin-bottom: 10%;
     font-size: 1.75em;
   }
+  /*Button Styling in Next Section*/
+  a button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+  }
   /*Pictures*/
   .picture1 {
     background-image: url("images/mannequins.jpg");
@@ -103,10 +107,10 @@
   }
   .firstPageText {
     /*makes the tooltip text go to the center*/
-    text-align: center; 
+    text-align: center;
     margin-bottom: 5%;
   }
-  .firstPageText p{
+  .firstPageText p {
     text-align: center;
   }
   /*Tooltip Text Styling*/

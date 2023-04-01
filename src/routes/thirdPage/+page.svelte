@@ -1,27 +1,63 @@
-<!--Flexbox for Picture 6 & 7-->
-<section class="flex-container">
-  <section class="picture6" />
-  <section class="picture7" />
-  <section class="picture8" />
-</section>
+<!--JavaScript-->
+<script>
+  export let slideImages = [
+    "images/flower.jpg",
+    "images/black hat.jpg",
+    "images/vibes.jpg",
+  ];
+  let currentSlide = 0;
 
-<h2>A new <big>DO</big>, for a new <big>YOU</big>!</h2>
+  //a function to go to next slide
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slideImages.length;
+  }
 
-<section class="picture9">
-  <img src="images/red.jpg" />
-</section>
+  //a function to go to previous slide
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+  }
+</script>
 
-<!--Buttons-->
-<section class="button-container">
-  <a href="/secondPage">
-    <button>Go Back</button>
-  </a>
-  <a href="/">
-    <button>Go Back to 1</button>
-  </a>
-</section>
+<!--HTML-->
+<body>
+  <!--Flexbox for Picture 6 & 7-->
+  <section class="flex-container">
+    <section class="picture6" />
+    <section class="picture7" />
+    <section class="picture8" />
+  </section>
 
-<p style="text-align: center; font-size: 2em">3</p>
+  <h2>A new <big>DO</big>, for a new <big>YOU</big>!</h2>
+
+  <section class="picture9">
+    <img src="images/red.jpg" />
+  </section>
+
+  <!--Navigation Buttons for Slideshow-->
+  <section class="button-container" style = "margin-top: 5%">
+    <button on:click={previousSlide} class="prevBtn">&#60</button>
+    <button on:click={nextSlide} class="nextBtn">&#62</button>
+  </section>
+
+  <!--Slideshow Images-->
+  <section class="slideshow">
+    {#if slideImages.length > 0}
+      <img src={slideImages[currentSlide]} />
+    {/if}
+  </section>
+
+  <!--Buttons-->
+  <section class="button-container">
+    <a href="/secondPage">
+      <button>Go Back</button>
+    </a>
+    <a href="/">
+      <button>Go Back to 1</button>
+    </a>
+  </section>
+
+  <p style="text-align: center; font-size: 2em">3</p>
+</body>
 
 <!--CSS Styling-->
 <style>
@@ -79,5 +115,16 @@
   }
   .picture9 img:hover {
     transform: scale(1.15);
+  }
+  /*Slideshow Styling*/
+  .slideshow {
+    position: relative;
+  }
+  .slideshow img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
