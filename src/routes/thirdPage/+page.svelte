@@ -33,14 +33,18 @@
     <img src="images/red.jpg" />
   </section>
 
+  <h2 style="margin-top: 5%">
+    Showcase your creativity through clothing choices! And have fun with it!
+  </h2>
   <!--Navigation Buttons for Slideshow-->
-  <section class="button-container" style = "margin-top: 5%">
-    <button on:click={previousSlide} class="prevBtn">&#60</button>
-    <button on:click={nextSlide} class="nextBtn">&#62</button>
+  <section class="button-container">
+    <button on:click={previousSlide}>&#60</button>
+    <button on:click={nextSlide}>&#62</button>
   </section>
 
   <!--Slideshow Images-->
   <section class="slideshow">
+    <!--if length of images array is not 0, images will be displayed-->
     {#if slideImages.length > 0}
       <img src={slideImages[currentSlide]} />
     {/if}
@@ -126,5 +130,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
+    border-radius: 25px;
   }
 </style>
