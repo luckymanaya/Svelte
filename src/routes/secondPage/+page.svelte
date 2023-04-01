@@ -13,19 +13,21 @@
 
 <!--HTML-->
 <body>
-    <section class="picture4">
-      <button on:click={animateText}>Click Me!</button>
+  <section class="picture4">
+    <button on:click={animateText}>Click Me!</button>
 
     <!--if true, animated text is displayed-->
     {#if displayText}
       <p transition:fly={{ y: 200 }}>
-      Vogue is one of the most popular fashion magazine since 1892 and has played a major role in influencing fashion industries even today!
-      Known for its <big><q><i>high quality</i></q></big> and <big><q><i>sophistication</i></q></big> as well as its runway shows. 
-      <br><br>
+        Vogue is one of the most popular fashion magazine since 1892 and has
+        played a major role in influencing fashion industries even today! Known
+        for its <big><q><i>high quality</i></q></big> and
+        <big><q><i>sophistication</i></q></big>
+        as well as its runway shows. <br><br>
+        <center>Vogue has been a source of fashion inspiration for many fashion lovers
+        around the world &#x2661</center>
       </p>
-      <p style = "text-align:center">Vogue has been a source of fashion inspiration for many fashion lovers around the world &#x2661</p>
     {/if}
-    
   </section>
 
   <section class="picture5">
@@ -59,12 +61,12 @@
     height: 990px;
     padding: 50px;
   }
-  .picture4 button{
+  .picture4 button {
     margin-top: 15%;
   }
-  .picture4 p{
-    margin-left: 15%; 
-    margin-right:15%;
+  .picture4 p {
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 2em;
   }
   .picture5 {
