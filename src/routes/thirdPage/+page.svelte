@@ -1,6 +1,6 @@
 <!--JavaScript-->
 <script>
-  export let slideImages = [
+  let slideImages = [
     "images/flower.jpg",
     "images/black hat.jpg",
     "images/vibes.jpg",
@@ -43,17 +43,18 @@
     Showcase your creativity through clothing choices<br />...and have fun with
     it!
   </h2>
-  <!--Navigation Buttons for Slideshow-->
-  <section class="button-container">
-    <button on:click={previousSlide}>&#60</button>
-    <button on:click={nextSlide}>&#62</button>
-  </section>
 
   <!--Slideshow Images-->
   <section class="slideshow">
     <!--if length of images array is not 0, images will be displayed-->
     {#if slideImages.length > 0}
-      <img src={slideImages[currentSlide]} />
+      <section class="flex-container">
+        <!--Previous Button for Slideshow-->
+        <button on:click={previousSlide}>&#60</button>
+        <img src={slideImages[currentSlide]} />
+        <!--Next Button for Slideshow-->
+        <button on:click={nextSlide}>&#62</button>
+      </section>
     {/if}
   </section>
 
@@ -131,9 +132,6 @@
     transform: scale(1.15);
   }
   /*Slideshow Styling*/
-  .slideshow {
-    position: relative;
-  }
   .slideshow img {
     width: 30%;
     height: auto;
@@ -142,5 +140,10 @@
     margin-right: auto;
     margin-bottom: 5%;
     border-radius: 25px;
+  }
+  .flex-container button {
+    width: 5%;
+    height: 10%;
+    margin: auto;
   }
 </style>
