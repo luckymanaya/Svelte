@@ -12,7 +12,7 @@
 <!--HTML-->
 <body>
   <!--Creates a new line to separate nav bar and textbox-->
-  <br>
+  <br />
   <!--TextBox-->
   <input class="nameText" bind:value={name} placeholder="What is your name?" />
   <!--Displays the user's name with a capitalized first letter-->
@@ -27,7 +27,9 @@
   </a>
 
   <section class="picture1" id="nextSection">
-    <h1 style="padding: 26%">Scroll Down <br><span class = "scroll-down">&#8595</span></h1>
+    <h1 style="padding: 26%">
+      Scroll Down <br /><span class="scroll-down">&#8595</span>
+    </h1>
   </section>
 
   <!--Text-->
@@ -79,10 +81,10 @@
     margin-right: auto;
     margin-bottom: 20%;
   }
-/*Scroll-Down Symbol Styling*/
-  .scroll-down{
-    font-size:2.5em;
-    color:white;
+  /*Scroll-Down Symbol Styling*/
+  .scroll-down {
+    font-size: 2.5em;
+    color: white;
   }
   /*Pictures*/
   .picture1 {
@@ -123,7 +125,7 @@
     visibility: hidden;
     border-radius: 10px;
     color: white;
-    font-family: 'Arial';
+    font-family: "Arial";
     font-size: 1.6em;
   }
   .firstPageText:hover .tooltipText {
