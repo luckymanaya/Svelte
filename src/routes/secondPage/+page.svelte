@@ -9,6 +9,7 @@
   }
   //array of words
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
+
 </script>
 
 <!--HTML-->

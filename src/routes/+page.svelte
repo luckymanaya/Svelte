@@ -7,6 +7,10 @@
   function scrollFunction() {
     document.documentElement.style.scrollBehavior = "smooth";
   }
+
+  //Sets and Gets item to the storage
+  window.localStorage.setItem("user", name);
+  window.localStorage.getItem("user");
 </script>
 
 <!--HTML-->
@@ -25,13 +29,15 @@
   </a>
 
   <section class="picture1" id="nextSection">
-    <h1 style="padding: 26%">
-      Scroll Down <br /><span class="scroll-down">&#8595</span>
+    <h1 style="padding: 20%">
+      Scroll Down <br /><span class="scroll-down">
+        <a href="#nextSection2">&#8595</a></span
+      >
     </h1>
   </section>
 
   <!--Text-->
-  <p style = "text-align:center">Hover Text Below</p>
+  <p style="text-align:center" id="nextSection2">Hover Text Below</p>
   <section class="firstPageText">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <!--Adds extra information-->
@@ -115,11 +121,11 @@
     text-align: center;
     margin-bottom: 2%;
   }
-  .firstPageText h2{
-    color:gray;
+  .firstPageText h2 {
+    color: gray;
   }
-  .firstPageText h2:hover{
-    color:white;
+  .firstPageText h2:hover {
+    color: white;
   }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
