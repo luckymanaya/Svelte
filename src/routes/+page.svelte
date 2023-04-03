@@ -31,8 +31,8 @@
   </section>
 
   <!--Text-->
+  <p style = "text-align:center">Hover Text Below</p>
   <section class="firstPageText">
-    <p>Hover Text Below</p>
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <!--Adds extra information-->
     <span class="tooltipText">
@@ -113,10 +113,13 @@
   .firstPageText {
     /*makes the tooltip text go to the center*/
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
-  .firstPageText p {
-    text-align: center;
+  .firstPageText h2{
+    color:gray;
+  }
+  .firstPageText h2:hover{
+    color:white;
   }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
