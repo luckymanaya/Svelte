@@ -4,9 +4,11 @@
   import Footer from "$lib/+footer.svelte";
 </script>
 
-<Header />
+<section class ="main">
+  <Header />
 
-<slot />
-<!--page specific content-->
+  <slot />
+  <!--page specific content-->
 
-<Footer />
+  <Footer />
+</section>

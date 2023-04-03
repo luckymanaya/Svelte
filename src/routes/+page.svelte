@@ -11,8 +11,6 @@
 
 <!--HTML-->
 <body>
-  <!--Creates a new line to separate nav bar and textbox-->
-  <br />
   <!--TextBox-->
   <input class="nameText" bind:value={name} placeholder="What is your name?" />
   <!--Displays the user's name with a capitalized first letter-->

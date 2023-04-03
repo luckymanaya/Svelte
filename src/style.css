@@ -51,7 +51,9 @@ nav ul {
   font-family: "Arial";
   font-size: 2.5em;
 }
-
+nav ul a{
+  padding: 15px;
+}
 nav ul a:last-of-type {
   margin-left: auto;
 }
@@ -71,7 +73,6 @@ nav ul a:last-of-type {
 /*Link Styling*/
 a {
   color: rgb(0, 0, 0);
-  padding: 15px;
 }
 
 a:link {
@@ -108,4 +109,10 @@ button {
 .button-container {
   display: flex;
   justify-content: center;
+}
+/*Layout Structure*/
+.main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
