@@ -6,12 +6,13 @@
   //Creates a smooth scrolling effect
   function scrollFunction() {
     document.documentElement.style.scrollBehavior = "smooth";
+
     //Sets item to the storage
     localStorage.setItem("user", name);
-  }
 
-  //Gets item to the storage
-  let userName = localStorage.getItem("user");
+    //Gets item to the storage
+    let getItem = localStorage.getItem("user");
+  }
 </script>
 
 <!--HTML-->
@@ -37,8 +38,10 @@
     </h1>
   </section>
 
+  <section id="nextSection2" />
+
   <!--Text-->
-  <p style="text-align:center" id="nextSection2">Hover Text Below</p>
+  <p style="text-align:center; margin-top: 10%">Hover Text Below</p>
   <section class="firstPageText">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <!--Adds extra information-->
