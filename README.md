@@ -87,7 +87,9 @@ https://unsplash.com/ (Pictures)
 
 https://developer.mozilla.org/en-US/ (MDN Web Doc)
 
-https://svelte.dev/  (Svelte)
+https://svelte.dev/ (Svelte)
+
+https://svelte.dev/tutorial/basics (Svelte Tutorials)
 
 ### Research for Website Design
 
