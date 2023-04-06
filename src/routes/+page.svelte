@@ -6,12 +6,6 @@
   //Creates a smooth scrolling effect
   function scrollFunction() {
     document.documentElement.style.scrollBehavior = "smooth";
-
-    //Sets item to the storage
-    localStorage.setItem("user", name);
-
-    //Gets item to the storage
-    let getItem = localStorage.getItem("user");
   }
 </script>
 
