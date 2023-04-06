@@ -58,19 +58,27 @@ alt = "Screenshot of feature in the Main Page"
 </p>
 
 ## Process
-### Struggles
-1. **Layout (secondPage)**
+### Struggles & Bugs
+1. **HTML, CSS & JavaScript**
 
-I struggled a bit with displaying an image and a text side by side. In the end, I decided to put the each loop inside the class for the picture which solved the problem.
+I have a limited knowledge in HTML and CSS and have never coded in JavaScript before so it was a bit of a struggle to code the website. But thankfully,  there are resources available online such as, "MDN Web Docs" which is a learning resource used by web developers and Moodle.
 
-2. **Layout (Nav Bar & other elements)**
+2. **Layout (secondPage)**
 
-I was struggling to separate the navigation bar and the other elements like the header, so I used <br> to separate them but luckily, I found a better solution which is by using the margin-top.
+I struggled a bit with displaying an image and a text (which is the words I stored in an array) side by side. And when I solved it, I found another bug which is that when you go to the next page and go back again, the text disappears. In the end, I decided to put the for each loop inside the class of the picture and then print each words in the array of words which somehow solved the problem.
 
-### Bug
-1. **Display User’s Name**
+3. **Layout (Nav Bar & other elements)**
 
-In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. I tried to do the Window.LocalStorage, however, it was beyond my knowledge. As a result, I’ll come back to it later.
+I was struggling to separate the navigation bar and the other elements like the header, so I used a lot of line breaks (br) to separate them but turns out, I can just use margin- top.
+
+4. **Slideshow**
+
+I wanted to incorporate this feature into my website at the start of the website development and at first, I had to use the W3Schools to learn how to do it, but unfortunately, that did not work and there were too much code that I mostly did not understand. In the end, I used the Svelte tutorials to learn how to make a slideshow. 
+At first, I made an array of image files and a for each loop as I initially wanted it to display the images one by one, however, that did not work so I decided to make an if statement which checks if the length of images is not empty (greater than zero) and if condition is true, image will be displayed. I also put the next and previous buttons inside the if statement to make the previous button go to the left side and the next button go to the right side as I initially put the buttons outside the if statement, making the buttons to be displayed on the top of slideshow which I did not want.
+
+5. **Display User’s Name**
+
+In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears.
 
 ## References:
 https://www.awwwards.com/ (Website Inspirations)
