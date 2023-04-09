@@ -2,16 +2,16 @@
 
 ## Fundamentals of Web Development
 
-## Project Name: Lucky’s Website
+## Website: Lucky’s Website
 
-## **Topic:** Fashion Magazine Website
+## Topic: Fashion Magazine Website
 
-## **Description**
+## Description
 
-<p align = "justify">My website which I named, *"Lucky's Website"*, is a fashion magazine website that provides users with fashion related content. It is built using a code editor called 'Visual Studio Code' where I used HTML, CSS, Javascript and a web framework called 'Svelte'. Lucky's Website is designed to be responsive in order to adapt to different devices with different screen sizes, increasing its accessibility. Moreover, the website is also very easy to navigate, making it user-friendly and enjoyable to use as the website follows the typical horizontal navigation menu, consisting of a 'Home' page, an 'About' page and a 'Contact Me' page. Not only it is user-friendly, but it also has a simple, yet modern look due to its black & white palette, allowing its content to become more visible which catches users' attention. It also contains animations, a slideshow and other interactive aspects in order to be considered 'visually appealing' to the users thus improving user experience and user engagement. In addition, Lucky's Website also follows the usability heuristics which is used as a guide to create an attractive, yet functional website
+<p align = "justify">My website which I named, <i>"Lucky's Website"</i>, is a fashion magazine website that provides users with fashion related content. It is built using a code editor called 'Visual Studio Code' where I used HTML, CSS, Javascript and a web framework called 'Svelte'. Lucky's Website is designed to be responsive in order to adapt to different devices with different screen sizes, increasing its accessibility. Moreover, the website is also very easy to navigate, making it user-friendly and enjoyable to use as the website follows the typical horizontal navigation menu, consisting of a 'Home' page, an 'About' page and a 'Contact Me' page. Not only it is user-friendly, but it also has a simple, yet modern look due to its black & white palette, allowing its content to become more visible which catches users' attention. It also contains animations, a slideshow and other interactive aspects in order to be considered 'visually appealing' to the users thus improving user experience and user engagement. In addition, this website also follows the usability heuristics which is used as a guide in order to create an attractive, yet functional website.
 </p>
 
-## **Installation Steps**
+## Installation Steps
 
 1. Clone repository
 2. Install the dependencies using **npm install**
@@ -29,15 +29,15 @@
 <p align = "justify">Multiple images in large sizes attract users’ attention thus making them more involved. Too much text may irritate the users. Furthermore, for my images, I decided to make all of them have rounded corners as not only are they ‘easy on the eyes’, but rounded corners also gave a more ‘warm’ and ‘friendly’ impact in comparison to images with sharp edges. 
 </p>
 
-3. **Text Animation**
+3. **Animation**
 
-<p align = "justify">Text animation such as the ‘fly animation’ is also a feature I want to incorporate into my website in order to make it more ‘visually appealing’ and catch the user’s attention. It will also allow my website to share information in a more and memorable way. But I plan to not overuse text animation as based on my research, too much animation can distract and even annoy users.
+<p align = "justify">Animation is also a feature I want to incorporate into my website. Animations such as, zooming in an image when hovered and text animation such as the ‘fly animation’ to make the text appear vertically will make my website look ‘visually appealing’ and catch the user’s attention. It will also allow my website to share information in a more fun and memorable way. However, I plan not to use too much animation as based on my research, too much animation can distract and even annoy users.
 </p>
 
 ### Website #2: [Selected Website](https://selectedbase.com/)
 1. **Large font size** 
 
-<p align = "justify">I want to use relatively large font sizes for my website because not only does it make the text legible, but it also makes it readable for the users to read. For example, a 12pt font size may be legible, however, it is not large enough to make the users actually stay in your website and read the whole text as readability takes emotions and ease of reading into consideration. As a result, I am going to make the text header to have a larger font size in order to catch the users’ attention and I will also try to display less text as people do not want to read a long, daunting paragraph with a very small font size.
+<p align = "justify">I want to use relatively large font sizes for my website because not only does it make the text legible, but it also makes it readable for the users to read. For example, a 12pt font size may be legible, however, it is not large enough to make the users actually stay in your website and read the whole text as readability takes emotions and ease of reading into consideration. As a result, I am going to make the text to have a larger font size, but not too large that it takes up a lot of space in the website. This is so that it catches users’ attention and I will also try to display less text as people do not want to read a long, daunting paragraph with a very small font size.
 </p>
 
 2. **Black & White colors** 
