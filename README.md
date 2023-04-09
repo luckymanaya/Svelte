@@ -24,6 +24,7 @@
 
 <p align = "justify">I chose the sans-serif fonts to incorporate into my website. This is because according to my research, sans-serif fonts are more ‘friendly’ and ‘approachable’ which is an effect I want my website to have. On the other hand, serif fonts are considered 'classic’ and ‘elegant’ and are ideal if you want to make your website appear ‘serious’. In addition, sans-serif fonts are considered to be more legible than serif fonts as they are more ‘clean’ and ‘simple’ due to its lack of ‘curls’ and additional ‘lines.’ This increased readability makes it ideal for people who have dyslexia or reading difficulties to read the text, which is also a feature I want in order to increase the accessibility of my website. As a result, I will use the font, ‘Arial’, as it is one of the fonts that appears ‘less crowded’. 
 </p>
+
 2. **Multiple Images**
 
 <p align = "justify">Multiple images in large sizes attract users’ attention thus making them more involved. Too much text may irritate the users. Furthermore, for my images, I decided to make all of them have rounded corners as not only are they ‘easy on the eyes’, but rounded corners also gave a more ‘warm’ and ‘friendly’ impact in comparison to images with sharp edges. 
