@@ -51,13 +51,40 @@ nav ul {
   font-family: "Arial";
   font-size: 2.5em;
 }
-nav ul a{
+nav ul a {
   padding: 15px;
 }
 nav ul a:last-of-type {
   margin-left: auto;
 }
 
+/*Dropdown Styling*/
+.dropdown {
+}
+.dropdown .dropdownBtn {
+  background-color: transparent;
+  font-size: inherit;
+  padding: inherit;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+.dropdown .dropdownBtn:hover {
+  color: white;
+}
+.dropdown-content {
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(155, 152, 152);
+}
+.dropdown-content a {
+  color: black;
+  display: block;
+}
 .nav-transparency {
   /*to make header transparent*/
   position: absolute;
@@ -88,7 +115,7 @@ a:hover {
   display: flex;
 }
 
-.flex-container>div {
+.flex-container > div {
   margin: 30px;
 }
 
@@ -104,6 +131,7 @@ button {
   margin: 10px;
   width: 170px;
   transition: transform 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .button-container {
@@ -111,7 +139,7 @@ button {
   justify-content: center;
 }
 /*Layout Structure*/
-.main{
+.main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
