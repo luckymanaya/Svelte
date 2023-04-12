@@ -90,7 +90,7 @@ alt = "Screenshot of feature in the Main Page"
 
 5. **Display User’s Name**
 
-<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears.
+<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. It also accepts numbers and special characters which are invalid inputs.
 </p>
 
 ## References:
