@@ -63,7 +63,7 @@
 
 <p align = "center">
 <img src = "Main.png" 
-alt = "Screenshot of feature in the Main Page"
+alt = "Screenshot of feature in the Main Page">
 </p>
 
 ## Process
