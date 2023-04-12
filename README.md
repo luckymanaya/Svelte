@@ -75,7 +75,7 @@ alt = "Screenshot of feature in the Main Page">
 
 2. **Layout (secondPage)**
 
-<p align = "justify">I struggled a bit with displaying an image and a text (which is the words I stored in an array) side by side. And when I solved it, I found another bug which is that when you go to the next page and go back again, the text disappears. In the end, I decided to put the for each loop inside the class of the picture and then print each words in the array of words which somehow solved the problem.
+<p align = "justify">I struggled a bit with displaying an image and a text (which is the words I stored in an array) side by side but I solved it using 'margin-left'. After that, I found another bug which is that when you go to the next page and go back again, the text disappears. In the end, I decided to put the for each loop inside the class of the picture and then print each words in the array of words which solved the problem.
 </p>
 
 3. **Layout (Nav Bar & other elements)**
