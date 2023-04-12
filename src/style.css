@@ -59,25 +59,23 @@ nav ul a:last-of-type {
 }
 
 /*Dropdown Styling*/
-.dropdown {
-}
 .dropdown .dropdownBtn {
   background-color: transparent;
   font-size: inherit;
-  padding: inherit;
   border: none;
   color: black;
-  cursor: pointer;
+  margin: 0;
+  padding: 15px;
 }
 .dropdown .dropdownBtn:hover {
   color: white;
 }
-.dropdown-content {
+.dropdown .dropdownBtn .dropdown-content {
   display: none;
   z-index: 1;
   position: absolute;
 }
-.dropdown:hover .dropdown-content {
+.dropdown .dropdownBtn:hover .dropdown-content {
   display: block;
   background-color: rgb(155, 152, 152);
 }
