@@ -1,6 +1,5 @@
 <!--Javascript-->
 <script>
-
   import { fly } from "svelte/transition";
   let displayText = false;
 
@@ -10,7 +9,6 @@
   }
   //array of words
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
-
 </script>
 
 <!--HTML-->
@@ -73,8 +71,7 @@
     margin-top: 10%;
   }
   .picture4 p {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-inline: 15%; /*Sets the margin at the start and end in inline direction*/
     margin-top: 5%;
     font-size: 2em;
   }

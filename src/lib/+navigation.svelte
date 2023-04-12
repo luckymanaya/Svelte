@@ -7,7 +7,7 @@
       <a href="/about">About</a>
       <section class="dropdown">
         <button class="dropdownBtn"
-          >Pages
+          >Pages<small>&#9660</small>
           <section class="dropdown-content">
             <a href="/">Page 1</a>
             <a href="/secondPage">Page 2</a>

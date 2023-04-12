@@ -75,7 +75,7 @@ nav ul a:last-of-type {
   z-index: 1;
   position: absolute;
 }
-.dropdown .dropdownBtn:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
   background-color: rgb(155, 152, 152);
 }
