@@ -58,11 +58,11 @@
 </p>
 
 ## Other Features:
-<p align = "justify">In the main page, I added an additional interactive aspect by adding a textbox that asks the user’s name and after that, it displays the name. After clicking ‘continue’, it goes to the next section ‘smoothly’.
+<p align = "justify">In the main page, I added an additional interactive aspect by adding a greeting based on the local time and a textbox that asks the user’s name and displays it. After clicking ‘continue’, it goes to the next section ‘smoothly’.
 </p>
 
 <p align = "center">
-<img src = "Main.png" 
+<img src = "Main.PNG" 
 alt = "Screenshot of feature in the Main Page">
 </p>
 
@@ -123,3 +123,6 @@ https://www.nngroup.com/articles/ten-usability-heuristics/
 ### Bug Solution
 
 https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage (Web Storage)
+
+### Other Features
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours (Greetings based on local time feature)
