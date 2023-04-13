@@ -42,7 +42,6 @@
       <p><br /><br />{w}<br /><br /></p>
     {/each}
   </section>
-
   <!--Buttons-->
   <section class="button-container">
     <a href="/">

@@ -93,7 +93,6 @@
     height: 990px;
     padding: 50px;
     border-radius: 25px;
-    margin: 30px;
     margin-top: 6%;
   }
   .picture8 {

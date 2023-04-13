@@ -3,6 +3,19 @@
   let name = "";
   let title = "Lucky's Website";
 
+  const today = new Date();
+  const time = today.getHours();
+  let greeting = "";
+
+  //If/else statements for displaying greetings based on time
+  if(time >= 5 && time < 12){
+    greeting = "Good Morning!";
+  }else if (time >= 12 && time < 18){
+    greeting = "Good Afternoon!";
+  }else{
+  greeting = "Good Evening!";
+
+}
   //Creates a smooth scrolling effect
   function scrollFunction() {
     document.documentElement.style.scrollBehavior = "smooth";
@@ -12,9 +25,15 @@
 <!--HTML-->
 <body>
   <!--TextBox-->
-  <input class="nameText" bind:value={name} placeholder="What is your name?" />
+  <input
+    class="nameText"
+    bind:value={name}
+    placeholder="What is your name?"
+    maxlength="20"
+  />
   <!--Displays the user's name with a capitalized first letter-->
-  <h2 style="margin-bottom: 10%">
+  <h2>{greeting}</h2>
+  <h2 style="margin-bottom: 5%">
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"} to {title}!
     &#x2661
   </h2>
@@ -69,11 +88,9 @@
   /*TextBox*/
   .nameText {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     display: block;
     margin-top: 10%;
-    margin-bottom: 10%;
     font-size: 1.75em;
   }
   /*Button Styling in Next Section*/
