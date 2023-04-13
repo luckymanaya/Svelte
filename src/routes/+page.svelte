@@ -69,8 +69,12 @@
 
   <!--Flexbox for Picture 2 & 3-->
   <section class="flex-container">
-    <section class="picture2" />
+    <section class = "item">
+    <section class ="picture2" />
+  </section>
+  <section class = "item">
     <section class="picture3" />
+    </section>
   </section>
 
   <!--Button-->
@@ -117,7 +121,7 @@
     background-image: url("images/castle.jpg");
     background-size: cover;
     background-position: center;
-    width: 55%;
+    width: auto;
     height: 990px;
     margin: 10px;
     border-radius: 25px;
@@ -126,7 +130,7 @@
     background-image: url("images/three women.jpg");
     background-size: cover;
     background-position: center;
-    width: 45%;
+    width: auto;
     height: 990px;
     margin: 10px;
     border-radius: 25px;

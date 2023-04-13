@@ -22,14 +22,22 @@
 <body>
   <!--Flexbox for Picture 6 & 7-->
   <section class="flex-container">
-    <section class="picture6">
-      <h1 class="text">Expressive</h1>
+    <section class="item">
+      <section class="picture6">
+        <h1 class="text">Expressive</h1>
+      </section>
     </section>
-    <section class="picture7">
-      <h1 class="text">Creative</h1>
+
+    <section class="item">
+      <section class="picture7">
+        <h1 class="text">Creative</h1>
+      </section>
     </section>
-    <section class="picture8">
-      <h1 class="text">Influential</h1>
+
+    <section class="item">
+      <section class="picture8">
+        <h1 class="text">Influential</h1>
+      </section>
     </section>
   </section>
 
@@ -78,33 +86,34 @@
     background-image: url("images/earring.jpg");
     background-size: cover;
     background-position: center;
-    width: 55%;
+    width: 60%;
     height: 990px;
     padding: 50px;
     border-radius: 25px;
-    margin: 30px;
-    margin-top: 6%;
+    margin-inline: auto;
+    margin-top: 20%;
   }
   .picture7 {
     background-image: url("images/accessories.jpg");
     background-size: cover;
     background-position: center;
-    width: 55%;
+    width: 60%;
     height: 990px;
     padding: 50px;
     border-radius: 25px;
-    margin-top: 6%;
+    margin-inline: auto;
+    margin-top: 20%;
   }
   .picture8 {
     background-image: url("images/hair.jpg");
     background-size: cover;
     background-position: center;
-    width: 55%;
+    width: 60%;
     height: 990px;
     padding: 50px;
     border-radius: 25px;
-    margin: 30px;
-    margin-top: 6%;
+    margin-inline: auto;
+    margin-top: 20%;
   }
   .text {
     color: black;
