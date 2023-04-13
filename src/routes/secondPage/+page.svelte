@@ -63,12 +63,13 @@
     background-image: url("images/vogue.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: auto;
     height: 990px;
     padding: 50px;
   }
   .picture4 button {
-    margin-top: 10%;
+    margin-top: 15%;
+    
   }
   .picture4 p {
     margin-inline: 15%; /*Sets the margin at the start and end in inline direction*/

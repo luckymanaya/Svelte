@@ -1,6 +1,5 @@
 <!--HTML-->
-<section class="about-header">
-
+<section class="about-and-contact-header">
   <h1>About Page</h1>
   <h2>Hi There!</h2>
   <p>
@@ -8,10 +7,3 @@
     content is given to you &#x2661
   </p>
 </section>
-
-<!--CSS Styling-->
-<style>
-  .about-header{
-    margin-top: 60px;
-  }
-  </style>

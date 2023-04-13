@@ -141,11 +141,7 @@
   }
   /*Slideshow Styling*/
   .slideshow img {
-    width: 30%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 35%;
     margin-bottom: 5%;
     border-radius: 25px;
   }

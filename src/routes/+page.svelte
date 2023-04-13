@@ -93,9 +93,11 @@
   .nameText {
     text-align: center;
     margin-inline: auto;
-    display: block;
+    margin-bottom: 5%;
     margin-top: 10%;
+    display: block;
     font-size: 1.75em;
+    position: relative;
   }
   /*Button Styling in Next Section*/
   a button {

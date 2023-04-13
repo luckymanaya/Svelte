@@ -4,6 +4,11 @@ body {
   background-color: black;
 }
 
+/*About and Contact Header Styling*/
+.about-and-contact-header {
+  margin-top: 5%;
+}
+
 /*Text Styling*/
 h1 {
   text-align: center;
@@ -51,9 +56,11 @@ nav ul {
   font-family: "Arial";
   font-size: 2.5em;
 }
+
 nav ul a {
   padding: 15px;
 }
+
 nav ul a:last-of-type {
   margin-left: auto;
 }
@@ -67,22 +74,27 @@ nav ul a:last-of-type {
   margin: 0;
   padding: 15px;
 }
+
 .dropdown .dropdownBtn:hover {
   color: white;
 }
+
 .dropdown .dropdownBtn .dropdown-content {
   display: none;
   z-index: 1;
   position: absolute;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
   background-color: rgb(155, 152, 152);
 }
+
 .dropdown-content a {
   color: black;
   display: block;
 }
+
 .nav-transparency {
   /*to make header transparent*/
   position: absolute;
@@ -113,10 +125,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.flex-container .item{
-  flex:1; /*Sets to 1 to distribute remaining space equally to all items*/
+
+.flex-container .item {
+  flex: 1;
+  /*Sets to 1 to distribute remaining space equally to all items*/
 }
-.flex-container > div {
+
+.flex-container>div {
   margin: 30px;
 }
 
@@ -139,6 +154,7 @@ button {
   display: flex;
   justify-content: center;
 }
+
 /*Layout Structure*/
 .main {
   display: flex;
