@@ -58,12 +58,17 @@
 </p>
 
 ## Other Features:
+1. **Main Page**
 <p align = "justify">In the main page, I added an additional interactive aspect by adding a greeting based on the local time and a textbox that asks the user’s name and displays it. After clicking ‘continue’, it goes to the next section ‘smoothly’.
 </p>
 
 <p align = "center">
 <img src = "Main.PNG" 
 alt = "Screenshot of feature in the Main Page">
+</p>
+
+2. **Dropdown Menu**
+<p align = "justify">I created a dropdown menu for the 'Pages' which can be seen in the navigation bar so that users can go to certain pages faster and not have to go through all of the pages which saves users' time.
 </p>
 
 ## Process
