@@ -136,6 +136,11 @@ a:hover {
 }
 
 /*Buttons Styling*/
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   padding: 10px;
   font-family: "Arial";
@@ -150,14 +155,15 @@ button {
   cursor: pointer;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
 /*Layout Structure*/
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/*Page Number Text Styling*/
+.pageNumber p{
+  text-align: center;
+  font-size: 2em;
 }

@@ -5,7 +5,9 @@
     "images/black hat.jpg",
     "images/vibes.jpg",
   ];
+
   let currentSlide = 0;
+  let pageNum = 3;
 
   //a function to go to next slide
   function nextSlide() {
@@ -65,19 +67,23 @@
       </section>
     {/if}
   </section>
-
-  <!--Buttons-->
-  <section class="button-container">
-    <a href="/secondPage">
-      <button>Go Back</button>
-    </a>
-    <a href="/">
-      <button>Go Back to 1</button>
-    </a>
-  </section>
-
-  <p style="text-align: center; font-size: 2em">3</p>
 </body>
+
+<!--Buttons-->
+<section class="button-container">
+  <a href="/">
+    <button>Go Back to 1</button>
+  </a>
+
+  <a href="/secondPage">
+    <button>Go Back</button>
+  </a>
+</section>
+
+<!--Page Number Text-->
+<section class="pageNumber">
+  <p>{pageNum}</p>
+</section>
 
 <!--CSS Styling-->
 <style>

@@ -2,20 +2,20 @@
 <script>
   let name = "";
   let title = "Lucky's Website";
+  let pageNum = 1;
 
   const today = new Date();
   const time = today.getHours();
   let greeting = "";
 
   //If/else statements for displaying greetings based on time
-  if(time >= 5 && time < 12){
+  if (time >= 5 && time < 12) {
     greeting = "Good Morning!";
-  }else if (time >= 12 && time < 18){
+  } else if (time >= 12 && time < 18) {
     greeting = "Good Afternoon!";
-  }else{
-  greeting = "Good Evening!";
-
-}
+  } else {
+    greeting = "Good Evening!";
+  }
   //Creates a smooth scrolling effect
   function scrollFunction() {
     document.documentElement.style.scrollBehavior = "smooth";
@@ -69,23 +69,26 @@
 
   <!--Flexbox for Picture 2 & 3-->
   <section class="flex-container">
-    <section class = "item">
-    <section class ="picture2" />
-  </section>
-  <section class = "item">
-    <section class="picture3" />
+    <section class="item">
+      <section class="picture2" />
+    </section>
+    <section class="item">
+      <section class="picture3" />
     </section>
   </section>
-
-  <!--Button-->
-  <section class="button-container">
-    <a href="/secondPage">
-      <button>Next</button>
-    </a>
-  </section>
-
-  <p style="text-align: center; font-size: 2em">1</p>
 </body>
+
+<!--Buttons-->
+<section class="button-container">
+  <a href="/secondPage">
+    <button>Next</button>
+  </a>
+</section>
+
+<!--Page Number Text-->
+<section class="pageNumber">
+  <p>{pageNum}</p>
+</section>
 
 <!--CSS Styling-->
 <style>

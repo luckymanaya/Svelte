@@ -1,7 +1,9 @@
 <!--Javascript-->
 <script>
   import { fly } from "svelte/transition";
+  
   let displayText = false;
+  let pageNum = 2;
 
   //if called, displayText becomes true
   function animateText() {
@@ -42,19 +44,23 @@
       <p><br /><br />{w}<br /><br /></p>
     {/each}
   </section>
-
-  <!--Buttons-->
-  <section class="button-container">
-    <a href="/">
-      <button>Go Back</button>
-    </a>
-    <a href="/thirdPage">
-      <button>Next</button>
-    </a>
-  </section>
-
-  <p style="text-align: center; font-size: 2em">2</p>
 </body>
+
+<!--Buttons-->
+<section class="button-container">
+  <a href="/">
+    <button>Go Back</button>
+  </a>
+
+  <a href="/thirdPage">
+    <button>Next</button>
+  </a>
+</section>
+
+<!--Page Number Text-->
+<section class="pageNumber">
+  <p>{pageNum}</p>
+</section>
 
 <!--CSS Styling-->
 <style>
@@ -69,7 +75,6 @@
   }
   .picture4 button {
     margin-top: 15%;
-    
   }
   .picture4 p {
     margin-inline: 15%; /*Sets the margin at the start and end in inline direction*/

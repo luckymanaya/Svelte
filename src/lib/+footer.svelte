@@ -13,11 +13,11 @@
     padding: 15px;
     color: white;
   }
-  a {
+  footer a {
     color: gray;
     text-decoration: underline;
   }
-  a:hover {
+  footer a:hover {
     color: white;
   }
 </style>
