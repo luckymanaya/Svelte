@@ -1,7 +1,7 @@
 <!--Javascript-->
 <script>
   import { fly } from "svelte/transition";
-  
+
   let displayText = false;
   let pageNum = 2;
 
@@ -92,7 +92,7 @@
     transition: transform 0.5s; /* Animation */
   }
   .picture5:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /*Zooms in*/
   }
   .picture5 p {
     margin-left: 140%;

@@ -87,12 +87,19 @@ nav ul a:last-of-type {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color: rgb(155, 152, 152);
+  background-color: lightgray;
+  border-radius: 10px;
 }
 
 .dropdown-content a {
   color: black;
   display: block;
+  font-size: 0.95em;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+  border-radius: inherit;
 }
 
 .nav-transparency {
@@ -127,8 +134,8 @@ a:hover {
 }
 
 .flex-container .item {
-  flex: 1;
   /*Sets to 1 to distribute remaining space equally to all items*/
+  flex: 1;
 }
 
 .flex-container>div {
@@ -151,7 +158,6 @@ button {
   border: 2px solid white;
   margin: 10px;
   width: 170px;
-  transition: transform 0.1s ease-in-out;
   cursor: pointer;
 }
 
@@ -163,7 +169,7 @@ button {
 }
 
 /*Page Number Text Styling*/
-.pageNumber p{
+.pageNumber p {
   text-align: center;
   font-size: 2em;
 }

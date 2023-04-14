@@ -1,6 +1,7 @@
 <!--JavaScript-->
 <script>
   let name = "";
+
   let title = "Lucky's Website";
   let pageNum = 1;
 
@@ -34,8 +35,8 @@
   <!--Displays the user's name with a capitalized first letter-->
   <h2>{greeting}</h2>
   <h2 style="margin-bottom: 5%">
-    Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"} to {title}!
-    &#x2661
+    Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
+    to {title}! &#x2661
   </h2>
 
   <!--Button for Next Section-->
