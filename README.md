@@ -132,3 +132,4 @@ https://rodneylab.com/using-local-storage-sveltekit/ (Local Storage - Sveltekit)
 
 ### Other Features
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours (Greetings based on local time feature)
+https://svelte.dev/repl/a5bc00c245964b27bc750c1e8fba5bae?version=3.44.1 (Input Validation)
