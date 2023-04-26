@@ -5,6 +5,16 @@
   //If not null, value is returned from the storage. If null, returns empty string
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
 
+  //Checks if input is string. If not, returns empty string
+  function validateInput(e) {
+    const value = e.target.value;
+    if (isNaN(value)) {
+      name = value;
+    } else {
+      name = "";
+    }
+  }
+
   let title = "Lucky's Website";
   let pageNum = 1;
 
@@ -32,6 +42,7 @@
   <!--TextBox-->
   <input
     class="nameText"
+    on:input={validateInput}
     bind:value={name}
     placeholder="What is your name?"
     maxlength="20"
@@ -133,6 +144,7 @@
     padding: 20px;
     margin-top: 50px;
     width: auto;
+    font-size: 50%;
   }
   .picture2 {
     background-image: url("images/castle.jpg");
