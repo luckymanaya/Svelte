@@ -11,6 +11,9 @@
   }
   //array of words
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
+
+  //Gets the user's name
+  const name = localStorage.getItem("username");
 </script>
 
 <!--HTML-->

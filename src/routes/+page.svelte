@@ -1,6 +1,9 @@
 <!--JavaScript-->
 <script>
-  let name = "";
+   import { browser } from '$app/environment';
+
+   //If not null, value is returned from the storage. If null, returns empty string
+   let name = browser ? window.localStorage.getItem('username') ?? "" : "";
 
   let title = "Lucky's Website";
   let pageNum = 1;
@@ -19,8 +22,10 @@
   }
   //Creates a smooth scrolling effect
   function scrollFunction() {
+    localStorage.setItem('username', name);
     document.documentElement.style.scrollBehavior = "smooth";
   }
+
 </script>
 
 <!--HTML-->
