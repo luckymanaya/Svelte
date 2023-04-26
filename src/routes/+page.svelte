@@ -4,17 +4,16 @@
 
   //If not null, value is returned from the storage. If null, returns empty string
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
-
   //Checks if input is string. If not, returns empty string
   function validateInput(e) {
-    const value = e.target.value;
+    //value equals the input entered
+    let value = e.target.value;
     if (isNaN(value)) {
       name = value;
     } else {
       name = "";
     }
   }
-
   let title = "Lucky's Website";
   let pageNum = 1;
 
