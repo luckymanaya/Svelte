@@ -95,7 +95,7 @@ alt = "Screenshot of feature in the Main Page">
 
 5. **Display User’s Name**
 
-<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. It also accepts numbers and special characters which are invalid inputs.
+<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. But this bug is solved using local storage by setting the name and paired it with a key after the 'Continue' button is clicked and getting the name after that.
 </p>
 
 ## References:
@@ -128,6 +128,7 @@ https://www.nngroup.com/articles/ten-usability-heuristics/
 ### Bug Solution
 
 https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage (Web Storage)
+https://rodneylab.com/using-local-storage-sveltekit/ (Local Storage - Sveltekit)
 
 ### Other Features
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours (Greetings based on local time feature)
