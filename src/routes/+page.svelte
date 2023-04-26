@@ -1,9 +1,9 @@
 <!--JavaScript-->
 <script>
-   import { browser } from '$app/environment';
+  import { browser } from "$app/environment";
 
-   //If not null, value is returned from the storage. If null, returns empty string
-   let name = browser ? window.localStorage.getItem('username') ?? "" : "";
+  //If not null, value is returned from the storage. If null, returns empty string
+  let name = browser ? window.localStorage.getItem("username") ?? "" : "";
 
   let title = "Lucky's Website";
   let pageNum = 1;
@@ -22,10 +22,9 @@
   }
   //Creates a smooth scrolling effect
   function scrollFunction() {
-    localStorage.setItem('username', name);
+    localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
   }
-
 </script>
 
 <!--HTML-->
@@ -52,7 +51,9 @@
   <section class="picture1" id="nextSection">
     <h1 style="padding: 20%">
       Scroll Down <br /><span class="scroll-down">
-        <a href="#nextSection2">&#8595</a></span
+        <a href="#nextSection2"
+          ><button on:click={scrollFunction}>&#8595</button></a
+        ></span
       >
     </h1>
   </section>
@@ -128,6 +129,11 @@
     width: 100%;
     height: 970px;
   }
+  .picture1 button {
+    padding: 20px;
+    margin-top: 50px;
+    width: auto;
+  }
   .picture2 {
     background-image: url("images/castle.jpg");
     background-size: cover;
@@ -156,6 +162,8 @@
   }
   .firstPageText h2:hover {
     color: white;
+    /*Cursor won't change to textbox cursor*/
+    cursor: default;
   }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
