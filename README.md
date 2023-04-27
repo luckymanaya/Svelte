@@ -59,7 +59,7 @@
 
 ## Other Features:
 1. **Main Page**
-<p align = "justify">In the main page, I added an additional interactive aspect by adding a greeting based on the local time and a textbox that asks the user’s name and displays it. After clicking ‘continue’, it goes to the next section ‘smoothly’.
+<p align = "justify">In the main page, I added an additional interactive aspect by adding a greeting based on the local time and a textbox that asks the user’s name and displays it. After clicking ‘continue’, it goes to the next section ‘smoothly’ and the name added will be saved to the storage and will not change unless the user changes it.
 </p>
 
 <p align = "center">
@@ -69,6 +69,10 @@ alt = "Screenshot of feature in the Main Page">
 
 2. **Dropdown Menu**
 <p align = "justify">I created a dropdown menu for the 'Pages' which can be seen in the navigation bar so that users can go to certain pages faster and not have to go through all of the pages which saves users' time.
+</p>
+
+3. **Slider**
+<p align = "justify">I made a slider that increases and decreases the font size of the text in the second page so that users do not have a hard time reading it.
 </p>
 
 ## Process
@@ -133,5 +137,3 @@ https://rodneylab.com/using-local-storage-sveltekit/ (Local Storage - Sveltekit)
 
 ### Other Features
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours (Greetings based on local time feature)
-
-https://svelte.dev/repl/a5bc00c245964b27bc750c1e8fba5bae?version=3.44.1 (Input Validation)
