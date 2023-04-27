@@ -72,7 +72,7 @@ alt = "Screenshot of feature in the Main Page">
 </p>
 
 <p align = "center">
-<img src = "dropdownMenu.PNG" 
+<img src = "dropdownMenu.png" 
 alt = "Screenshot of feature in the Main Page">
 </p>
 
