@@ -93,7 +93,7 @@
     background-size: cover;
     background-position: center;
     width: 65%;
-    height: 500px;
+    height: 550px;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
@@ -108,7 +108,7 @@
     background-size: cover;
     background-position: center;
     width: 65%;
-    height: 500px;
+    height: 550px;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
@@ -123,7 +123,7 @@
     background-size: cover;
     background-position: center;
     width: 65%;
-    height: 500px;
+    height: 550px;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
@@ -136,7 +136,7 @@
   /*Text on Picture 6, 7, 8 Styling*/
   .text {
     color: black;
-    margin-top: -15%;
+    margin-top: -10%;
   }
   /*Background picture goes behind the image*/
   .picture9 {
