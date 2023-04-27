@@ -2,8 +2,7 @@
 <footer>
   &copy; Images:
   <a href="https://unsplash.com/">Unsplash Website</a>
-  <br />
-  Links:
+  Contact Link:
   <a href="/contact">Contact Me</a>
 </footer>
 

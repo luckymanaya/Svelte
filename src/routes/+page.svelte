@@ -36,26 +36,29 @@
 
 <!--HTML-->
 <body>
-  <!--TextBox-->
-  <input
-    class="nameText"
-    on:input={validateInput}
-    bind:value={name}
-    placeholder="What is your name?"
-    maxlength="20"
-  />
-  <!--Displays the user's name with a capitalized first letter-->
-  <h2>{greeting}</h2>
-  <h2 style="margin-bottom: 5%">
-    Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
-    to {title}! &#x2661
-  </h2>
+  <section class="mainPicture">
+    <!--TextBox-->
+    <input
+      on:input={validateInput}
+      bind:value={name}
+      placeholder="What is your name?"
+      maxlength="20"
+    />
+    <!-- Displays greeting based on local time -->
+    <h2>{greeting}</h2>
+    <!--Displays the user's name with a capitalized first letter-->
+    <h2 style="margin-bottom: 5%">
+      Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
+      to {title}! &#x2661
+    </h2>
 
-  <!--Button for Next Section-->
-  <a href="#nextSection">
-    <button on:click={scrollFunction}>Continue</button>
-  </a>
+    <!--Button for Next Section-->
+    <a href="#nextSection">
+      <button on:click={scrollFunction}>Continue</button>
+    </a>
+  </section>
 
+  <!-- Next Section -->
   <section class="picture1" id="nextSection">
     <h1 style="padding: 20%">
       Scroll Down <br /><span class="scroll-down">
@@ -107,12 +110,20 @@
 
 <!--CSS Styling-->
 <style>
+  /*Main Picture*/
+  .mainPicture {
+    background-image: url("images/sewing machine.jpg");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 990px;
+    padding: 15%;
+  }
   /*TextBox*/
-  .nameText {
+  .mainPicture input {
     text-align: center;
     margin-inline: auto;
     margin-bottom: 5%;
-    margin-top: 10%;
     display: block;
     font-size: 1.75em;
     position: relative;
@@ -134,7 +145,7 @@
     background-image: url("images/mannequins.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: auto;
     height: 970px;
   }
   .picture1 button {

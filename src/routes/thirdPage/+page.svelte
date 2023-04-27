@@ -92,38 +92,51 @@
     background-image: url("images/earring.jpg");
     background-size: cover;
     background-position: center;
-    width: 60%;
-    height: 990px;
+    width: 65%;
+    height: 500px;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 20%;
+    margin-top: 30%;
+    transition: transform 0.5s; /* Animation */
+  }
+  .picture6:hover {
+    transform: scale(1.1); /*Zooms in*/
   }
   .picture7 {
     background-image: url("images/accessories.jpg");
     background-size: cover;
     background-position: center;
-    width: 60%;
-    height: 990px;
+    width: 65%;
+    height: 500px;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 20%;
+    margin-top: 30%;
+    transition: transform 0.5s; /* Animation */
+  }
+  .picture7:hover {
+    transform: scale(1.1); /*Zooms in*/
   }
   .picture8 {
     background-image: url("images/hair.jpg");
     background-size: cover;
     background-position: center;
-    width: 60%;
-    height: 990px;
+    width: 65%;
+    height: 500px;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 20%;
+    margin-top: 30%;
+    transition: transform 0.5s; /* Animation */
   }
+  .picture8:hover {
+    transform: scale(1.1); /*Zooms in*/
+  }
+  /*Text on Picture 6, 7, 8 Styling*/
   .text {
     color: black;
-    margin-top: 0;
+    margin-top: -15%;
   }
   /*Background picture goes behind the image*/
   .picture9 {
@@ -137,6 +150,7 @@
   /*Image goes on top of the background picture*/
   .picture9 img {
     max-width: 45%;
+    /*Centers the picture*/
     margin: 0 auto;
     padding: 15%;
     display: block;

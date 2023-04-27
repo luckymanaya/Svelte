@@ -7,3 +7,10 @@
     content is given to you &#x2661
   </p>
 </section>
+
+<!--CSS Styling-->
+<style>
+  p{
+    text-align: center;
+  }
+</style>
