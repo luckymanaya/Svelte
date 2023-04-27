@@ -72,7 +72,7 @@ alt = "Screenshot of feature in the Main Page">
 </p>
 
 3. **Slider**
-<p align = "justify">I made a slider that increases and decreases the font size of the text in the second page so that users do not have a hard time reading it.
+<p align = "justify">I made a slider that increases and decreases the font size of the text in the second page so that users can resize the text based on their preferences. This allows users to have more control and also increases the website accessibility, especially for users with reading difficulties.
 </p>
 
 ## Process
