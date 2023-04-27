@@ -2,18 +2,17 @@
 <script>
   import { fly } from "svelte/transition";
 
+  let fontSize = 30;
   let displayText = false;
-  let pageNum = 2;
+  const pageNum = 2;
 
-  //if called, displayText becomes true
-  function animateText() {
-    displayText = !displayText;
-  }
   //array of words
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
 
-  //Gets the user's name
-  const name = localStorage.getItem("username");
+  //if called, displayText becomes true
+  const animateText = () => {
+    displayText = !displayText;
+  };
 </script>
 
 <!--HTML-->
@@ -23,7 +22,8 @@
 
     <!--if true, animated text is displayed-->
     {#if displayText}
-      <p transition:fly={{ y: 200 }}>
+      <p>Increase Font Size: <input type="range" bind:value={fontSize} /></p>
+      <p style="font-size: {fontSize}px" transition:fly={{ y: 200 }}>
         <mark
           >Vogue is one of the most popular fashion magazine since 1892 and has
           played a major role in influencing fashion industries and still even
@@ -82,7 +82,6 @@
   .picture4 p {
     margin-inline: 15%; /*Sets the margin at the start and end in inline direction*/
     margin-top: 5%;
-    font-size: 2em;
   }
   .picture5 {
     background-image: url("images/runway.jpg");

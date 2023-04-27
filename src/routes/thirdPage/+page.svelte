@@ -7,17 +7,17 @@
   ];
 
   let currentSlide = 0;
-  let pageNum = 3;
+  const pageNum = 3;
 
-  //a function to go to next slide
-  function nextSlide() {
+  //A function to go to next slide
+  const nextSlide = () => {
     currentSlide = (currentSlide + 1) % slideImages.length;
-  }
+  };
 
-  //a function to go to previous slide
-  function previousSlide() {
+  //A function to go to previous slide
+  const previousSlide = () => {
     currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-  }
+  };
 </script>
 
 <!--HTML-->

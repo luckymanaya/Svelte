@@ -4,36 +4,34 @@
 
   //If not null, value is returned from the storage. If null, returns empty string
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
-  //Checks if input is string. If not, returns empty string
-  function validateInput(e) {
+
+  //A function that checks if input is string. If not a string, empty string is returned
+  const validateInput = (e) => {
     //value equals the input entered
-    let value = e.target.value;
-    if (isNaN(value)) {
-      name = value;
-    } else {
-      name = "";
-    }
-  }
+    const value = e.target.value;
+
+    if (isNaN(value)) name = value;
+    else name = "";
+  };
+
   let title = "Lucky's Website";
-  let pageNum = 1;
+  const pageNum = 1;
 
   const today = new Date();
   const time = today.getHours();
   let greeting = "";
 
-  //If/else statements for displaying greetings based on time
-  if (time >= 5 && time < 12) {
-    greeting = "Good Morning!";
-  } else if (time >= 12 && time < 18) {
-    greeting = "Good Afternoon!";
-  } else {
-    greeting = "Good Evening!";
-  }
+  //If and else statements for displaying greetings based on local time
+  if (time >= 5 && time < 12) greeting = "Good Morning!";
+  else if (time >= 12 && time < 18) greeting = "Good Afternoon!";
+  else greeting = "Good Evening!";
+
   //Creates a smooth scrolling effect
-  function scrollFunction() {
+  const scrollFunction = () => {
+    //Sets the name to the storage with a paired key of username after clicking the button
     localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
-  }
+  };
 </script>
 
 <!--HTML-->
