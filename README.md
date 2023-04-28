@@ -109,7 +109,7 @@ alt = "Screenshot of feature in the Main Page">
 
 5. **Display User’s Name**
 
-<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. But this bug is solved using local storage by setting the name and paired it with a key after the 'Continue' button is clicked and getting the name after that.
+<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. But this bug is solved using local storage by setting the name and paired it with a key after the 'Continue' button is clicked and getting the name after that. Another bug is that it also accepts numbers and I only want it to accept letters only.
 </p>
 
 ## References:
