@@ -2,6 +2,43 @@
 <script>
   import { browser } from "$app/environment";
 
+  // Unsplash Website URL
+  const BASE_URL = "https://api.unsplash.com";
+  // Img1
+  let img1 = "images/sewing machine.jpg";
+
+  // Fetches data
+  setTimeout(
+    () =>
+      fetch(
+        `${BASE_URL}/photos/jNKv4QohAk0?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4`
+      )
+        .then((r) => r.json())
+        .then((data) => {
+          console.log(data);
+          img1 = data.urls.full;
+          console.log(img1);
+        }),
+    2000
+  );
+  // Img2
+  let img2 = "images/sewing machine.jpg";
+
+  // Fetches data
+  setTimeout(
+    () =>
+      fetch(
+        `${BASE_URL}/photos/HpEDSZukJqk?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4`
+      )
+        .then((r) => r.json())
+        .then((data) => {
+          console.log(data);
+          img2 = data.urls.full;
+          console.log(img2);
+        }),
+    2000
+  );
+
   //If not null, value is returned from the storage. If null, returns empty string
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
 
@@ -36,7 +73,7 @@
 
 <!--HTML-->
 <body>
-  <section class="mainPicture">
+  <section class="mainPicture" style="background-image:url({img1})">
     <!--TextBox-->
     <input
       on:input={validateInput}
@@ -59,7 +96,7 @@
   </section>
 
   <!-- Next Section -->
-  <section class="picture1" id="nextSection">
+  <section class="picture1" id="nextSection" style="background-image:url({img2})">
     <h1 style="padding: 20%">
       Scroll Down <br /><span class="scroll-down">
         <a href="#nextSection2"
@@ -112,28 +149,26 @@
 <style>
   /*Main Picture*/
   .mainPicture {
-    background-image: url("images/sewing machine.jpg");
     background-size: cover;
     background-position: center;
-    width: auto;
-    height: 990px;
-    padding: 15%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   /*TextBox*/
   .mainPicture input {
     text-align: center;
     margin-inline: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: block;
     font-size: 1.75em;
-    position: relative;
   }
   /*Button Styling in Next Section*/
   a button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20%;
   }
   /*Scroll-Down Symbol Styling*/
   .scroll-down {
@@ -142,7 +177,6 @@
   }
   /*Pictures*/
   .picture1 {
-    background-image: url("images/mannequins.jpg");
     background-size: cover;
     background-position: center;
     width: auto;

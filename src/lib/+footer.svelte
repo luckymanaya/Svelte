@@ -16,7 +16,7 @@
   {:else}
     Images:
     <a href="https://unsplash.com/">Unsplash Website</a> | Contact Link:
-    <a href="/contact">Contact Me:</a> | Privacy Policy Link:
+    <a href="/contact">Contact Me</a> | Privacy Policy Link:
     <!-- Link goes nowhere -->
     <a href="#0">Privacy Policy</a>
     <br />
