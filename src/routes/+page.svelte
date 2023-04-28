@@ -43,13 +43,10 @@
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
 
   //A function that checks if input is string. If not a string, empty string is returned
-  const validateInput = (e) => {
-    //value equals the input entered
-    const value = e.target.value;
-
-    if (isNaN(value)) name = value;
-    else name = "";
-  };
+function alphaOnly(event) {
+  var key = event.keyCode;
+  return ((key >= 65 && key <= 90) || key == 8);
+};
 
   let title = "Lucky's Website";
   const pageNum = 1;
@@ -76,10 +73,10 @@
   <section class="mainPicture" style="background-image:url({img1})">
     <!--TextBox-->
     <input
-      on:input={validateInput}
       bind:value={name}
       placeholder="What is your name?"
       maxlength="20"
+      on:keydown={event => /[a-z]/i.test(event.key)}
     />
     <!-- Displays greeting based on local time -->
     <h2>{greeting}</h2>
