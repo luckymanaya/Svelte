@@ -6,6 +6,7 @@
   const BASE_URL = "https://api.unsplash.com";
 
   let img = "";
+  // Fetches picture based on ID
   setTimeout(
     () =>
       fetch(

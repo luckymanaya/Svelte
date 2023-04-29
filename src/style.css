@@ -3,10 +3,12 @@ body {
   margin: 0;
   background-color: black;
 }
+
 /* About and Contact Header Styling */
-.about-and-contact-header{
-  margin-top:5%;
+.about-and-contact-header {
+  margin-top: 5%;
 }
+
 /*Text Styling*/
 h1 {
   text-align: center;
@@ -27,7 +29,7 @@ p {
   font-family: "Arial";
   font-size: 1.75em;
   color: white;
-  margin-inline:10px;
+  margin-inline: 10px;
 }
 
 /*Highlighted Text Styling*/
