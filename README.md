@@ -8,7 +8,7 @@
 
 ## Description
 
-<p align = "justify">My website which I named, <i>"Lucky's Website"</i>, is a fashion magazine website that provides users with fashion related content. It is built using a code editor called 'Visual Studio Code' where I used HTML, CSS, Javascript and a web framework called 'Svelte'. Lucky's Website is designed to be responsive in order to adapt to different devices with different screen sizes, increasing its accessibility. Moreover, the website is also very easy to navigate, making it user-friendly and enjoyable to use as the website follows the typical horizontal navigation menu, consisting of a 'Home' page, an 'About' page, a dropdown menu for the 'Pages' and a 'Contact Me' page. Not only it is user-friendly, but it also has a simple, yet modern look due to its black & white palette, allowing its content to become more visible which catches users' attention. It also contains animations, a slideshow and other interactive aspects in order to be considered 'visually appealing' to the users thus improving user experience and user engagement. In addition, this website also follows the usability heuristics which is used as a guide in order to create an attractive, yet functional website.
+<p align = "justify">My website which I named, <i>"Lucky's Website"</i>, is a fashion magazine website that provides users with fashion related content. It is built using the code editor called 'Visual Studio Code' where I used HTML, CSS, Javascript and a web framework called 'Svelte'. This website is designed to be responsive in order to adapt to different devices with different screen sizes. Moreover, the website is also very easy to navigate, making it user-friendly and enjoyable to use as the website follows the typical horizontal navigation menu, consisting of a 'Home' page, an 'About' page, a dropdown menu for the 'Pages' and a 'Contact Me' page. Not only it is user-friendly, but it also has a simple, yet modern look due to its black & white palette, allowing its content to become more visible, catching users' attention. It also contains animations, a slideshow and other interactive aspects in order to be considered 'visually appealing' and it also follows the usability heuristics which I used as a guide in order to create an attractive, yet functional website.
 </p>
 
 ## Installation Steps
@@ -109,7 +109,7 @@ alt = "Screenshot of feature in the Main Page">
 
 5. **Display User’s Name**
 
-<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears. But this bug is solved using local storage by setting the name and paired it with a key after the 'Continue' button is clicked and getting the name after that. Another bug is that it also accepts numbers and I only want it to accept letters only.
+<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears which is a bug. But, this bug is solved using local storage after the 'Continue' button is clicked and getting the name after that. Another bug is that it also accepts numbers and I only want it to accept letters only.
 </p>
 
 ## References:
