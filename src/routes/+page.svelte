@@ -4,10 +4,8 @@
 
   // Unsplash Website URL
   const BASE_URL = "https://api.unsplash.com";
-  // Img1
-  let img1 = "images/sewing machine.jpg";
 
-  // Fetches data
+  let img = "";
   setTimeout(
     () =>
       fetch(
@@ -16,37 +14,14 @@
         .then((r) => r.json())
         .then((data) => {
           console.log(data);
-          img1 = data.urls.full;
-          console.log(img1);
-        }),
-    2000
-  );
-  // Img2
-  let img2 = "images/sewing machine.jpg";
-
-  // Fetches data
-  setTimeout(
-    () =>
-      fetch(
-        `${BASE_URL}/photos/HpEDSZukJqk?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4`
-      )
-        .then((r) => r.json())
-        .then((data) => {
-          console.log(data);
-          img2 = data.urls.full;
-          console.log(img2);
+          img = data.urls.full;
+          console.log(img);
         }),
     2000
   );
 
   //If not null, value is returned from the storage. If null, returns empty string
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
-
-  //A function that checks if input is string. If not a string, empty string is returned
-function alphaOnly(event) {
-  var key = event.keyCode;
-  return ((key >= 65 && key <= 90) || key == 8);
-};
 
   let title = "Lucky's Website";
   const pageNum = 1;
@@ -70,14 +45,9 @@ function alphaOnly(event) {
 
 <!--HTML-->
 <body>
-  <section class="mainPicture" style="background-image:url({img1})">
+  <section class="mainPicture" style="background-image:url({img})">
     <!--TextBox-->
-    <input
-      bind:value={name}
-      placeholder="What is your name?"
-      maxlength="20"
-      on:keydown={event => /[a-z]/i.test(event.key)}
-    />
+    <input bind:value={name} placeholder="What is your name?" maxlength="20" />
     <!-- Displays greeting based on local time -->
     <h2>{greeting}</h2>
     <!--Displays the user's name with a capitalized first letter-->
@@ -93,8 +63,8 @@ function alphaOnly(event) {
   </section>
 
   <!-- Next Section -->
-  <section class="picture1" id="nextSection" style="background-image:url({img2})">
-    <h1 style="padding: 20%">
+  <section class="picture1" id="nextSection">
+    <h1>
       Scroll Down <br /><span class="scroll-down">
         <a href="#nextSection2"
           ><button on:click={scrollFunction}>&#8595</button></a
@@ -174,10 +144,14 @@ function alphaOnly(event) {
   }
   /*Pictures*/
   .picture1 {
+    background-image: url("images/mannequins.jpg");
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 970px;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
   }
   .picture1 button {
     padding: 20px;
@@ -190,7 +164,7 @@ function alphaOnly(event) {
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 990px;
+    height: 150vh;
     margin: 10px;
     border-radius: 25px;
   }
@@ -199,7 +173,7 @@ function alphaOnly(event) {
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 990px;
+    height: 150vh;
     margin: 10px;
     border-radius: 25px;
   }

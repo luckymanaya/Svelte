@@ -22,8 +22,8 @@
 
     <!--if true, animated text is displayed-->
     {#if displayText}
-      <p>Increase Font Size: <input type="range" bind:value={fontSize} /></p>
-      <p style="font-size: {fontSize}px" transition:fly={{ y: 200 }}>
+      <p>Increase Font Size: <input type="range" bind:value={fontSize} min = "20" max="45"/></p>
+      <p style="margin-top: 5%; font-size: {fontSize}px" transition:fly={{ y: 200 }}>
         <mark
           >Vogue is one of the most popular fashion magazine since 1892 and has
           played a major role in influencing fashion industries and still even
@@ -73,15 +73,16 @@
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 990px;
-    padding: 50px;
+    height: 120vh;
+    padding: 5%;
+    display:flex; 
+    flex-direction: column;
   }
   .picture4 button {
-    margin-top: 15%;
+    margin-top:15%;
   }
   .picture4 p {
-    margin-inline: 15%; /*Sets the margin at the start and end in inline direction*/
-    margin-top: 5%;
+    margin-inline: 5%;
   }
   .picture5 {
     background-image: url("images/runway.jpg");

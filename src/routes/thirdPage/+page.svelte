@@ -143,18 +143,21 @@
     background-image: url("images/red.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 1700px;
+    width: auto;
+    height: 190vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   /*Image goes on top of the background picture*/
   .picture9 img {
+    /* Sets the maximum width of image */
     max-width: 45%;
-    /*Centers the picture*/
+    /* Centers image */
     margin: 0 auto;
-    padding: 15%;
-    display: block;
-    transition: transform 0.5s; /* Animation */
+    /* Animation */
+    transition: transform 0.5s;
   }
   .picture9 img:hover {
     transform: scale(1.15);
