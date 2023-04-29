@@ -93,7 +93,7 @@
     background-size: cover;
     background-position: center;
     width: 65%;
-    height: 550px;
+    height: 100vh;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
@@ -108,7 +108,7 @@
     background-size: cover;
     background-position: center;
     width: 65%;
-    height: 550px;
+    height: 100vh;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
@@ -123,7 +123,7 @@
     background-size: cover;
     background-position: center;
     width: 65%;
-    height: 550px;
+    height: 100vh;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
@@ -163,6 +163,9 @@
     transform: scale(1.15);
   }
   /*Slideshow Styling*/
+  .slideshow {
+    display: flex;
+  }
   .slideshow img {
     width: 35%;
     margin-bottom: 5%;
