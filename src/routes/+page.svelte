@@ -14,9 +14,9 @@
       )
         .then((r) => r.json())
         .then((data) => {
-          console.log(data);
+          //console.log(data);
           img = data.urls.full;
-          console.log(img);
+         // console.log(img);
         }),
     2000
   );
@@ -42,13 +42,21 @@
     localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
   };
+
+  //A function that prevents numbers and special characters from displaying in the textbox
+  const changeName = e => {
+    if (/^[0-9(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)]*$/.test(e.key)) { 
+      e.preventDefault();
+      return false;
+    }
+  }
 </script>
 
 <!--HTML-->
 <body>
   <section class="mainPicture" style="background-image:url({img})">
     <!--TextBox-->
-    <input bind:value={name} placeholder="What is your name?" maxlength="20" />
+    <input bind:value={name} on:keydown={changeName} placeholder="What is your name?" maxlength="20" />
     <!-- Displays greeting based on local time -->
     <h2>{greeting}</h2>
     <!--Displays the user's name with a capitalized first letter-->

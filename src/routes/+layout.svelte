@@ -1,3 +1,4 @@
+<!-- JavaScript -->
 <script>
   import "../style.css";
   import Header from "$lib/+header.svelte";
