@@ -64,7 +64,7 @@
 <!-- Scrolls back to the top -->
 <section class = "BackToTop">
   <a href = "#" >
-  <button on:click={scrollFunction}>Back to top</button>
+  <button>Back to top &uarr;</button>
   </a>
   </section>
 
