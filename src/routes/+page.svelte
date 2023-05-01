@@ -9,11 +9,11 @@
   setTimeout(
     () =>
       fetch(
-        `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black`
+        `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black clothes`
       )
         .then((r) => r.json())
         .then((data) => {
-          img = data.results[0].urls.full;
+          img = data.results[2].urls.full;
           console.log(img);
         }),
     2000
@@ -117,11 +117,19 @@
 </body>
 
 <!--Buttons-->
+<!-- Scrolls back to the top -->
+<section class = "BackToTop">
+  <a href = "#" >
+  <button on:click={scrollFunction}>Back to top</button>
+  </a>
+  </section>
+
 <section class="button-container">
   <a href="/secondPage">
     <button>Next</button>
   </a>
 </section>
+
 
 <!--Page Number Text-->
 <section class="pageNumber">

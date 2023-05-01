@@ -31,7 +31,7 @@
     font-family: "Arial";
     font-size: 1em;
     margin-top: auto;
-    padding: 30px;
+    padding: 50px;
     color: black;
   }
   footer a {

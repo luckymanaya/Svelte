@@ -160,6 +160,10 @@ button {
   cursor: pointer;
 }
 
+.BackToTop{
+  display: flex;
+  justify-content: right;
+}
 /*Layout Structure*/
 .main {
   display: flex;

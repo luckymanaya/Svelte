@@ -70,6 +70,13 @@
 </body>
 
 <!--Buttons-->
+<!-- Scrolls back to the top -->
+<section class = "BackToTop">
+  <a href = "#" >
+  <button on:click={scrollFunction}>Back to top</button>
+  </a>
+  </section>
+  
 <section class="button-container">
   <a href="/">
     <button>Go Back to 1</button>
