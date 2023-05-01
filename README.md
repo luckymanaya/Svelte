@@ -85,32 +85,25 @@ alt = "Screenshot of feature in the Main Page">
 alt = "Screenshot of feature in the Main Page">
 </p>
 
-## Process
-### Struggles & Bugs
-1. **HTML, CSS & JavaScript**
+## Bugs
+1. **Slideshow**
 
-<p align = "justify">I have a limited knowledge in HTML and CSS and have never coded in JavaScript before so it was a bit of a struggle to code the website. But thankfully,  there are resources available online such as, "MDN Web Docs" which is a learning resource used by web developers and Moodle.
-</p>
+**Bug:** The pictures were not displayed as expected
 
-2. **Layout (secondPage)**
+**Solution #1:** I made an array of image files and a for each loop as I initially wanted it to display the images one by one, however, that did not work.
 
-<p align = "justify">I struggled a bit with displaying an image and a text (which is the words I stored in an array) side by side but I solved it using 'margin-left'. After that, I found another bug which is that when you go to the next page and go back again, the text disappears. In the end, I decided to put the for each loop inside the class of the picture and then print each words in the array of words which solved the problem.
-</p>
+**Solution #2:** I made an if statement which checks if the length of images is greater than 0, the images will be displayed.
 
-3. **Layout (Nav Bar & other elements)**
+2. **Display User’s Name**
 
-<p align = "justify">I was struggling to separate the navigation bar and the other elements like the header, so I used a lot of line breaks (br) to separate them but turns out, I can just use margin- top.
-</p>
+**Bug #1:** First page of the website, the user’s name is displayed after inputting a name but when you go to the next page and then back to the first page, the user’s name disappears.
 
-4. **Slideshow**
+**Solution:** Using local storage after the 'Continue' button is clicked and getting the name after that. 
 
-<p align = "justify">I wanted to incorporate this feature into my website at the start of the website development and at first, I had to use the W3Schools to learn how to do it, but unfortunately, that did not work and there were too much code that I mostly did not understand. In the end, I used the Svelte tutorials to learn how to make a slideshow. At first, I made an array of image files and a for each loop as I initially wanted it to display the images one by one, however, that did not work so I decided to make an if statement which checks if the length of images is not empty (greater than zero) and if condition is true, image will be displayed. I also put the next and previous buttons inside the if statement to make the previous button go to the left side and the next button go to the right side as I initially put the buttons outside the if statement, making the buttons to be displayed on the top of slideshow which I did not want.
-</p>
+**Bug #2:** It accepts numbers and special characters
 
-5. **Display User’s Name**
+**Solution:** Using regex characters. If certain characters are found, input is not displayed in textbox.
 
-<p align = "justify">In the first page of the website, the user’s name is displayed after inputting a name, however, when I go to the next page and then back to the first page, the user’s name disappears which is a bug. But, this bug is solved using local storage after the 'Continue' button is clicked and getting the name after that. Another bug is that it also accepts numbers and I only want it to accept letters only.
-</p>
 
 ## References:
 https://www.awwwards.com/ (Website Inspirations)
