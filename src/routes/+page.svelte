@@ -118,18 +118,17 @@
 
 <!--Buttons-->
 <!-- Scrolls back to the top -->
-<section class = "BackToTop">
-  <a href = "#" >
-  <button on:click={scrollFunction}>Back to top &uarr;</button>
+<section class="BackToTop">
+  <a href="#">
+    <button on:click={scrollFunction}>Back to top &uarr;</button>
   </a>
-  </section>
+</section>
 
 <section class="button-container">
   <a href="/secondPage">
     <button>Next</button>
   </a>
 </section>
-
 
 <!--Page Number Text-->
 <section class="pageNumber">
