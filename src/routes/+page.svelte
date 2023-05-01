@@ -6,17 +6,15 @@
   const BASE_URL = "https://api.unsplash.com";
 
   let img = "";
-  // Fetches picture based on ID
   setTimeout(
     () =>
       fetch(
-        `${BASE_URL}/photos/jNKv4QohAk0?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4`
+        `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black`
       )
         .then((r) => r.json())
         .then((data) => {
-          //console.log(data);
-          img = data.urls.full;
-         // console.log(img);
+          img = data.results[0].urls.full;
+          console.log(img);
         }),
     2000
   );
@@ -44,19 +42,28 @@
   };
 
   //A function that prevents numbers and special characters from displaying in the textbox
-  const changeName = e => {
-    if (/^[0-9(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)]*$/.test(e.key)) { 
+  const changeName = (e) => {
+    if (
+      /^[0-9(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)]*$/.test(
+        e.key
+      )
+    ) {
       e.preventDefault();
       return false;
     }
-  }
+  };
 </script>
 
 <!--HTML-->
 <body>
   <section class="mainPicture" style="background-image:url({img})">
     <!--TextBox-->
-    <input bind:value={name} on:keydown={changeName} placeholder="What is your name?" maxlength="20" />
+    <input
+      bind:value={name}
+      on:keydown={changeName}
+      placeholder="What is your name?"
+      maxlength="20"
+    />
     <!-- Displays greeting based on local time -->
     <h2>{greeting}</h2>
     <!--Displays the user's name with a capitalized first letter-->
@@ -158,9 +165,9 @@
     background-position: center;
     width: auto;
     height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
   }
   .picture1 button {
     padding: 20px;
