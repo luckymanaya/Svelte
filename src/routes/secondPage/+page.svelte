@@ -59,14 +59,13 @@
   </section>
 </body>
 
-
 <!--Buttons-->
 <!-- Scrolls back to the top -->
-<section class = "BackToTop">
-  <a href = "#" >
-  <button>Back to top &uarr;</button>
+<section class="BackToTop">
+  <a href="#">
+    <button>Back to top &uarr;</button>
   </a>
-  </section>
+</section>
 
 <section class="button-container">
   <a href="/">
@@ -99,6 +98,11 @@
   }
   .picture4 p {
     margin-inline: 5%;
+  }
+  /*Highlighted Text Styling*/
+  mark {
+    background-color: black;
+    color: white;
   }
   .picture5 {
     background-image: url("images/runway.jpg");

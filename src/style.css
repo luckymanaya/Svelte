@@ -32,12 +32,6 @@ p {
   margin-inline: 10px;
 }
 
-/*Highlighted Text Styling*/
-mark {
-  background-color: black;
-  color: white;
-}
-
 /*Link Styling*/
 a {
   color: rgb(0, 0, 0);

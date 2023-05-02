@@ -151,7 +151,7 @@
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 190vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,21 +160,21 @@
   /*Image goes on top of the background picture*/
   .picture9 img {
     /* Sets the maximum width of image */
-    max-width: 45%;
+    max-width: 30%;
     /* Centers image */
     margin: 0 auto;
     /* Animation */
     transition: transform 0.5s;
   }
   .picture9 img:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
   }
   /*Slideshow Styling*/
   .slideshow {
     display: flex;
   }
   .slideshow img {
-    width: 35%;
+    width: 25%;
     margin-bottom: 5%;
     border-radius: 25px;
   }
