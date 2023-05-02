@@ -85,6 +85,15 @@ alt = "Screenshot of feature in the Main Page">
 alt = "Screenshot of feature in the Main Page">
 </p>
 
+4. **Social Media Icons**
+<p align = "justify"> The social media icons are displayed in the header to attract users which encourages them to check the other platforms and increase user engagement.
+</p>
+
+<p align = "center">
+<img src = "social media.PNG" 
+alt = "Social Media Icons">
+</p>
+
 ## Bugs
 1. **Slideshow**
 
