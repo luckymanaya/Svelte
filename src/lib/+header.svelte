@@ -46,7 +46,7 @@
     justify-content: center;
     gap: 4rem;
     background-color: black;
-    padding: 1rem;
+    padding: 0.6rem;
   }
   a {
     transition: transform 0.5s; /* Animation */
