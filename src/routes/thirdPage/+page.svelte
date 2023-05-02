@@ -71,12 +71,12 @@
 
 <!--Buttons-->
 <!-- Scrolls back to the top -->
-<section class = "BackToTop">
-  <a href = "#" >
-  <button>Back to top &uarr;</button>
+<section class="BackToTop">
+  <a href="#">
+    <button>Back to top &uarr;</button>
   </a>
-  </section>
-  
+</section>
+
 <section class="button-container">
   <a href="/">
     <button>Go Back to 1</button>

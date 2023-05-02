@@ -13,7 +13,7 @@
       )
         .then((r) => r.json())
         .then((data) => {
-          img = data.results[2].urls.full;
+          img = data.results[0].urls.full;
           console.log(img);
         }),
     2000
