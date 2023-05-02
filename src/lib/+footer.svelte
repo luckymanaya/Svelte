@@ -27,7 +27,7 @@
 <!--CSS Styling-->
 <style>
   footer {
-    background-color: gray;
+    background: rgb(155, 152, 152);
     font-family: "Arial";
     font-size: 1em;
     margin-top: auto;

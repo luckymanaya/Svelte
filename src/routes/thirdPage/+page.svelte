@@ -104,7 +104,7 @@
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 30%;
+    margin-top: 10vh;
     transition: transform 0.5s; /* Animation */
   }
   .picture6:hover {
@@ -119,7 +119,7 @@
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 30%;
+    margin-top: 10vh;
     transition: transform 0.5s; /* Animation */
   }
   .picture7:hover {
@@ -134,7 +134,7 @@
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 30%;
+    margin-top: 10vh;
     transition: transform 0.5s; /* Animation */
   }
   .picture8:hover {
