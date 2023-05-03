@@ -8,7 +8,7 @@
 
 ## Description
 
-<p align = "justify">My website which I named, <i>"Lucky's Website"</i>, is a fashion magazine website that provides users with fashion related content. It is built using the code editor called 'Visual Studio Code' where I used HTML, CSS, Javascript and a web framework called 'Svelte'. This website is designed to be responsive in order to adapt to different devices with different screen sizes. Moreover, the website is also very easy to navigate, making it user-friendly and enjoyable to use as the website follows the typical horizontal navigation menu, consisting of a 'Home' page, an 'About' page, a dropdown menu for the 'Pages' and a 'Contact Me' page. Not only it is user-friendly, but it also has a simple, yet modern look due to its black & white palette, allowing its content to become more visible, catching users' attention. It also contains animations, a slideshow and other interactive aspects in order to be considered 'visually appealing' and it also follows the usability heuristics which I used as a guide in order to create an attractive, yet functional website.
+<p align = "justify">My website which I named, <i>"Lucky's Website"</i>, is a fashion magazine website that provides users with fashion related content. It is built using the code editor called 'Visual Studio Code' where I used HTML, CSS, Javascript and a web framework called 'Svelte'. This website is designed to be responsive in order to adapt to different devices with different screen sizes. Moreover, the website is also very easy to navigate, making it user-friendly and enjoyable to use as the website follows the typical horizontal navigation menu, consisting of a 'Home' page, an 'About' page, a dropdown menu for the 'Pages', a dropdown menu for the 'Socials' and a 'Contact Me' page. Not only it is user-friendly, but it also has a simple, yet modern look due to its black & white palette, allowing its content to become more visible, catching users' attention. It also contains animations, a slideshow and other interactive aspects in order to be considered 'visually appealing' and it also follows the usability heuristics which I used as a guide in order to create an attractive, yet functional website.
 </p>
 
 ## Installation Steps
@@ -67,16 +67,7 @@
 alt = "Screenshot of feature in the Main Page">
 </p>
 
-2. **Dropdown Menu**
-<p align = "justify">I created a dropdown menu for the 'Pages' which can be seen in the navigation bar so that users can go to certain pages faster and not have to go through all of the pages which saves users' time.
-</p>
-
-<p align = "center">
-<img src = "dropdownMenu.png" 
-alt = "Screenshot of feature in the Main Page">
-</p>
-
-3. **Slider**
+2. **Slider**
 <p align = "justify">I made a slider that increases and decreases the font size of the text in the second page so that users can resize the text based on their preferences. This allows users to have more control and also increases the website accessibility, especially for users with reading difficulties.
 </p>
 
@@ -85,21 +76,10 @@ alt = "Screenshot of feature in the Main Page">
 alt = "Screenshot of feature in the Main Page">
 </p>
 
-4. **Social Media Icons**
-<p align = "justify"> The social media icons are displayed in the header to attract users which encourages them to check the other platforms and increase user engagement.
-</p>
-
-<p align = "center">
-<img src = "social media.PNG" 
-alt = "Social Media Icons">
-</p>
-
 ## Bugs
 1. **Slideshow**
 
 **Bug:** The pictures were not displayed as expected
-
-**Solution #1:** I made an array of image files and a for each loop as I initially wanted it to display the images one by one, however, that did not work.
 
 **Solution #2:** I made an if statement which checks if the length of images is greater than 0, the images will be displayed.
 
