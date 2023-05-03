@@ -141,7 +141,7 @@
   .mainPicture {
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

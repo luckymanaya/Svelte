@@ -99,12 +99,12 @@
     background-image: url("images/earring.jpg");
     background-size: cover;
     background-position: center;
-    width: 25vw;
+    width: 20vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     transition: transform 0.5s; /* Animation */
   }
   .picture6:hover {
@@ -114,12 +114,12 @@
     background-image: url("images/accessories.jpg");
     background-size: cover;
     background-position: center;
-    width: 25vw;
+    width: 20vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     transition: transform 0.5s; /* Animation */
   }
   .picture7:hover {
@@ -129,12 +129,12 @@
     background-image: url("images/hair.jpg");
     background-size: cover;
     background-position: center;
-    width: 25vw;
+    width: 20vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;
     margin-inline: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     transition: transform 0.5s; /* Animation */
   }
   .picture8:hover {
