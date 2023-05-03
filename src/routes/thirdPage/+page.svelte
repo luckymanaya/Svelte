@@ -1,6 +1,6 @@
 <!--JavaScript-->
 <script>
-  let slideImages = [
+  const slideImages = [
     "images/flower.jpg",
     "images/black hat.jpg",
     "images/vibes.jpg",
@@ -99,7 +99,7 @@
     background-image: url("images/earring.jpg");
     background-size: cover;
     background-position: center;
-    width: 65%;
+    width: 25vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;
@@ -114,7 +114,7 @@
     background-image: url("images/accessories.jpg");
     background-size: cover;
     background-position: center;
-    width: 65%;
+    width: 25vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;
@@ -129,7 +129,7 @@
     background-image: url("images/hair.jpg");
     background-size: cover;
     background-position: center;
-    width: 65%;
+    width: 25vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;
@@ -160,7 +160,7 @@
   /*Image goes on top of the background picture*/
   .picture9 img {
     /* Sets the maximum width of image */
-    max-width: 30%;
+    max-width: 30vw;
     /* Centers image */
     margin: 0 auto;
     /* Animation */
@@ -179,8 +179,9 @@
     border-radius: 25px;
   }
   .flex-container button {
-    width: 5%;
-    height: 10%;
+    width: 5vw;
+    height: 8vh;
     margin: auto;
+    font-size: 2.5em;
   }
 </style>
