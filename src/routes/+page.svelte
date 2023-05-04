@@ -2,10 +2,13 @@
 <script>
   import { browser } from "$app/environment";
 
-  // Unsplash Website URL
   const BASE_URL = "https://api.unsplash.com";
 
   let img = "";
+
+  /*
+    The setTimeout here is emulating a delayed response - it makes the user feel like something is actually 'loading'.
+  */
   setTimeout(
     () =>
       fetch(
@@ -29,14 +32,12 @@
   const time = today.getHours();
   let greeting = "";
 
-  //If and else statements for displaying greetings based on local time
   if (time >= 5 && time < 12) greeting = "Good Morning!";
   else if (time >= 12 && time < 18) greeting = "Good Afternoon!";
   else greeting = "Good Evening!";
 
   //Creates a smooth scrolling effect
   const scrollFunction = () => {
-    //Sets the name to the storage with a paired key of username after clicking the button
     localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
   };
@@ -57,28 +58,24 @@
 <!--HTML-->
 <body>
   <section class="mainPicture" style="background-image:url({img})">
-    <!--TextBox-->
     <input
       bind:value={name}
       on:keydown={changeName}
       placeholder="What is your name?"
       maxlength="20"
     />
-    <!-- Displays greeting based on local time -->
+
     <h2>{greeting}</h2>
-    <!--Displays the user's name with a capitalized first letter-->
     <h2 style="margin-bottom: 5%">
       Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
       to {title}! &#x2661
     </h2>
 
-    <!--Button for Next Section-->
     <a href="#nextSection">
       <button on:click={scrollFunction}>Continue</button>
     </a>
   </section>
 
-  <!-- Next Section -->
   <section class="picture1" id="nextSection">
     <h1>
       Scroll Down <br /><span class="scroll-down">
@@ -91,11 +88,9 @@
 
   <section id="nextSection2" />
 
-  <!--Text-->
   <p style="text-align:center; margin-top: 10%">Hover Text Below</p>
   <section class="firstPageText">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
-    <!--Adds extra information-->
     <span class="tooltipText">
       <q
         >When you wear something that is comfortable, cute, or fancy, it makes
@@ -108,10 +103,10 @@
   <!--Flexbox for Picture 2 & 3-->
   <section class="flex-container">
     <section class="item">
-      <section class="picture2" />
+      <section id="picture2" class="picture" />
     </section>
     <section class="item">
-      <section class="picture3" />
+      <section id="picture3" class="picture" />
     </section>
   </section>
 </body>
@@ -137,7 +132,6 @@
 
 <!--CSS Styling-->
 <style>
-  /*Main Picture*/
   .mainPicture {
     background-size: cover;
     background-position: center;
@@ -146,7 +140,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  /*TextBox*/
   .mainPicture input {
     text-align: center;
     margin-inline: auto;
@@ -154,13 +147,11 @@
     display: block;
     font-size: 1.75em;
   }
-  /*Button Styling in Next Section*/
   a button {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  /*Scroll-Down Symbol Styling*/
   .scroll-down {
     font-size: 2.5em;
     color: white;
@@ -182,8 +173,7 @@
     width: auto;
     font-size: 50%;
   }
-  .picture2 {
-    background-image: url("images/castle.jpg");
+  .picture {
     background-size: cover;
     background-position: center;
     width: auto;
@@ -191,17 +181,13 @@
     margin: 10px;
     border-radius: 25px;
   }
-  .picture3 {
+  #picture2 {
+    background-image: url("images/castle.jpg");
+  }
+  #picture3 {
     background-image: url("images/three women.jpg");
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 150vh;
-    margin: 10px;
-    border-radius: 25px;
   }
   .firstPageText {
-    /*makes the tooltip text go to the center*/
     text-align: center;
     margin-bottom: 2%;
   }
@@ -210,7 +196,6 @@
   }
   .firstPageText h2:hover {
     color: white;
-    /*Cursor won't change to textbox cursor*/
     cursor: default;
   }
   /*Tooltip Text Styling*/
@@ -222,6 +207,6 @@
     font-size: 1.6em;
   }
   .firstPageText:hover .tooltipText {
-    visibility: visible; /*extra info becomes visible*/
+    visibility: visible;
   }
 </style>

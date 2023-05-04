@@ -25,19 +25,19 @@
   <!--Flexbox for Picture 6 & 7-->
   <section class="flex-container">
     <section class="item">
-      <section class="picture6">
+      <section id="picture6" class="picture">
         <h1 class="text">Expressive</h1>
       </section>
     </section>
 
     <section class="item">
-      <section class="picture7">
+      <section id="picture7" class="picture">
         <h1 class="text">Creative</h1>
       </section>
     </section>
 
     <section class="item">
-      <section class="picture8">
+      <section id="picture8" class="picture">
         <h1 class="text">Influential</h1>
       </section>
     </section>
@@ -56,13 +56,10 @@
 
   <!--Slideshow Images-->
   <section class="slideshow">
-    <!--if length of images array is not 0, images will be displayed-->
     {#if slideImages.length > 0}
       <section class="flex-container">
-        <!--Previous Button for Slideshow-->
         <button on:click={previousSlide}>&#60</button>
         <img src={slideImages[currentSlide]} />
-        <!--Next Button for Slideshow-->
         <button on:click={nextSlide}>&#62</button>
       </section>
     {/if}
@@ -70,7 +67,6 @@
 </body>
 
 <!--Buttons-->
-<!-- Scrolls back to the top -->
 <section class="BackToTop">
   <a href="#">
     <button>Back to top &uarr;</button>
@@ -95,52 +91,36 @@
 <!--CSS Styling-->
 <style>
   /*Pictures*/
-  .picture6 {
+  .picture {
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 100vh;
+    padding: 50px;
+    border-radius: 25px;
+    margin-inline: auto;
+    margin-top: 15vh;
+    transition: transform 0.5s;
+  }
+
+  #picture6 {
     background-image: url("images/earring.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 20vw;
-    height: 100vh;
-    padding: 50px;
-    border-radius: 25px;
-    margin-inline: auto;
-    margin-top: 15vh;
-    transition: transform 0.5s; /* Animation */
   }
-  .picture6:hover {
-    transform: scale(1.1); /*Zooms in*/
+  #picture6:hover {
+    transform: scale(1.1);
   }
-  .picture7 {
+  #picture7 {
     background-image: url("images/accessories.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 20vw;
-    height: 100vh;
-    padding: 50px;
-    border-radius: 25px;
-    margin-inline: auto;
-    margin-top: 15vh;
-    transition: transform 0.5s; /* Animation */
   }
-  .picture7:hover {
-    transform: scale(1.1); /*Zooms in*/
+  #picture7:hover {
+    transform: scale(1.1);
   }
-  .picture8 {
+  #picture8 {
     background-image: url("images/hair.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 20vw;
-    height: 100vh;
-    padding: 50px;
-    border-radius: 25px;
-    margin-inline: auto;
-    margin-top: 15vh;
-    transition: transform 0.5s; /* Animation */
   }
-  .picture8:hover {
-    transform: scale(1.1); /*Zooms in*/
+  #picture8:hover {
+    transform: scale(1.1);
   }
-  /*Text on Picture 6, 7, 8 Styling*/
   .text {
     color: black;
     margin-top: -10%;
@@ -158,12 +138,10 @@
   }
 
   /*Image goes on top of the background picture*/
+
   .picture9 img {
-    /* Sets the maximum width of image */
     max-width: 30vw;
-    /* Centers image */
     margin: 0 auto;
-    /* Animation */
     transition: transform 0.5s;
   }
   .picture9 img:hover {

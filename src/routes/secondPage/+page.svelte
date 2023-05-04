@@ -77,7 +77,6 @@
   </a>
 </section>
 
-<!--Page Number Text-->
 <section class="pageNumber">
   <p>{pageNum}</p>
 </section>
@@ -99,7 +98,6 @@
   .picture4 p {
     margin-inline: 5%;
   }
-  /*Highlighted Text Styling*/
   mark {
     background-color: black;
     color: white;
