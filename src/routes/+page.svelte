@@ -36,7 +36,7 @@
   else greeting = "Good Evening!";
 
   //Creates a smooth scrolling effect
-  let scrollFunction = () => {
+  const scrollFunction = () => {
     localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
   };
@@ -107,7 +107,6 @@
     {/each}
   </section>
 </body>
-
 
 <!--CSS Styling-->
 <style>
