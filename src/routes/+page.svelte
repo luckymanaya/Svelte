@@ -100,20 +100,16 @@
     </span>
   </section>
 
-  <!--Flexbox for Picture 2 & 3-->
   <section class="flex-container">
-
     {#each Array(2) as _, index (index)}
       <section class="item">
-        <section id="picture{index+2}" class="picture" />
+        <section id="picture{index + 2}" class="picture" />
       </section>
-	  {/each}
-    
+    {/each}
   </section>
 </body>
 
 <!--Buttons-->
-<!-- Scrolls back to the top -->
 <section class="BackToTop">
   <a href="#">
     <button on:click={scrollFunction}>Back to top &uarr;</button>

@@ -22,7 +22,6 @@
 
 <!--HTML-->
 <body>
-  <!--Flexbox for Picture 6 & 7-->
   <section class="flex-container">
     {#each Array(3) as _, index (index)}
       <section class="item">
@@ -42,7 +41,6 @@
     it!
   </h2>
 
-  <!--Slideshow Images-->
   <section class="slideshow">
     {#if slideImages.length > 0}
       <section class="flex-container">

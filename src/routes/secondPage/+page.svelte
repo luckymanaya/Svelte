@@ -52,7 +52,6 @@
   </section>
 
   <section class="picture5">
-    <!--displays each word from variable 'words'-->
     {#each words as w}
       <p>{w}</p>
     {/each}
@@ -60,7 +59,6 @@
 </body>
 
 <!--Buttons-->
-<!-- Scrolls back to the top -->
 <section class="BackToTop">
   <a href="#">
     <button>Back to top &uarr;</button>
