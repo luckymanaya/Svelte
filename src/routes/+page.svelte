@@ -26,7 +26,6 @@
   let name = browser ? window.localStorage.getItem("username") ?? "" : "";
 
   let title = "Lucky's Website";
-  const pageNum = 1;
 
   const today = new Date();
   const time = today.getHours();
@@ -109,23 +108,6 @@
   </section>
 </body>
 
-<!--Buttons-->
-<section class="BackToTop">
-  <a href="#">
-    <button on:click={scrollFunction}>Back to top &uarr;</button>
-  </a>
-</section>
-
-<section class="button-container">
-  <a href="/secondPage">
-    <button>Next</button>
-  </a>
-</section>
-
-<!--Page Number Text-->
-<section class="pageNumber">
-  <p>{pageNum}</p>
-</section>
 
 <!--CSS Styling-->
 <style>
