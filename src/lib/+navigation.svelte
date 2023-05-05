@@ -111,15 +111,11 @@
     color: white;
   }
 
-  .dropdownBtn .dropdown-content {
+  .dropdown-content {
     position: absolute;
-  }
-
-  .dropdown .dropdown-content {
     background-color: lightgray;
     border-radius: 10px;
   }
-
   .dropdown-content a {
     color: black;
     display: block;
@@ -129,5 +125,6 @@
   .dropdown-content a:hover {
     background-color: gray;
     border-radius: inherit;
+    color: white;
   }
 </style>
