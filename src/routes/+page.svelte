@@ -92,22 +92,23 @@
   <section class="firstPageText">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <span class="tooltipText">
-      <q
-        >When you wear something that is comfortable, cute, or fancy, it makes
+      <q>
+        When you wear something that is comfortable, cute, or fancy, it makes
         you feel good about yourself. <br />Fashion is in the clothes, but style
-        is in the person.</q
-      >
+        is in the person.
+      </q>
     </span>
   </section>
 
   <!--Flexbox for Picture 2 & 3-->
   <section class="flex-container">
-    <section class="item">
-      <section id="picture2" class="picture" />
-    </section>
-    <section class="item">
-      <section id="picture3" class="picture" />
-    </section>
+
+    {#each Array(2) as _, index (index)}
+      <section class="item">
+        <section id="picture{index+2}" class="picture" />
+      </section>
+	  {/each}
+    
   </section>
 </body>
 

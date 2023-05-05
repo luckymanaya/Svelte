@@ -24,23 +24,11 @@
 <body>
   <!--Flexbox for Picture 6 & 7-->
   <section class="flex-container">
-    <section class="item">
-      <section id="picture6" class="picture">
-        <h1 class="text">Expressive</h1>
+    {#each Array(3) as _, index (index)}
+      <section class="item">
+        <section id="picture{index + 6}" class="picture" />
       </section>
-    </section>
-
-    <section class="item">
-      <section id="picture7" class="picture">
-        <h1 class="text">Creative</h1>
-      </section>
-    </section>
-
-    <section class="item">
-      <section id="picture8" class="picture">
-        <h1 class="text">Influential</h1>
-      </section>
-    </section>
+    {/each}
   </section>
 
   <h1 style="margin-top: 5%">A new <big>DO</big>, for a new <big>YOU</big>!</h1>
@@ -120,10 +108,6 @@
   }
   #picture8:hover {
     transform: scale(1.1);
-  }
-  .text {
-    color: black;
-    margin-top: -10%;
   }
   /*Background picture goes behind the image*/
   .picture9 {
