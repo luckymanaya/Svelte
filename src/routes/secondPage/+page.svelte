@@ -4,7 +4,6 @@
 
   let fontSize = 30;
   let displayText = false;
-  const pageNum = 2;
 
   //array of words
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
@@ -57,27 +56,6 @@
     {/each}
   </section>
 </body>
-
-<!--Buttons-->
-<section class="BackToTop">
-  <a href="#">
-    <button>Back to top &uarr;</button>
-  </a>
-</section>
-
-<section class="button-container">
-  <a href="/">
-    <button>Go Back</button>
-  </a>
-
-  <a href="/thirdPage">
-    <button>Next</button>
-  </a>
-</section>
-
-<section class="pageNumber">
-  <p>{pageNum}</p>
-</section>
 
 <!--CSS Styling-->
 <style>

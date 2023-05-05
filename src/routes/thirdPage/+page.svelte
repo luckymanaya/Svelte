@@ -7,7 +7,6 @@
   ];
 
   let currentSlide = 0;
-  const pageNum = 3;
 
   //A function to go to next slide
   const nextSlide = () => {
@@ -51,28 +50,6 @@
     {/if}
   </section>
 </body>
-
-<!--Buttons-->
-<section class="BackToTop">
-  <a href="#">
-    <button>Back to top &uarr;</button>
-  </a>
-</section>
-
-<section class="button-container">
-  <a href="/">
-    <button>Go Back to 1</button>
-  </a>
-
-  <a href="/secondPage">
-    <button>Go Back</button>
-  </a>
-</section>
-
-<!--Page Number Text-->
-<section class="pageNumber">
-  <p>{pageNum}</p>
-</section>
 
 <!--CSS Styling-->
 <style>
