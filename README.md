@@ -81,7 +81,7 @@ alt = "Screenshot of feature in the Main Page">
 
 **Bug:** The pictures were not displayed as expected
 
-**Solution #2:** I made an if statement which checks if the length of images is greater than 0, the images will be displayed.
+**Solution:** I made an if statement which checks if the length of images is greater than 0, the images will be displayed.
 
 2. **Display User’s Name**
 
@@ -91,7 +91,7 @@ alt = "Screenshot of feature in the Main Page">
 
 **Bug #2:** It accepts numbers and special characters
 
-**Solution:** Using regex characters. If certain characters are found, input is not displayed in textbox.
+**Solution:** Using regex. If certain characters are found, input is not displayed in textbox.
 
 
 ## References:
