@@ -77,22 +77,7 @@ alt = "Screenshot of feature in the Main Page">
 </p>
 
 ## Bugs
-1. **Slideshow**
-
-**Bug:** The pictures were not displayed as expected
-
-**Solution:** I made an if statement which checks if the length of images is greater than 0, the images will be displayed.
-
-2. **Display User’s Name**
-
-**Bug #1:** First page of the website, the user’s name is displayed after inputting a name but when you go to the next page and then back to the first page, the user’s name disappears.
-
-**Solution:** Using local storage after the 'Continue' button is clicked and getting the name after that. 
-
-**Bug #2:** It accepts numbers and special characters
-
-**Solution:** Using regex. If certain characters are found, input is not displayed in textbox.
-
+No bugs found.
 
 ## References:
 https://www.awwwards.com/ (Website Inspirations)
