@@ -52,6 +52,8 @@
       return false;
     }
   };
+
+  const bgPics = ["images/castle.jpg", "images/three.jpg"];
 </script>
 
 <!--HTML-->
@@ -87,7 +89,7 @@
 
   <section id="nextSection2" />
 
-  <p style="text-align:center; margin-top: 10%">Hover Text Below</p>
+  <p style="text-align:center; margin-top: 10vh">Hover Text Below</p>
   <section class="firstPageText">
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <span class="tooltipText">
@@ -100,10 +102,10 @@
   </section>
 
   <section class="flex-container">
-    {#each Array(2) as _, index (index)}
-      <section class="item">
-        <section id="picture{index + 2}" class="picture" />
-      </section>
+    {#each bgPics as pic}
+      <div class="item">
+        <div class="picture" style="background-image:url({pic})" />
+      </div>
     {/each}
   </section>
 </body>
@@ -155,15 +157,9 @@
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 150vh;
+    height: 125vh;
     margin: 10px;
     border-radius: 25px;
-  }
-  #picture2 {
-    background-image: url("images/castle.jpg");
-  }
-  #picture3 {
-    background-image: url("images/three women.jpg");
   }
   .firstPageText {
     text-align: center;

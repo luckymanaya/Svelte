@@ -30,7 +30,7 @@
         />
       </p>
       <p
-        style="margin-top: 5%; font-size: {fontSize}px"
+        style="font-size: {fontSize}px"
         transition:fly={{ y: 200 }}
       >
         <mark

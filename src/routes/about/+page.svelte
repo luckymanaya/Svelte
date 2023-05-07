@@ -1,5 +1,5 @@
 <!--HTML-->
-<section class="about-and-contact-header">
+<section class="about-container">
   <h1>About Page</h1>
   <h2>Hi There!</h2>
   <p>
@@ -10,7 +10,10 @@
 
 <!--CSS Styling-->
 <style>
-  p{
+  .about-container h1 {
+    margin-top: 10vh;
+  }
+  .about-container p {
     text-align: center;
   }
 </style>
