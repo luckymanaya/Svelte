@@ -40,7 +40,7 @@
     {#each pictureDetails as pic}
       <div class="item">
         <div class="picture" style="background-image:url({pic.image})">
-          <h2 class="text">{pic.text}</h2>
+          <h1 class="text">{pic.text}</h1>
         </div>
       </div>
     {/each}
@@ -87,11 +87,9 @@
   .text {
     color: black;
     margin-top: -2vh;
-    opacity: 0.5;
     transition: transform 0.5s;
   }
   .text:hover {
-    opacity: 1;
     transform: scale(1.1);
   }
   .picture9 {
