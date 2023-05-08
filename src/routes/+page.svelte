@@ -4,26 +4,28 @@
 
   const BASE_URL = "https://api.unsplash.com";
 
-  let img = "";
-
   /*
     The setTimeout here is emulating a delayed response - it makes the user feel like something is actually 'loading'.
   */
-  setTimeout(
-    () =>
-      fetch(
-        `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black clothes`
-      )
-        .then((r) => r.json())
-        .then((data) => {
-          img = data.results[0].urls.full;
-          console.log(img);
-        }),
-    2000
-  );
+
+  let img = browser ? localStorage.getItem("image") ?? "" : "";
+
+  if (img === "") {
+    setTimeout(() => {
+        fetch(
+          `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black clothes`
+        )
+          .then((r) => r.json())
+          .then((data) => {
+            img = data.results[0].urls.full;
+            console.log(img);
+          });
+
+    }, 2000);
+}
 
   //If not null, value is returned from the storage. If null, returns empty string
-  let name = browser ? window.localStorage.getItem("username") ?? "" : "";
+  let name = browser ? localStorage.getItem("username") ?? "" : "";
 
   let title = "Lucky's Website";
 
@@ -36,6 +38,7 @@
   else greeting = "Good Evening!";
 
   const scrollFunction = () => {
+    localStorage.setItem("image", img);
     localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
   };
