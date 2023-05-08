@@ -35,7 +35,6 @@
   else if (time >= 12 && time < 18) greeting = "Good Afternoon!";
   else greeting = "Good Evening!";
 
-  //Creates a smooth scrolling effect
   const scrollFunction = () => {
     localStorage.setItem("username", name);
     document.documentElement.style.scrollBehavior = "smooth";
@@ -89,8 +88,9 @@
 
   <section id="nextSection2" />
 
-  <p style="text-align:center; margin-top: 10vh">Hover Text Below</p>
   <section class="firstPageText">
+    <p style="text-align:center; margin-top: 10vh">Hover Text Below</p>
+
     <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
     <span class="tooltipText">
       <q>

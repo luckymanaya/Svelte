@@ -68,7 +68,6 @@
     width: 100%;
     position: fixed;
   }
-
   nav ul {
     padding: 0;
     margin: 0;
@@ -76,17 +75,13 @@
     font-family: "Arial";
     font-size: 2.5em;
   }
-
   nav ul a {
     padding: 15px;
   }
-
   nav ul a:last-of-type {
     margin-left: auto;
   }
-
   .nav-transparency {
-    /*to make header transparent*/
     position: absolute;
     top: 0;
     right: 0;
@@ -96,7 +91,6 @@
     opacity: 0.4;
     z-index: -1;
   }
-
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
@@ -106,11 +100,9 @@
     margin: 0;
     padding: 15px;
   }
-
   .dropdownBtn:hover {
     color: white;
   }
-
   .dropdown-content {
     position: absolute;
     background-color: lightgray;
@@ -121,10 +113,10 @@
     display: block;
     font-size: 0.95em;
   }
-
   .dropdown-content a:hover {
-    background-color: gray;
+    background-color: black;
     border-radius: inherit;
     color: white;
   }
 </style>
+

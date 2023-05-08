@@ -61,3 +61,11 @@
     <p>3</p>
   </section>
 {/if}
+
+<!-- CSS Styling -->
+<style>
+  .pageNumber p {
+    text-align: center;
+    font-size: 2em;
+  }
+</style>

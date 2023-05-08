@@ -46,7 +46,6 @@ a:hover {
 }
 
 .flex-container .item {
-  /*Sets to 1 to distribute remaining space equally to all items*/
   flex: 1;
 }
 
@@ -69,7 +68,7 @@ button {
   color: white;
   border: 2px solid white;
   margin: 10px;
-  width: 170px;
+  width: 10vw;
   cursor: pointer;
 }
 
@@ -77,15 +76,10 @@ button {
   display: flex;
   justify-content: right;
 }
+
 /*Layout Structure*/
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-/*Page Number Text Styling*/
-.pageNumber p {
-  text-align: center;
-  font-size: 2em;
 }

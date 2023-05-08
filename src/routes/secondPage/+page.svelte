@@ -5,10 +5,8 @@
   let fontSize = 30;
   let displayText = false;
 
-  //array of words
   let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
 
-  //if called, displayText becomes true
   const animateText = () => {
     displayText = !displayText;
   };
@@ -19,7 +17,6 @@
   <section class="picture4">
     <button on:click={animateText}>Click Me!</button>
 
-    <!--if true, animated text is displayed-->
     {#if displayText}
       <p>
         Increase Font Size: <input
@@ -29,10 +26,7 @@
           max="45"
         />
       </p>
-      <p
-        style="font-size: {fontSize}px"
-        transition:fly={{ y: 200 }}
-      >
+      <p style="font-size: {fontSize}px" transition:fly={{ y: 200 }}>
         <mark
           >Vogue is one of the most popular fashion magazine since 1892 and has
           played a major role in influencing fashion industries and still even
@@ -86,13 +80,13 @@
     height: 100vh;
     border-radius: 50%;
     margin: 8%;
-    transition: transform 0.5s; /* Animation */
+    transition: transform 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .picture5:hover {
-    transform: scale(1.1); /*Zooms in*/
+    transform: scale(1.1);
   }
   .picture5 p {
     font-size: 2.5em;

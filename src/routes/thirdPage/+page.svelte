@@ -120,16 +120,16 @@
   /*Slideshow Styling*/
   .slideshow {
     display: flex;
+    flex-direction: column;
   }
   .slideshow img {
-    width: 25%;
-    margin-bottom: 5%;
+    width: 25vw;
     border-radius: 25px;
   }
   .flex-container button {
-    width: 5vw;
-    height: 8vh;
-    margin: auto;
     font-size: 2.5em;
+    width: 5vw;
+    height: 7vh;
+    margin: auto;
   }
 </style>
