@@ -12,17 +12,16 @@
 
   if (img === "") {
     setTimeout(() => {
-        fetch(
-          `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black clothes`
-        )
-          .then((r) => r.json())
-          .then((data) => {
-            img = data.results[0].urls.full;
-            console.log(img);
-          });
-
+      fetch(
+        `${BASE_URL}/search/photos?client_id=X7SnFWVw8MCYh7ne-LVwwwwxgi05ikflmFslty1sef4&query=black clothes`
+      )
+        .then((r) => r.json())
+        .then((data) => {
+          img = data.results[0].urls.full;
+          console.log(img);
+        });
     }, 2000);
-}
+  }
 
   //If not null, value is returned from the storage. If null, returns empty string
   let name = browser ? localStorage.getItem("username") ?? "" : "";
