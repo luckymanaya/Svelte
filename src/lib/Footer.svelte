@@ -4,12 +4,10 @@
 </script>
 
 <!-- HTML -->
-<!--Footer Details-->
 <footer>
   {#if $page.url.pathname === "/contact"}
     Images:
     <a href="https://unsplash.com/">Unsplash Website</a> | Privacy Policy Link:
-    <!-- Link goes nowhere -->
     <a href="#0">Privacy Policy</a>
     <br />
     &copy; 2023, Lucky Manaya
@@ -17,7 +15,6 @@
     Images:
     <a href="https://unsplash.com/">Unsplash Website</a> | Contact Link:
     <a href="/contact">Contact Me</a> | Privacy Policy Link:
-    <!-- Link goes nowhere -->
     <a href="#0">Privacy Policy</a>
     <br />
     &copy; 2023, Lucky Manaya

@@ -1,10 +1,10 @@
 <script>
   import Picture from "$lib/Picture.svelte";
-  export let pictures;
+  export let pictureDetails;
 </script>
 
 <section class="flex-container">
-  {#each pictures as pic}
+  {#each pictureDetails as pic}
     <Picture {pic} />
   {/each}
 </section>

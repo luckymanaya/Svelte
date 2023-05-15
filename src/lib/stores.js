@@ -1,8 +1,14 @@
-export let pictures = [
+export let pictureDetails = [
   {
-    image: "images/castle.jpg",
+    image: "images/earring.jpg",
+    text: "Expressive",
   },
   {
-    image: "images/three.jpg",
+    image: "images/accessories.jpg",
+    text: "Creative",
+  },
+  {
+    image: "images/hair.jpg",
+    text: "Influential",
   },
 ];

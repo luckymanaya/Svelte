@@ -3,19 +3,17 @@
   import SocialIcons from "@rodneylab/svelte-social-icons";
   let isClicked1 = false;
   let isClicked2 = false;
-  // A function that sets boolean to true when called
+
   const handlePageDropDown = () => {
     isClicked1 = !isClicked1;
   };
 
-  // A function that sets boolean to true when called
   const handleSocialsDropDown = () => {
     isClicked2 = !isClicked2;
   };
 </script>
 
 <!-- HTML -->
-<!--Navigation - List of options-->
 <section class="nav-container">
   <nav>
     <ul>
@@ -63,7 +61,6 @@
 
 <!-- CSS Styling -->
 <style>
-  /*Navigation Styling*/
   .nav-container {
     width: 100%;
     position: fixed;
@@ -119,4 +116,3 @@
     color: white;
   }
 </style>
-

@@ -13,7 +13,7 @@
   .about-container h1 {
     margin-top: 10vh;
   }
-  .about-container p{
+  .about-container p {
     text-align: center;
   }
 </style>
