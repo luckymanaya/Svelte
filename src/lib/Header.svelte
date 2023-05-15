@@ -1,6 +1,6 @@
 <!-- JavaScript -->
 <script>
-  import Navigation from "./+navigation.svelte";
+  import Navigation from "./Navigation.svelte";
 </script>
 
 <Navigation />
