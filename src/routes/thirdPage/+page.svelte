@@ -1,6 +1,6 @@
 <!--JavaScript-->
 <script>
-  import {pictureDetails} from "$lib/stores.js"
+  import { pictureDetails } from "$lib/stores.js";
   import PictureList from "$lib/PictureList.svelte";
 
   const slideImages = [
@@ -21,28 +21,28 @@
 </script>
 
 <!--HTML-->
-  
-<PictureList {pictureDetails}/>
 
-  <section class="picture9">
-    <h1>A new <big>DO</big>, for a new <big>YOU</big>!</h1>
-    <img src="images/red.jpg" />
-  </section>
+<PictureList {pictureDetails} />
 
-  <h2>
-    Showcase your creativity through clothing choices<br />...and have fun with
-    it!
-  </h2>
+<section class="bgPic">
+  <h1>A new <big>DO</big>, for a new <big>YOU</big>!</h1>
+  <img src="images/red.jpg" />
+</section>
 
-  <section class="slideshow">
-    {#if slideImages.length > 0}
-      <div class="flex-container">
-        <button on:click={previousSlide}>&#60</button>
-        <img src={slideImages[currentSlide]} />
-        <button on:click={nextSlide}>&#62</button>
-      </div>
-    {/if}
-  </section>
+<h2>
+  Showcase your creativity through clothing choices<br />...and have fun with
+  it!
+</h2>
+
+<section class="slideshow">
+  {#if slideImages.length > 0}
+    <div class="flex-container">
+      <button on:click={previousSlide}>&#60</button>
+      <img src={slideImages[currentSlide]} />
+      <button on:click={nextSlide}>&#62</button>
+    </div>
+  {/if}
+</section>
 
 <!--CSS Styling-->
 <style>
@@ -56,17 +56,17 @@
     flex-direction: column;
     justify-content: center;
   }
-  .picture9 h1 {
+  .bgPic h1 {
     font-size: 3em;
     text-shadow: 2px 5px 4px black;
   }
   /*Image goes on top of the background picture*/
-  .picture9 img {
+  .bgPic img {
     max-width: 30vw;
     margin: 0 auto;
     transition: transform 0.5s;
   }
-  .picture9 img:hover {
+  .bgPic img:hover {
     transform: scale(1.1);
   }
   /*Slideshow Styling*/

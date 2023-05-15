@@ -13,48 +13,46 @@
 </script>
 
 <!--HTML-->
-<body>
-  <section class="picture4">
-    <button on:click={animateText}>Click Me!</button>
+<section class="voguePic">
+  <button on:click={animateText}>Click Me!</button>
 
-    {#if displayText}
-      <p>
-        Increase Font Size: <input
-          type="range"
-          bind:value={fontSize}
-          min="20"
-          max="45"
-        />
-      </p>
-      <p style="font-size: {fontSize}px" transition:fly={{ y: 200 }}>
-        <mark
-          >Vogue is one of the most popular fashion magazine since 1892 and has
-          played a major role in influencing fashion industries and still even
-          today! Known for its <big><q><i>high quality</i></q></big> and
-          <big><q><i>sophistication</i></q></big>
-          as well as its runway shows.</mark
-        > <br /><br />
-        <center
-          ><mark
-            >Vogue has been a source of fashion inspiration for many fashion
-            lovers around the world &#x2661</mark
-          ></center
-        >
-      </p>
-    {/if}
-  </section>
+  {#if displayText}
+    <p>
+      Increase Font Size: <input
+        type="range"
+        bind:value={fontSize}
+        min="20"
+        max="45"
+      />
+    </p>
+    <p style="font-size: {fontSize}px" transition:fly={{ y: 200 }}>
+      <mark
+        >Vogue is one of the most popular fashion magazine since 1892 and has
+        played a major role in influencing fashion industries and still even
+        today! Known for its <big><q><i>high quality</i></q></big> and
+        <big><q><i>sophistication</i></q></big>
+        as well as its runway shows.</mark
+      > <br /><br />
+      <center
+        ><mark
+          >Vogue has been a source of fashion inspiration for many fashion
+          lovers around the world &#x2661</mark
+        ></center
+      >
+    </p>
+  {/if}
+</section>
 
-  <section class="picture5">
-    {#each words as w}
-      <p>{w}</p>
-    {/each}
-  </section>
-</body>
+<section class="modelPic">
+  {#each words as w}
+    <p>{w}</p>
+  {/each}
+</section>
 
 <!--CSS Styling-->
 <style>
   /*Pictures*/
-  .picture4 {
+  .voguePic {
     background-image: url("images/vogue.jpg");
     background-size: cover;
     background-position: center;
@@ -62,17 +60,17 @@
     height: 120vh;
     padding: 5%;
   }
-  .picture4 button {
+  .voguePic button {
     margin-top: 15%;
   }
-  .picture4 p {
+  .voguePic p {
     margin-inline: 5%;
   }
   mark {
     background-color: black;
     color: white;
   }
-  .picture5 {
+  .modelPic {
     background-image: url("images/runway.jpg");
     background-size: cover;
     background-position: center;
@@ -85,10 +83,10 @@
     flex-direction: column;
     justify-content: center;
   }
-  .picture5:hover {
+  .modelPic:hover {
     transform: scale(1.1);
   }
-  .picture5 p {
+  .modelPic p {
     font-size: 2.5em;
     margin-left: 140%;
   }

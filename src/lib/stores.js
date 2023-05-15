@@ -11,4 +11,10 @@ export let pictureDetails = [
     image: "images/hair.jpg",
     text: "Influential",
   },
+  {
+    "images/castle.jpg"
+  },
+  {
+    image: "images/three.jpg"
+  }
 ];

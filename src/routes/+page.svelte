@@ -58,59 +58,57 @@
 </script>
 
 <!--HTML-->
-<body>
-  <section class="mainPicture" style="background-image:url({img})">
-    <input
-      bind:value={name}
-      on:keydown={changeName}
-      placeholder="What is your name?"
-      maxlength="20"
-    />
+<section class="mainPicture" style="background-image:url({img})">
+  <input
+    bind:value={name}
+    on:keydown={changeName}
+    placeholder="What is your name?"
+    maxlength="20"
+  />
 
-    <h2>{greeting}</h2>
-    <h2 style="margin-bottom: 5%">
-      Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
-      to {title}! &#x2661
-    </h2>
+  <h2>{greeting}</h2>
+  <h2 style="margin-bottom: 5%">
+    Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
+    to {title}! &#x2661
+  </h2>
 
-    <a href="#nextSection">
-      <button on:click={scrollFunction}>Continue</button>
-    </a>
-  </section>
+  <a href="#nextSection">
+    <button on:click={scrollFunction}>Continue</button>
+  </a>
+</section>
 
-  <section class="picture1" id="nextSection">
-    <h1>
-      Scroll Down <br /><span class="scroll-down">
-        <a href="#nextSection2"
-          ><button on:click={scrollFunction}>&#8595</button></a
-        ></span
-      >
-    </h1>
-  </section>
+<section class="mannequinPic" id="nextSection">
+  <h1>
+    Scroll Down <br /><span class="scroll-down">
+      <a href="#nextSection2"
+        ><button on:click={scrollFunction}>&#8595</button></a
+      ></span
+    >
+  </h1>
+</section>
 
-  <section id="nextSection2" />
+<section id="nextSection2" />
 
-  <section class="firstPageText">
-    <p style="text-align:center; margin-top: 10vh">Hover Text Below</p>
+<section class="firstPageText">
+  <p style="text-align:center; margin-top: 10vh">Hover Text Below</p>
 
-    <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
-    <span class="tooltipText">
-      <q>
-        When you wear something that is comfortable, cute, or fancy, it makes
-        you feel good about yourself. <br />Fashion is in the clothes, but style
-        is in the person.
-      </q>
-    </span>
-  </section>
+  <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
+  <span class="tooltipText">
+    <q>
+      When you wear something that is comfortable, cute, or fancy, it makes you
+      feel good about yourself. <br />Fashion is in the clothes, but style is in
+      the person.
+    </q>
+  </span>
+</section>
 
-  <section class="flex-container">
-    {#each bgPics as pic}
-      <div class="item">
-        <div class="picture" style="background-image:url({pic})" />
-      </div>
-    {/each}
-  </section>
-</body>
+<section class="flex-container">
+  {#each bgPics as pic}
+    <div class="item">
+      <div class="picture" style="background-image:url({pic})" />
+    </div>
+  {/each}
+</section>
 
 <!--CSS Styling-->
 <style>
@@ -139,7 +137,7 @@
     color: white;
   }
   /*Pictures*/
-  .picture1 {
+  .mannequinPic {
     background-image: url("images/mannequins.jpg");
     background-size: cover;
     background-position: center;
@@ -149,7 +147,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .picture1 button {
+  .mannequinPic button {
     padding: 20px;
     margin-top: 50px;
     width: auto;

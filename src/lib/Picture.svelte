@@ -28,6 +28,8 @@
     color: black;
     margin-top: -2vh;
     transition: transform 0.5s;
+    word-wrap: break-word;
+
   }
   .text:hover {
     transform: scale(1.1);
