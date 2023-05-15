@@ -120,3 +120,6 @@ https://svelte.dev/repl/a5bc00c245964b27bc750c1e8fba5bae?version=3.44.1 (Input V
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours (Greetings based on local time feature)
 
 https://rodneylab.com/svelte-social-icons/ (Social Media Icons)
+
+### Media Queries
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
