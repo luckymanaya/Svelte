@@ -70,7 +70,7 @@ button {
 
 .BackToTop {
   display: flex;
-  justify-content: right;
+  justify-content: rig;
 }
 
 /*Layout Structure*/
@@ -79,3 +79,4 @@ button {
   flex-direction: column;
   min-height: 100vh;
 }
+
