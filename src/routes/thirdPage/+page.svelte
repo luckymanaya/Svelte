@@ -18,11 +18,13 @@
   const previousSlide = () => {
     currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
   };
+
+  let subset = [...pictureDetails];
+  subset = subset.splice(0, 3);
 </script>
 
 <!--HTML-->
-
-<PictureList {pictureDetails} />
+<PictureList pictureDetails={subset} />
 
 <section class="bgPic">
   <h1>A new <big>DO</big>, for a new <big>YOU</big>!</h1>
@@ -46,7 +48,7 @@
 
 <!--CSS Styling-->
 <style>
-  .picture9 {
+  .bgPic {
     background-image: url("images/red.jpg");
     background-size: cover;
     background-position: center;

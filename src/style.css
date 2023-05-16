@@ -49,10 +49,6 @@ a:hover {
   flex: 1;
 }
 
-.flex-container > div {
-  margin: 30px;
-}
-
 /*Buttons Styling*/
 .button-container {
   display: flex;

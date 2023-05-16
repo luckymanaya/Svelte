@@ -1,6 +1,8 @@
 <!--JavaScript-->
 <script>
   import { browser } from "$app/environment";
+  import { pictureDetails } from "$lib/stores.js";
+  import PictureList from "$lib/PictureList.svelte";
 
   const BASE_URL = "https://api.unsplash.com";
 
@@ -54,7 +56,8 @@
     }
   };
 
-  const bgPics = ["images/castle.jpg", "images/three.jpg"];
+  let subset = [...pictureDetails];
+  subset = subset.splice(3, 5);
 </script>
 
 <!--HTML-->
@@ -102,13 +105,7 @@
   </span>
 </section>
 
-<section class="flex-container">
-  {#each bgPics as pic}
-    <div class="item">
-      <div class="picture" style="background-image:url({pic})" />
-    </div>
-  {/each}
-</section>
+<PictureList pictureDetails={subset} />
 
 <!--CSS Styling-->
 <style>

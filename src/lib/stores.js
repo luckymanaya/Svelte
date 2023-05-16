@@ -12,9 +12,12 @@ export let pictureDetails = [
     text: "Influential",
   },
   {
-    "images/castle.jpg"
+    image: "images/castle.jpg",
+    text: ""
   },
   {
-    image: "images/three.jpg"
+    image: "images/three.jpg",
+    text: ""
+
   }
 ];
