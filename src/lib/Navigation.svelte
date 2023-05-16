@@ -21,7 +21,7 @@
       <a href="/about">About</a>
       <section class="dropdown">
         <button on:click={handlePageDropDown} class="dropdownBtn"
-          >Pages<small>&#9660</small>
+          >Pages&#9660
           {#if isClicked1}
             <section class="dropdown-content">
               <a href="/">Page 1</a>
@@ -94,8 +94,8 @@
     font-size: inherit;
     border: none;
     color: black;
-    margin: 0;
     padding: 15px;
+    margin: 0;
   }
   .dropdownBtn:hover {
     color: white;
@@ -115,5 +115,4 @@
     border-radius: inherit;
     color: white;
   }
-
 </style>

@@ -4,13 +4,17 @@
   import { pictureDetails } from "$lib/stores.js";
   import PictureList from "$lib/PictureList.svelte";
 
+  let title = "Lucky's Website";
+
   const BASE_URL = "https://api.unsplash.com";
 
-  /*
-    The setTimeout here is emulating a delayed response - it makes the user feel like something is actually 'loading'.
-  */
+  //If not null, value is returned from the storage. If null, returns empty string
+  let name = browser ? window.localStorage.getItem("username") ?? "" : "";
+  let img = browser ? window.localStorage.getItem("image") ?? "" : "";
 
-  let img = browser ? localStorage.getItem("image") ?? "" : "";
+  /*
+The setTimeout here is emulating a delayed response - it makes the user feel like something is actually 'loading'.
+*/
 
   if (img === "") {
     setTimeout(() => {
@@ -25,10 +29,12 @@
     }, 2000);
   }
 
-  //If not null, value is returned from the storage. If null, returns empty string
-  let name = browser ? localStorage.getItem("username") ?? "" : "";
-
-  let title = "Lucky's Website";
+  // This function creates a smooth scrolling effect and also sets the image and the username
+  const scrollFunction = () => {
+    localStorage.setItem("image", img);
+    localStorage.setItem("username", name);
+    document.documentElement.style.scrollBehavior = "smooth";
+  };
 
   const today = new Date();
   const time = today.getHours();
@@ -37,12 +43,6 @@
   if (time >= 5 && time < 12) greeting = "Good Morning!";
   else if (time >= 12 && time < 18) greeting = "Good Afternoon!";
   else greeting = "Good Evening!";
-
-  const scrollFunction = () => {
-    localStorage.setItem("image", img);
-    localStorage.setItem("username", name);
-    document.documentElement.style.scrollBehavior = "smooth";
-  };
 
   //A function that prevents numbers and special characters from displaying in the textbox
   const changeName = (e) => {
