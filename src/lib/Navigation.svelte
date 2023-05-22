@@ -52,7 +52,7 @@
           {/if}
         </button>
       </section>
-      <a href="/contact">Contact Me</a>
+      <li><a href="/contact">Contact Me</a></li>
     </ul>
   </nav>
 
@@ -73,6 +73,9 @@
     font-size: 2.5em;
     list-style: none;
     gap: 30px;
+  }
+  nav ul a{
+    padding: 15px;
   }
   nav ul a:last-of-type {
     margin-left: auto;

@@ -3,13 +3,14 @@
   import { page } from "$app/stores";
 </script>
 
-<section class="BackToTop">
-  <a href="#">
-    <button>Back to top &uarr;</button>
-  </a>
-</section>
 <!-- HTML -->
 {#if $page.url.pathname === "/"}
+  <section class="BackToTop">
+    <a href="#">
+      <button>Back to top &uarr;</button>
+    </a>
+  </section>
+
   <section class="button-container">
     <a href="/secondPage">
       <button>Next</button>
@@ -20,6 +21,12 @@
     <p>1</p>
   </section>
 {:else if $page.url.pathname === "/secondPage"}
+  <section class="BackToTop">
+    <a href="#">
+      <button>Back to top &uarr;</button>
+    </a>
+  </section>
+
   <section class="button-container">
     <a href="/">
       <button>Go Back</button>
@@ -33,6 +40,11 @@
     <p>2</p>
   </section>
 {:else if $page.url.pathname === "/thirdPage"}
+  <section class="BackToTop">
+    <a href="#">
+      <button>Back to top &uarr;</button>
+    </a>
+  </section>
   <section class="button-container">
     <a href="/">
       <button>Go Back to 1</button>
