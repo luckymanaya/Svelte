@@ -21,7 +21,7 @@
       <li><a href="/about">About</a></li>
       <section class="dropdown">
         <button on:click={handlePageDropDown} class="dropdownBtn"
-          >Pages<small>&#9660</small>
+          >Pages&#9660
           {#if isClicked1}
             <section class="dropdown-content">
               <a href="/">Page 1</a>
