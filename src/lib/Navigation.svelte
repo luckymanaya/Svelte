@@ -17,8 +17,8 @@
 <section class="nav-container">
   <nav>
     <ul>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
       <section class="dropdown">
         <button on:click={handlePageDropDown} class="dropdownBtn"
           >Pages<small>&#9660</small>
@@ -71,9 +71,8 @@
     display: flex;
     font-family: "Arial";
     font-size: 2.5em;
-  }
-  nav ul a {
-    padding: 15px;
+    list-style: none;
+    gap: 30px;
   }
   nav ul a:last-of-type {
     margin-left: auto;
@@ -87,6 +86,7 @@
     background: rgb(155, 152, 152);
     opacity: 0.4;
     z-index: -1;
+    padding: 3vh;
   }
   /*Dropdown Styling*/
   .dropdownBtn {
@@ -95,7 +95,7 @@
     border: none;
     color: black;
     margin: 0;
-    padding: 15px;
+    padding: 0;
   }
   .dropdownBtn:hover {
     color: white;
@@ -115,5 +115,4 @@
     border-radius: inherit;
     color: white;
   }
-
 </style>
