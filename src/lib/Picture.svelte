@@ -26,7 +26,7 @@
   }
   .text {
     color: white;
-    -webkit-text-stroke-width: 2px  ;
+    -webkit-text-stroke-width: 0.12vw  ;
     -webkit-text-stroke-color: black; 
     margin-top: -2vh;
     transition: transform 0.5s;
@@ -41,6 +41,9 @@
     .picture {
     width: 100vw;
     height: 30vh;
+  }
+  .text{
+    font-size:10vw;
   }
 }
 </style>

@@ -6,21 +6,21 @@ body {
 h1 {
   text-align: center;
   font-family: "Arial";
-  font-size: 2.75em;
+  font-size: 2.3vw;
   color: white;
 }
 
 h2 {
   text-align: center;
   font-family: "Arial";
-  font-size: 2.5em;
+  font-size: 2vw;
   color: white;
 }
 
 p {
   text-align: justify;
   font-family: "Arial";
-  font-size: 1.75em;
+  font-size: 1.5vw;
   color: white;
   margin-inline: 10px;
 }
@@ -57,7 +57,7 @@ a:hover {
 button {
   padding: 10px;
   font-family: "Arial";
-  font-size: 1.5rem;
+  font-size: 1.6vw;
   border-radius: 10px;
   background-color: black;
   color: white;

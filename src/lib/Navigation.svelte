@@ -33,7 +33,7 @@
       </section>
       <section class="dropdown">
         <button on:click={handleSocialsDropDown} class="dropdownBtn"
-          >Socials<small>&#9660</small>
+          >Socials&#9660
           {#if isClicked2}
             <section class="dropdown-content">
               <a href="#0">
@@ -55,41 +55,26 @@
       <li><a href="/contact">Contact Me</a></li>
     </ul>
   </nav>
-
-  <section class="nav-transparency" />
 </section>
 
 <!-- CSS Styling -->
 <style>
   .nav-container {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
+    background: gray;
   }
   nav ul {
     padding: 0;
     margin: 0;
     display: flex;
     font-family: "Arial";
-    font-size: 2.5em;
+    font-size: 2.3vw;
     list-style: none;
-    gap: 30px;
+    justify-content: space-evenly;
   }
-  nav ul a{
+  nav ul a {
     padding: 15px;
-  }
-  nav ul a:last-of-type {
-    margin-left: auto;
-  }
-  .nav-transparency {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgb(155, 152, 152);
-    opacity: 0.4;
-    z-index: -1;
-    padding: 3vh;
   }
   /*Dropdown Styling*/
   .dropdownBtn {
