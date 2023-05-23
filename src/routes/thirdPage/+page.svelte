@@ -81,9 +81,16 @@
     border-radius: 25px;
   }
   .flex-container button {
-    font-size: 2.5em;
+    font-size: 2vw;
     width: 5vw;
     height: 7vh;
     margin: auto;
+  }
+
+  @media screen and (max-width: 375px) {
+    .bgPic {
+      width: 170vw;
+      margin-top: 30px;
+    }
   }
 </style>

@@ -146,9 +146,8 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   }
   .mannequinPic button {
     padding: 20px;
-    margin-top: 50px;
-    width: auto;
-    font-size: 50%;
+    width: 5vw;
+    font-size: 2vw;
   }
   .picture {
     background-size: cover;
@@ -159,6 +158,9 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
     border-radius: 25px;
   }
   .firstPageText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin-bottom: 2%;
   }
@@ -180,4 +182,29 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   .firstPageText:hover .tooltipText {
     visibility: visible;
   }
+@media screen and (max-width: 375px){
+  .mainPicture {
+    width: 165vw;
+  }
+  button{
+    font-size: 6vw;
+    width: 40vw;
+  }
+  .mannequinPic {
+    width: 165vw;
+  }
+  .mannequinPic button {
+    padding: 20px;
+    margin-top: 50px;
+    width: 25vw;
+    font-size: 15vw;
+  }
+  .mannequinPic h1{
+    font-size: 8vw;
+  }
+  .firstPageText h2, p{
+    text-align:center;
+    font-size:10vw;
+  }
+}
 </style>

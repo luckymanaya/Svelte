@@ -63,9 +63,6 @@
   .voguePic button {
     margin-top: 15%;
   }
-  .voguePic p {
-    margin-inline: 5%;
-  }
   mark {
     background-color: black;
     color: white;
@@ -74,7 +71,7 @@
     background-image: url("images/runway.jpg");
     background-size: cover;
     background-position: center;
-    width: 45%;
+    width: 44vw;
     height: 100vh;
     border-radius: 50%;
     margin: 8%;
@@ -87,7 +84,24 @@
     transform: scale(1.1);
   }
   .modelPic p {
-    font-size: 2.5em;
+    font-size: 2.2vw;
     margin-left: 140%;
   }
+
+  @media screen and (max-width: 375px){
+.voguePic{
+  width: 160vw;
+}
+.voguePic button {
+    width: 40vw;
+    font-size: 8vw;
+  }
+
+  .modelPic{
+    width: 85vw;
+  }
+  .modelPic p {
+    font-size: 8vw;
+  }
+}
 </style>

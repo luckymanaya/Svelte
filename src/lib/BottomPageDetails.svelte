@@ -63,7 +63,7 @@
 <style>
   .pageNum p {
     text-align: center;
-    font-size: 2em;
+    font-size: 2vw;
   }
 
   .BackToTop {

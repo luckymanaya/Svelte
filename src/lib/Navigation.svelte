@@ -61,11 +61,10 @@
 <style>
   .nav-container {
     width: 100%;
-    /* position: fixed; */
     background: gray;
   }
   nav ul {
-    padding: 0;
+    padding: 5px;
     margin: 0;
     display: flex;
     font-family: "Arial";
@@ -73,13 +72,13 @@
     list-style: none;
     justify-content: space-evenly;
   }
-  nav ul a {
-    padding: 15px;
+  nav ul a{
+    padding: 5px;
   }
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
-    font-size: inherit;
+    font-size: 2.3vw;
     border: none;
     color: black;
     margin: 0;
@@ -96,11 +95,28 @@
   .dropdown-content a {
     color: black;
     display: block;
-    font-size: 0.95em;
   }
   .dropdown-content a:hover {
     background-color: black;
     border-radius: inherit;
     color: white;
   }
+
+  @media screen and (max-width: 375px){
+    .nav-container {
+    width: 170vw;
+  }
+  nav ul {
+    padding: 40px;
+    font-size: 5vw;
+  }
+  .dropdownBtn{
+    font-size: 5vw;
+  }
+  .dropdown-content a {
+    font-size: 10vw;
+    width: 60vw;
+
+  }
+}
 </style>

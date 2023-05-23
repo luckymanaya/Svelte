@@ -39,7 +39,7 @@
 
   @media screen and (max-width: 375px){
     .picture {
-    width: 100vw;
+    width: 135vw;
     height: 30vh;
   }
   .text{
