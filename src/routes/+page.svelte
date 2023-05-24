@@ -4,8 +4,6 @@
   import { pictureDetails } from "$lib/stores.js";
   import PictureList from "$lib/PictureList.svelte";
 
-  let title = "Lucky's Website";
-
   const BASE_URL = "https://api.unsplash.com";
 
   //If not null, value is returned from the storage. If null, returns empty string
@@ -24,7 +22,6 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
         .then((r) => r.json())
         .then((data) => {
           img = data.results[0].urls.full;
-          console.log(img);
         });
     }, 2000);
   }
@@ -72,7 +69,7 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   <h2>{greeting}</h2>
   <h2 style="margin-bottom: 5%">
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
-    to {title}! &#x2661
+    to Lucky's Website! &#x2661
   </h2>
 
   <a href="#nextSection">
@@ -81,30 +78,24 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
 </section>
 
 <section class="mannequinPic" id="nextSection">
-  <h1>
-    Scroll Down <br /><span class="scroll-down">
-      <a href="#nextSection2"
-        ><button on:click={scrollFunction}>&#8595</button></a
-      ></span
-    >
-  </h1>
+  <h1>Scroll Down</h1>
+  <a href="#nextSection2"><button on:click={scrollFunction}>&#8595</button></a>
 </section>
 
 <section id="nextSection2" />
 
 <section class="firstPageText">
-  <p style="text-align:center; margin-top: 10vh">Hover Text Below</p>
+  <h1>Hover Text Below</h1>
 
   <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
   <span class="tooltipText">
-    <q>
+    <p>
       When you wear something that is comfortable, cute, or fancy, it makes you
       feel good about yourself. <br />Fashion is in the clothes, but style is in
       the person.
-    </q>
+    </p>
   </span>
 </section>
-
 <PictureList pictureDetails={subset} />
 
 <!--CSS Styling-->
@@ -120,20 +111,12 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   .mainPicture input {
     text-align: center;
     margin-inline: auto;
-    margin-bottom: 2%;
-    display: block;
-    font-size: 1.75em;
+    font-size: 1.8vw;
   }
   a button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline:auto;
   }
-  .scroll-down {
-    font-size: 2.5em;
-    color: white;
-  }
-  /*Pictures*/
   .mannequinPic {
     background-image: url("images/mannequins.jpg");
     background-size: cover;
@@ -145,66 +128,31 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
     justify-content: center;
   }
   .mannequinPic button {
-    padding: 20px;
+    height: 10vh;
     width: 5vw;
-    font-size: 2vw;
-  }
-  .picture {
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 125vh;
-    margin: 10px;
-    border-radius: 25px;
+    font-size: 3vw;
   }
   .firstPageText {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 2%;
   }
   .firstPageText h2 {
     color: gray;
   }
   .firstPageText h2:hover {
     color: white;
-    cursor: default;
   }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
     visibility: hidden;
-    border-radius: 10px;
-    color: white;
-    font-family: "Arial";
-    font-size: 1.6em;
   }
   .firstPageText:hover .tooltipText {
     visibility: visible;
   }
-@media screen and (max-width: 375px){
-  .mainPicture {
-    width: 165vw;
+  @media screen and (max-width: 375px) {
+    .mainPicture, .mannequinPic {
+      width: 165vw;
+    }
   }
-  button{
-    font-size: 6vw;
-    width: 40vw;
-  }
-  .mannequinPic {
-    width: 165vw;
-  }
-  .mannequinPic button {
-    padding: 20px;
-    margin-top: 50px;
-    width: 25vw;
-    font-size: 15vw;
-  }
-  .mannequinPic h1{
-    font-size: 8vw;
-  }
-  .firstPageText h2, p{
-    text-align:center;
-    font-size:10vw;
-  }
-}
 </style>

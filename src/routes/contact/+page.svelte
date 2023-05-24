@@ -6,7 +6,7 @@
 </section>
 
 <style>
-  .contact-container h1 {
-    margin-top: 10vh;
-  }
+.contact-container p{
+text-align: justify;
+}
 </style>

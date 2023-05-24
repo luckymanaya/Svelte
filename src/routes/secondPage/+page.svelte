@@ -4,9 +4,7 @@
 
   let fontSize = 30;
   let displayText = false;
-
-  let words = ['"Amazing"', '"Beautiful"', '"Stunning!"', '"Gorgeous"'];
-
+  
   const animateText = () => {
     displayText = !displayText;
   };
@@ -43,12 +41,6 @@
   {/if}
 </section>
 
-<section class="modelPic">
-  {#each words as w}
-    <p>{w}</p>
-  {/each}
-</section>
-
 <!--CSS Styling-->
 <style>
   /*Pictures*/
@@ -66,26 +58,6 @@
   mark {
     background-color: black;
     color: white;
-  }
-  .modelPic {
-    background-image: url("images/runway.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 44vw;
-    height: 100vh;
-    border-radius: 50%;
-    margin: 8%;
-    transition: transform 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .modelPic:hover {
-    transform: scale(1.1);
-  }
-  .modelPic p {
-    font-size: 2.2vw;
-    margin-left: 140%;
   }
 
   @media screen and (max-width: 375px){

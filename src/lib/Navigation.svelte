@@ -72,9 +72,6 @@
     list-style: none;
     justify-content: space-evenly;
   }
-  nav ul a{
-    padding: 5px;
-  }
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
@@ -90,11 +87,12 @@
   .dropdown-content {
     position: absolute;
     background-color: lightgray;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
   .dropdown-content a {
     color: black;
     display: block;
+    padding: 1rem;
   }
   .dropdown-content a:hover {
     background-color: black;

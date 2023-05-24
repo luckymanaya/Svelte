@@ -13,7 +13,7 @@
   .picture {
     background-size: cover;
     background-position: center;
-    width: 20vw;
+    width: 25vw;
     height: 100vh;
     padding: 50px;
     border-radius: 25px;

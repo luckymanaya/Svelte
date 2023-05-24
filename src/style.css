@@ -4,27 +4,21 @@ body {
 }
 /*Text Styling*/
 h1 {
-  text-align: center;
-  font-family: "Arial";
-  font-size: 2.3vw;
-  color: white;
+  font-size: 2.5vw;
 }
-
 h2 {
-  text-align: center;
-  font-family: "Arial";
-  font-size: 2.em;
-  color: white;
+  font-size: 2vw;
 }
-
 p {
-  text-align: justify;
-  font-family: "Arial";
   font-size: 1.5vw;
-  color: white;
   margin-inline: 10px;
 }
-
+h1, h2, p{
+  text-align: center;
+  font-family: "Arial";
+  color: white;
+  cursor:default;
+}
 /*Link Styling*/
 a {
   color: rgb(0, 0, 0);
@@ -55,14 +49,13 @@ a:hover {
 }
 
 button {
-  padding: 10px;
+  padding: 0.5rem;
   font-family: "Arial";
-  font-size: 1.6vw;
-  border-radius: 10px;
+  font-size: 1.5vw;
+  border-radius: 1rem;
   background-color: black;
   color: white;
   border: 2px solid white;
-  margin: 10px;
   width: 10vw;
   cursor: pointer;
 }
@@ -73,4 +66,3 @@ button {
   flex-direction: column;
   min-height: 100vh;
 }
-

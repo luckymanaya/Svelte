@@ -38,7 +38,6 @@
   footer a:hover {
     color: white;
   }
-
   @media screen and (max-width: 375px) {
     footer {
       font-size: 9vw;

@@ -7,13 +7,3 @@
     content is given to you &#x2661
   </p>
 </section>
-
-<!--CSS Styling-->
-<style>
-  .about-container h1 {
-    margin-top: 10vh;
-  }
-  .about-container p {
-    text-align: center;
-  }
-</style>
