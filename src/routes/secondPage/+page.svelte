@@ -43,7 +43,6 @@
 
 <!--CSS Styling-->
 <style>
-  /*Pictures*/
   .voguePic {
     background-image: url("images/vogue.jpg");
     background-size: cover;
@@ -59,20 +58,12 @@
     background-color: black;
     color: white;
   }
-
   @media screen and (max-width: 375px){
 .voguePic{
   width: 160vw;
 }
 .voguePic button {
     width: 40vw;
-    font-size: 8vw;
-  }
-
-  .modelPic{
-    width: 85vw;
-  }
-  .modelPic p {
     font-size: 8vw;
   }
 }

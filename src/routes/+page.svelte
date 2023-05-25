@@ -77,14 +77,7 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   </a>
 </section>
 
-<section class="mannequinPic" id="nextSection">
-  <h1>Scroll Down</h1>
-  <a href="#nextSection2"><button on:click={scrollFunction}>&#8595</button></a>
-</section>
-
-<section id="nextSection2" />
-
-<section class="firstPageText">
+<section class="firstPageText" id = "nextSection">
   <h1>Hover Text Below</h1>
 
   <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
@@ -97,7 +90,6 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   </span>
 </section>
 <PictureList pictureDetails={subset} />
-
 <!--CSS Styling-->
 <style>
   .mainPicture {
@@ -117,31 +109,16 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
     display: block;
     margin-inline:auto;
   }
-  .mannequinPic {
-    background-image: url("images/mannequins.jpg");
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .mannequinPic button {
-    height: 10vh;
-    width: 5vw;
-    font-size: 3vw;
-  }
   .firstPageText {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .firstPageText h2 {
-    color: gray;
-  }
+    opacity:0.7;
+    }
   .firstPageText h2:hover {
-    color: white;
+    opacity: 1;
   }
   /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
@@ -151,7 +128,7 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
     visibility: visible;
   }
   @media screen and (max-width: 375px) {
-    .mainPicture, .mannequinPic {
+    .mainPicture{
       width: 165vw;
     }
   }

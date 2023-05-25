@@ -38,7 +38,7 @@
 
 <section class="slideshow">
   {#if slideImages.length > 0}
-    <div class="flex-container">
+    <div class="button-container">
       <button on:click={previousSlide}>&#60</button>
       <img src={slideImages[currentSlide]} />
       <button on:click={nextSlide}>&#62</button>
@@ -57,15 +57,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 2rem;
   }
   .bgPic h1 {
-    font-size: 3em;
     text-shadow: 2px 5px 4px black;
   }
   /*Image goes on top of the background picture*/
   .bgPic img {
-    max-width: 30vw;
-    margin: 0 auto;
+    width: 35vw;
+    align-self: center;
     transition: transform 0.5s;
   }
   .bgPic img:hover {
@@ -80,17 +80,18 @@
     width: 25vw;
     border-radius: 25px;
   }
-  .flex-container button {
+  .button-container button {
     font-size: 2vw;
     width: 5vw;
     height: 7vh;
     margin: auto;
   }
-
   @media screen and (max-width: 375px) {
     .bgPic {
       width: 170vw;
-      margin-top: 30px;
+    }
+    .bgPic h1 {
+      font-size: 8vw;
     }
   }
 </style>

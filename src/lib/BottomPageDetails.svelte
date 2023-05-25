@@ -18,7 +18,7 @@
   </section>
 
   <section class="pageNum">
-    <p>1</p>
+    <h1>1</h1>
   </section>
 {:else if $page.url.pathname === "/secondPage"}
   <section class="button-container">
@@ -31,7 +31,7 @@
   </section>
 
   <section class="pageNum">
-    <p>2</p>
+    <h1>2</h1>
   </section>
 {:else if $page.url.pathname === "/thirdPage"}
   <section class="BackToTop">
@@ -49,19 +49,23 @@
   </section>
 
   <section class="pageNum">
-    <p>3</p>
+    <h1>3</h1>
   </section>
 {/if}
 
 <!-- CSS Styling -->
 <style>
-  .pageNum p {
-    text-align: center;
-    font-size: 2vw;
-  }
-
   .BackToTop {
     display: flex;
     justify-content: right;
+  }
+  @media screen and (max-width: 375px) {
+    .button-container button{
+        font-size: 9vw;
+        width: 40vw;
+    }
+    .pageNum h1{
+      font-size:3rem;
+    }
   }
 </style>
