@@ -1,9 +1,7 @@
-<!-- JavaScript -->
 <script>
   import { page } from "$app/stores";
 </script>
 
-<!-- HTML -->
 {#if $page.url.pathname === "/"}
   <section class="BackToTop">
     <a href="#">
@@ -53,19 +51,14 @@
   </section>
 {/if}
 
-<!-- CSS Styling -->
 <style>
   .BackToTop {
     display: flex;
     justify-content: right;
   }
   @media screen and (max-width: 375px) {
-    .button-container button{
-        font-size: 9vw;
-        width: 40vw;
-    }
-    .pageNum h1{
-      font-size:3rem;
+    .pageNum h1 {
+      font-size: 3rem;
     }
   }
 </style>

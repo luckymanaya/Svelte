@@ -1,4 +1,3 @@
-<!--JavaScript-->
 <script>
   import { pictureDetails } from "$lib/stores.js";
   import PictureList from "$lib/PictureList.svelte";
@@ -23,30 +22,28 @@
   subset = subset.splice(0, 3);
 </script>
 
-<!--HTML-->
 <PictureList pictureDetails={subset} />
 
 <section class="bgPic">
-  <h1>A new <big>DO</big>, for a new <big>YOU</big>!</h1>
+  <h2>A new <big>DO</big>, for a new <big>YOU</big>!</h2>
   <img src="images/red.jpg" />
 </section>
 
 <h2>
-  Showcase your creativity through clothing choices<br />...and have fun with
-  it!
+  Showcase your creativity through clothing choices... and have fun with it!
 </h2>
+
+<div class="button-container">
+  <button on:click={previousSlide}>&#60</button>
+  <button on:click={nextSlide}>&#62</button>
+</div>
 
 <section class="slideshow">
   {#if slideImages.length > 0}
-    <div class="button-container">
-      <button on:click={previousSlide}>&#60</button>
-      <img src={slideImages[currentSlide]} />
-      <button on:click={nextSlide}>&#62</button>
-    </div>
+    <img src={slideImages[currentSlide]} />
   {/if}
 </section>
 
-<!--CSS Styling-->
 <style>
   .bgPic {
     background-image: url("images/red.jpg");
@@ -59,7 +56,7 @@
     justify-content: center;
     margin-top: 2rem;
   }
-  .bgPic h1 {
+  .bgPic h2 {
     text-shadow: 2px 5px 4px black;
   }
   /*Image goes on top of the background picture*/
@@ -73,25 +70,28 @@
   }
   /*Slideshow Styling*/
   .slideshow {
-    display: flex;
-    flex-direction: column;
+    align-self: center;
   }
   .slideshow img {
     width: 25vw;
-    border-radius: 25px;
+    border-radius: 1rem;
   }
   .button-container button {
     font-size: 2vw;
-    width: 5vw;
-    height: 7vh;
-    margin: auto;
+    margin: 1rem;
   }
   @media screen and (max-width: 375px) {
+    h2 {
+      font-size: 8vw;
+    }
     .bgPic {
       width: 170vw;
     }
-    .bgPic h1 {
-      font-size: 8vw;
+    .slideshow img {
+      width: 100vw;
+    }
+    .button-container button {
+      font-size: 10vw;
     }
   }
 </style>

@@ -1,16 +1,14 @@
-<!--Javascript-->
 <script>
   import { fly } from "svelte/transition";
 
   let fontSize = 30;
   let displayText = false;
-  
+
   const animateText = () => {
     displayText = !displayText;
   };
 </script>
 
-<!--HTML-->
 <section class="voguePic">
   <button on:click={animateText}>Click Me!</button>
 
@@ -41,7 +39,6 @@
   {/if}
 </section>
 
-<!--CSS Styling-->
 <style>
   .voguePic {
     background-image: url("images/vogue.jpg");
@@ -58,13 +55,9 @@
     background-color: black;
     color: white;
   }
-  @media screen and (max-width: 375px){
-.voguePic{
-  width: 160vw;
-}
-.voguePic button {
-    width: 40vw;
-    font-size: 8vw;
+  @media screen and (max-width: 375px) {
+    .voguePic {
+      width: 160vw;
+    }
   }
-}
 </style>

@@ -1,9 +1,7 @@
-<!-- JavaScript -->
 <script>
   import { page } from "$app/stores";
 </script>
 
-<!-- HTML -->
 <footer>
   {#if $page.url.pathname === "/contact"}
     Images:
@@ -21,7 +19,6 @@
   {/if}
 </footer>
 
-<!--CSS Styling-->
 <style>
   footer {
     background: rgb(155, 152, 152);

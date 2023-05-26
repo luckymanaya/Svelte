@@ -1,4 +1,3 @@
-<!--JavaScript-->
 <script>
   import { browser } from "$app/environment";
   import { pictureDetails } from "$lib/stores.js";
@@ -57,7 +56,6 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   subset = subset.splice(3, 5);
 </script>
 
-<!--HTML-->
 <section class="mainPicture" style="background-image:url({img})">
   <input
     bind:value={name}
@@ -77,9 +75,8 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   </a>
 </section>
 
-<section class="firstPageText" id = "nextSection">
-  <h1>Hover Text Below</h1>
-
+<section class="firstPageText" id="nextSection">
+  <p>Hover Text Below</p>
   <h2>Fashion is a form of <big><i>self-expression</i></big></h2>
   <span class="tooltipText">
     <p>
@@ -90,7 +87,7 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   </span>
 </section>
 <PictureList pictureDetails={subset} />
-<!--CSS Styling-->
+
 <style>
   .mainPicture {
     background-size: cover;
@@ -107,7 +104,7 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
   }
   a button {
     display: block;
-    margin-inline:auto;
+    margin-inline: auto;
   }
   .firstPageText {
     display: flex;
@@ -115,8 +112,8 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
     justify-content: center;
   }
   .firstPageText h2 {
-    opacity:0.7;
-    }
+    opacity: 0.7;
+  }
   .firstPageText h2:hover {
     opacity: 1;
   }
@@ -128,7 +125,7 @@ The setTimeout here is emulating a delayed response - it makes the user feel lik
     visibility: visible;
   }
   @media screen and (max-width: 375px) {
-    .mainPicture{
+    .mainPicture {
       width: 165vw;
     }
   }

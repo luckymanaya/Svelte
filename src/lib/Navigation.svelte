@@ -1,4 +1,3 @@
-<!-- JavaScript -->
 <script>
   import SocialIcons from "@rodneylab/svelte-social-icons";
   let isClicked1 = false;
@@ -13,7 +12,6 @@
   };
 </script>
 
-<!-- HTML -->
 <section class="nav-container">
   <nav>
     <ul>
@@ -57,14 +55,13 @@
   </nav>
 </section>
 
-<!-- CSS Styling -->
 <style>
   .nav-container {
     width: 100%;
     background: gray;
   }
   nav ul {
-    padding: 5px;
+    padding: 1rem;
     margin: 0;
     display: flex;
     font-family: "Arial";
@@ -100,21 +97,20 @@
     color: white;
   }
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 375px) {
     .nav-container {
-    width: 170vw;
+      width: 170vw;
+    }
+    nav ul {
+      padding: 40px;
+      font-size: 5vw;
+    }
+    .dropdownBtn {
+      font-size: 5vw;
+    }
+    .dropdown-content a {
+      font-size: 10vw;
+      width: 60vw;
+    }
   }
-  nav ul {
-    padding: 40px;
-    font-size: 5vw;
-  }
-  .dropdownBtn{
-    font-size: 5vw;
-  }
-  .dropdown-content a {
-    font-size: 10vw;
-    width: 60vw;
-
-  }
-}
 </style>

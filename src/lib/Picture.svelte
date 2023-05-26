@@ -1,8 +1,6 @@
 <script>
   export let pic;
 </script>
-
-
   <div class="item">
     <div class="picture" style="background-image:url({pic.image})">
       <h1 class="text">{pic.text}</h1>
@@ -16,7 +14,7 @@
     width: 25vw;
     height: 100vh;
     padding: 50px;
-    border-radius: 25px;
+    border-radius: 1rem;
     margin-inline: auto;
     margin-top: 15vh;
     transition: transform 0.5s;
@@ -36,7 +34,6 @@
   .text:hover {
     transform: scale(1.1);
   }
-
   @media screen and (max-width: 375px){
     .picture {
     width: 135vw;

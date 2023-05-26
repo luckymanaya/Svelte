@@ -13,11 +13,13 @@ p {
   font-size: 1.5vw;
   margin-inline: 10px;
 }
-h1, h2, p{
+h1,
+h2,
+p {
   text-align: center;
   font-family: "Arial";
   color: white;
-  cursor:default;
+  cursor: default;
 }
 /*Link Styling*/
 a {
@@ -48,7 +50,6 @@ a:hover {
   flex-direction: row;
   justify-content: center;
 }
-
 button {
   padding: 0.5rem;
   font-family: "Arial";
@@ -60,10 +61,15 @@ button {
   width: 10vw;
   cursor: pointer;
 }
-
 /*Layout Structure*/
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+@media screen and (max-width: 375px) {
+  button {
+      font-size: 9vw;
+      width: 40vw;
+    }
+  }
