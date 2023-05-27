@@ -18,6 +18,5 @@ export let pictureDetails = [
   {
     image: "images/three.jpg",
     text: "2"
-
-  }
+  },
 ];

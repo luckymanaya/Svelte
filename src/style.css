@@ -1,29 +1,37 @@
+:root {
+  --textColor: white;
+  --otherColor: black;
+}
 body {
   margin: 0;
-  background-color: black;
+  background-color: var(--otherColor);
+  font-family: "Arial";
+  cursor: default;
 }
 /*Text Styling*/
 h1 {
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
+
 h2 {
   font-size: 2vw;
 }
+
 p {
   font-size: 1.5vw;
   margin-inline: 10px;
 }
+
 h1,
 h2,
 p {
   text-align: center;
-  font-family: "Arial";
-  color: white;
-  cursor: default;
+  color: var(--textColor);
 }
+
 /*Link Styling*/
 a {
-  color: rgb(0, 0, 0);
+  color: var(--otherColor);
 }
 
 a:link {
@@ -31,7 +39,7 @@ a:link {
 }
 
 a:hover {
-  color: white;
+  color: var(--textColor);
 }
 
 /*Flexbox*/
@@ -43,33 +51,39 @@ a:hover {
 .flex-container .item {
   flex: 1;
 }
-
 /*Buttons Styling*/
 .button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 button {
+  background-color: var(--otherColor);
+  color: var(--textColor);
+  border: 2px solid var(--textColor);
   padding: 0.5rem;
-  font-family: "Arial";
+  margin: 1rem;
   font-size: 1.5vw;
   border-radius: 1rem;
-  background-color: black;
-  color: white;
-  border: 2px solid white;
   width: 10vw;
   cursor: pointer;
 }
+.backgroundPic {
+  background-size: cover;
+  background-position: center;
+}
+
 /*Layout Structure*/
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 @media screen and (max-width: 375px) {
   button {
-      font-size: 9vw;
-      width: 40vw;
-    }
+    font-size: 9vw;
+    width: 40vw;
   }
+}

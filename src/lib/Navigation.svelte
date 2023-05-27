@@ -3,10 +3,10 @@
   let isClicked1 = false;
   let isClicked2 = false;
 
+  //These functions handles the dropdown menu for pages and socials
   const handlePageDropDown = () => {
     isClicked1 = !isClicked1;
   };
-
   const handleSocialsDropDown = () => {
     isClicked2 = !isClicked2;
   };
@@ -63,23 +63,22 @@
   nav ul {
     padding: 1rem;
     margin: 0;
-    display: flex;
-    font-family: "Arial";
     font-size: 2.3vw;
     list-style: none;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content:space-evenly;
   }
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
     font-size: 2.3vw;
     border: none;
-    color: black;
+    color: var(--otherColor);
     margin: 0;
     padding: 0;
   }
   .dropdownBtn:hover {
-    color: white;
+    color: var(--textColor);
   }
   .dropdown-content {
     position: absolute;
@@ -87,14 +86,14 @@
     border-radius: 1rem;
   }
   .dropdown-content a {
-    color: black;
+    color: var(--otherColor);
     display: block;
     padding: 1rem;
   }
   .dropdown-content a:hover {
-    background-color: black;
+    background-color: var(--otherColor);
     border-radius: inherit;
-    color: white;
+    color: var(--textColor);
   }
 
   @media screen and (max-width: 375px) {
@@ -102,10 +101,10 @@
       width: 170vw;
     }
     nav ul {
-      padding: 40px;
-      font-size: 5vw;
+      padding: 1.5rem;
     }
-    .dropdownBtn {
+    .dropdownBtn,
+    nav ul {
       font-size: 5vw;
     }
     .dropdown-content a {

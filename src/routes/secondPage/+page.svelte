@@ -9,7 +9,7 @@
   };
 </script>
 
-<section class="voguePic">
+<section class="backgroundPic voguePic">
   <button on:click={animateText}>Click Me!</button>
 
   {#if displayText}
@@ -42,18 +42,13 @@
 <style>
   .voguePic {
     background-image: url("images/vogue.jpg");
-    background-size: cover;
-    background-position: center;
     width: auto;
-    height: 120vh;
-    padding: 5%;
-  }
-  .voguePic button {
-    margin-top: 15%;
+    height: 100vh;
+    padding: 3rem;
   }
   mark {
-    background-color: black;
-    color: white;
+    background-color: var(--otherColor);
+    color: var(--textColor);
   }
   @media screen and (max-width: 375px) {
     .voguePic {

@@ -22,18 +22,15 @@
 <style>
   footer {
     background: rgb(155, 152, 152);
-    font-family: "Arial";
-    font-size: 1em;
+    font-size: 1.3vw;
     margin-top: auto;
-    padding: 50px;
-    color: black;
+    padding: 3rem;
   }
   footer a {
-    color: black;
     text-decoration: underline;
   }
   footer a:hover {
-    color: white;
+    color: var(--textColor);
   }
   @media screen and (max-width: 375px) {
     footer {

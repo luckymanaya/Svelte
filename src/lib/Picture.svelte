@@ -1,46 +1,43 @@
 <script>
   export let pic;
 </script>
-  <div class="item">
-    <div class="picture" style="background-image:url({pic.image})">
-      <h1 class="text">{pic.text}</h1>
-    </div>
+
+<div class="item">
+  <div class="backgroundPic picture" style="background-image:url({pic.image})">
+    <h1 class="text">{pic.text}</h1>
   </div>
+</div>
 
 <style>
   .picture {
-    background-size: cover;
-    background-position: center;
     width: 25vw;
     height: 100vh;
-    padding: 50px;
+    padding: 3rem;
     border-radius: 1rem;
     margin-inline: auto;
-    margin-top: 15vh;
+    margin-top: 2rem;
     transition: transform 0.5s;
   }
   .picture:hover {
     transform: scale(1.1);
   }
   .text {
-    color: white;
-    -webkit-text-stroke-width: 0.12vw  ;
-    -webkit-text-stroke-color: black; 
-    margin-top: -2vh;
+    color: var(--textColor);
+    -webkit-text-stroke-width: 0.12vw;
+    -webkit-text-stroke-color: var(--otherColor);
     transition: transform 0.5s;
     word-wrap: break-word;
-
   }
   .text:hover {
     transform: scale(1.1);
   }
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 375px) {
     .picture {
-    width: 135vw;
-    height: 30vh;
+      width: 135vw;
+      height: 30vh;
+    }
+    .text {
+      font-size: 10vw;
+    }
   }
-  .text{
-    font-size:10vw;
-  }
-}
 </style>
