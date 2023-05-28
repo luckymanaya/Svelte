@@ -57,7 +57,6 @@
 
 <style>
   .nav-container {
-    width: 100%;
     background: gray;
   }
   nav ul {
@@ -76,6 +75,7 @@
     color: var(--otherColor);
     margin: 0;
     padding: 0;
+    width: auto;
   }
   .dropdownBtn:hover {
     color: var(--textColor);
@@ -97,19 +97,8 @@
   }
 
   @media screen and (max-width: 375px) {
-    .nav-container {
-      width: 170vw;
-    }
-    nav ul {
-      padding: 1.5rem;
-    }
-    .dropdownBtn,
-    nav ul {
-      font-size: 5vw;
-    }
-    .dropdown-content a {
-      font-size: 10vw;
-      width: 60vw;
-    }
+    nav ul, .dropdownBtn, .dropdown-content a{
+    font-size: 4vw;
+  }
   }
 </style>

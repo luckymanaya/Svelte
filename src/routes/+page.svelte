@@ -50,7 +50,6 @@
     placeholder="What is your name?"
     maxlength="20"
   />
-  <!-- Displays greeting based on local time -->
   <Greeting {greeting} />
   <h2 style="margin-bottom: 5%">
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
@@ -78,7 +77,6 @@
 
 <style>
   .mainPicture {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,10 +98,5 @@
   }
   .firstPageText:hover .tooltipText {
     visibility: visible;
-  }
-  @media screen and (max-width: 375px) {
-    .mainPicture {
-      width: 165vw;
-    }
   }
 </style>

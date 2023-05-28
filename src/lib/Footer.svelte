@@ -34,8 +34,7 @@
   }
   @media screen and (max-width: 375px) {
     footer {
-      font-size: 9vw;
-      width: 144vw;
+      font-size: 5vw;
     }
   }
 </style>

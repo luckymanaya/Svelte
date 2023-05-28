@@ -40,7 +40,7 @@
     }
    @media screen and (max-width: 375px) {
     .slideshow img{
-        width: 120vw;
-    }
-  }
+        width: 50vw;
+    } 
+   }
 </style>

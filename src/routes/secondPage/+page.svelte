@@ -18,7 +18,7 @@
         type="range"
         bind:value={fontSize}
         min="20"
-        max="45"
+        max="35"
       />
     </p>
     <p style="font-size: {fontSize}px" transition:fly={{ y: 200 }}>
@@ -42,17 +42,10 @@
 <style>
   .voguePic {
     background-image: url("images/vogue.jpg");
-    width: auto;
-    height: 100vh;
     padding: 3rem;
   }
   mark {
     background-color: var(--otherColor);
     color: var(--textColor);
-  }
-  @media screen and (max-width: 375px) {
-    .voguePic {
-      width: 160vw;
-    }
   }
 </style>

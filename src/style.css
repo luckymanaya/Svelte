@@ -12,7 +12,6 @@ body {
 h1 {
   font-size: 3vw;
 }
-
 h2 {
   font-size: 2vw;
 }
@@ -72,6 +71,7 @@ button {
 .backgroundPic {
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 /*Layout Structure*/
@@ -81,9 +81,16 @@ button {
   min-height: 100vh;
 }
 
+/* Media Queries */
 @media screen and (max-width: 375px) {
   button {
-    font-size: 9vw;
-    width: 40vw;
+    font-size: 5vw;
+    width: 25vw;
+  }
+  h2, p{
+    font-size:4vw;
+  }
+  h1{
+    font-size:5vw;
   }
 }
