@@ -99,4 +99,9 @@
   .firstPageText:hover .tooltipText {
     visibility: visible;
   }
+  @media screen and (max-width: 375px) {
+    .mainPicture input {
+      font-size: 4vw;
+    }
+  }
 </style>

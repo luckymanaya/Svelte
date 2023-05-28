@@ -57,7 +57,7 @@
     justify-content: right;
   }
   @media screen and (max-width: 375px) {
-    .pageNum h2{
+    .pageNum h2 {
       font-size: 8vw;
     }
   }

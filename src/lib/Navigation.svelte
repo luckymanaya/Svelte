@@ -65,7 +65,7 @@
     font-size: 2.3vw;
     list-style: none;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
   /*Dropdown Styling*/
   .dropdownBtn {
@@ -82,8 +82,7 @@
   }
   .dropdown-content {
     position: absolute;
-    background-color: lightgray;
-    border-radius: 1rem;
+    background-color: var(--bgColor);
   }
   .dropdown-content a {
     color: var(--otherColor);
@@ -92,13 +91,17 @@
   }
   .dropdown-content a:hover {
     background-color: var(--otherColor);
-    border-radius: inherit;
     color: var(--textColor);
   }
-
-  @media screen and (max-width: 375px) {
-    nav ul, .dropdownBtn, .dropdown-content a{
-    font-size: 4vw;
+  .dropdown-content,
+  .dropdown-content a:hover {
+    border-radius: 1rem;
   }
+  @media screen and (max-width: 375px) {
+    nav ul,
+    .dropdownBtn,
+    .dropdown-content a {
+      font-size: 4vw;
+    }
   }
 </style>

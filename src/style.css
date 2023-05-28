@@ -1,5 +1,6 @@
 :root {
   --textColor: white;
+  --bgColor: lightgray;
   --otherColor: black;
 }
 body {
@@ -83,14 +84,15 @@ button {
 
 /* Media Queries */
 @media screen and (max-width: 375px) {
-  button {
+  h1 {
     font-size: 5vw;
+  }
+  h2,
+  p,
+  button {
+    font-size: 4vw;
+  }
+  button {
     width: 25vw;
-  }
-  h2, p{
-    font-size:4vw;
-  }
-  h1{
-    font-size:5vw;
   }
 }

@@ -13,10 +13,10 @@ export let pictureDetails = [
   },
   {
     image: "images/castle.jpg",
-    text: "1"
+    text: "Express"
   },
   {
     image: "images/three.jpg",
-    text: "2"
+    text: "Yourself"
   },
 ];

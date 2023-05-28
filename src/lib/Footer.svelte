@@ -21,7 +21,7 @@
 
 <style>
   footer {
-    background: rgb(155, 152, 152);
+    background: var(--bgColor);
     font-size: 1.3vw;
     margin-top: auto;
     padding: 3rem;
