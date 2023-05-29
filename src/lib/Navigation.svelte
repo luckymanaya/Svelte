@@ -3,7 +3,6 @@
   let isClicked1 = false;
   let isClicked2 = false;
 
-  //These functions handles the dropdown menu for pages and socials
   const handlePageDropDown = () => {
     isClicked1 = !isClicked1;
   };

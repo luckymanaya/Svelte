@@ -1,5 +1,5 @@
 <script>
-  export let greeting = "";
+  export let greeting;
 
   const today = new Date();
   const time = today.getHours();

@@ -1,17 +1,12 @@
 <script>
-  const slideImages = [
-    "images/flower.jpg",
-    "images/black hat.jpg",
-    "images/vibes.jpg",
-  ];
+  export let slideImages;
 
   let currentSlide = 0;
 
-  //A function that displays next image
+  //These functions displays the next and previous images
   const nextSlide = () => {
     currentSlide = (currentSlide + 1) % slideImages.length;
   };
-  //A function that displays previous image
   const previousSlide = () => {
     currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
   };
@@ -34,7 +29,7 @@
   }
   .slideshow img {
     width: 25vw;
-    height: 80vh;
+    height: 75vh;
     border-radius: 1rem;
   }
   @media screen and (max-width: 375px) {

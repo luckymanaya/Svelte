@@ -19,6 +19,7 @@
         .then((r) => r.json())
         .then((data) => {
           img = data.results[0].urls.full;
+          console.log(img);
         });
     }, 2000);
   }
@@ -51,7 +52,7 @@
     maxlength="20"
   />
   <Greeting {greeting} />
-  <h2 style="margin-bottom: 5%">
+  <h2>
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
     to Lucky's Website! &#x2661
   </h2>
@@ -92,7 +93,6 @@
   .firstPageText h2:hover {
     opacity: 1;
   }
-  /*Tooltip Text Styling*/
   .firstPageText .tooltipText {
     visibility: hidden;
   }

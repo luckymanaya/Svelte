@@ -10,7 +10,6 @@ body {
   font-family: "Arial";
   cursor: default;
 }
-/*Text Styling*/
 h1 {
   font-size: 3vw;
 }
@@ -29,8 +28,6 @@ p {
   text-align: center;
   color: var(--textColor);
 }
-
-/*Link Styling*/
 a {
   color: var(--otherColor);
 }
@@ -42,8 +39,6 @@ a:link {
 a:hover {
   color: var(--textColor);
 }
-
-/*Flexbox*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +47,6 @@ a:hover {
 .flex-container .item {
   flex: 1;
 }
-/*Buttons Styling*/
 .button-container {
   display: flex;
   flex-direction: row;
@@ -75,15 +69,12 @@ button {
   background-position: center;
   height: 100vh;
 }
-
 /*Layout Structure*/
 .main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
-/* Media Queries */
 @media screen and (max-width: 375px) {
   h1 {
     font-size: 5vw;

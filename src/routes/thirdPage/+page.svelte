@@ -5,6 +5,12 @@
 
   let subset = [...pictureDetails];
   subset = subset.splice(0, 3);
+
+  let slideImages = [
+    "images/flower.jpg",
+    "images/black hat.jpg",
+    "images/vibes.jpg",
+  ];
 </script>
 
 <PictureList pictureDetails={subset} />
@@ -12,4 +18,4 @@
 <h2>
   Showcase your creativity through clothing choices... and have fun with it!
 </h2>
-<Slideshow />
+<Slideshow slideImages = {slideImages}/>
