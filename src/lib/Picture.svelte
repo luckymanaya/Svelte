@@ -32,11 +32,10 @@
   }
   @media screen and (max-width: 375px) {
     .picture {
-      width: 70vw;
-      height: 30vh;
+      height: 30vh; 
     }
     .text {
-      font-size: 8vw;
+      font-size: 6vw;
     }
   }
 </style>
