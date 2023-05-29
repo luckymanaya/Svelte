@@ -34,11 +34,13 @@
   }
   .slideshow img {
     width: 25vw;
+    height: 80vh;
     border-radius: 1rem;
   }
   @media screen and (max-width: 375px) {
     .slideshow img {
       width: 75vw;
+      height: 70vh;
     }
   }
 </style>

@@ -11,9 +11,8 @@
 <style>
   .picture {
     width: 25vw;
-    height: 100vh;
     padding: 3rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     margin-inline: auto;
     margin-top: 2rem;
     transition: transform 0.5s;

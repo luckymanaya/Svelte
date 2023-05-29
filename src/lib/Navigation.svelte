@@ -95,7 +95,7 @@
   }
   .dropdown-content,
   .dropdown-content a:hover {
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
   }
   @media screen and (max-width: 375px) {
     nav ul,
