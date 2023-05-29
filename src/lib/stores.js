@@ -13,10 +13,20 @@ export let pictureDetails = [
   },
   {
     image: "images/castle.jpg",
-    text: "Express"
+    text: "Express",
   },
   {
     image: "images/three.jpg",
-    text: "Yourself"
+    text: "Yourself",
   },
+];
+
+export let slideImages = [
+  "images/flower.jpg",
+  "images/black hat.jpg",
+  "images/vibes.jpg",
+  "images/magazine.jpg",
+  "images/bread.jpg",
+  "images/b&w.jpg",
+  "images/wine.jpg",
 ];

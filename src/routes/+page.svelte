@@ -1,6 +1,6 @@
 <script>
   import { browser } from "$app/environment";
-  import { pictureDetails } from "$lib/stores.js";
+  import { pictureDetails } from "$lib/stores";
   import PictureList from "$lib/PictureList.svelte";
   import Greeting from "$lib/Greeting.svelte";
 
@@ -31,17 +31,13 @@
   };
   //A function that prevents numbers and special characters from displaying in the textbox
   const onlyLetters = (e) => {
-    if (
-      /^[0-9(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)]*$/.test(
-        e.key
-      )
-    ) {
+    if (/^[^a-zA-Z]*$/.test(e.key)) {
       e.preventDefault();
       return false;
     }
   };
   let subset = [...pictureDetails];
-  subset = subset.splice(3, 5);
+  subset = subset.splice(3);
 </script>
 
 <section class="backgroundPic mainPicture" style="background-image:url({img})">

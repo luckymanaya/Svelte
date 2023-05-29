@@ -1,5 +1,7 @@
 <script>
   import { fly } from "svelte/transition";
+  import Slideshow from "$lib/Slideshow.svelte";
+  import { slideImages } from "$lib/stores";
 
   let fontSize = 30;
   let displayText = false;
@@ -7,6 +9,9 @@
   const animateText = () => {
     displayText = !displayText;
   };
+
+  let subsetSlides = [...slideImages];
+  subsetSlides = subsetSlides.splice(3);
 </script>
 
 <section class="backgroundPic voguePic">
@@ -38,6 +43,8 @@
     </p>
   {/if}
 </section>
+
+<Slideshow slideImages={subsetSlides} />
 
 <style>
   .voguePic {
