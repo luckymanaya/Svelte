@@ -1,4 +1,5 @@
 <script>
+  import { fade } from "svelte/transition";
   export let slideImages;
 
   let currentSlide = 0;
@@ -18,9 +19,12 @@
 </div>
 
 <section class="slideshow">
-  {#if slideImages.length > 0}
+  <!-- {#if slideImages.length > 0}
     <img src={slideImages[currentSlide]} />
-  {/if}
+  {/if} -->
+  {#each [slideImages[currentSlide]] as src (currentSlide)}
+	<img transition:fade {src} alt="" />	
+{/each}
 </section>
 
 <style>
