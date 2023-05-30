@@ -22,7 +22,7 @@
 ### Website #1: [Halo Media Website](https://halomedia.com/)
 1. **Sans-serif fonts**
 
-<p align = "justify">I chose the sans-serif fonts to incorporate into my website. This is because according to my research, sans-serif fonts are more ‘friendly’ and ‘approachable’ which is an effect I want my website to have. On the other hand, serif fonts are considered 'classic’ and ‘elegant’ and are ideal if you want to make your website appear ‘serious’. In addition, sans-serif fonts are considered to be more legible than serif fonts as they are more ‘clean’ and ‘simple’ due to its lack of ‘curls’ and additional ‘lines.’ This increased readability makes it ideal for people who have dyslexia or reading difficulties to read the text, which is also a feature I want in order to increase the accessibility of my website. As a result, I will use the font, ‘Arial’, as it is one of the fonts that appears ‘less crowded’. 
+<p align = "justify">I chose the sans-serif fonts to incorporate into my website. This is because according to my research, sans-serif fonts are more ‘friendly’ and ‘approachable’ which is an effect I want my website to have. On the other hand, serif fonts are considered to be 'classic’ and ‘elegant’ and are ideal if you want to make your website appear ‘serious’. In addition, sans-serif fonts are considered to be more legible than serif fonts as they are more ‘clean’ and ‘simple’ due to its lack of ‘curls’ and additional ‘lines.’ This increased readability makes it ideal for people who have dyslexia or reading difficulties to read the text, which is also a feature I want in order to increase the accessibility of my website. As a result, I will use the font, ‘Arial’, as it is one of the fonts that appears ‘less crowded’. 
 </p>
 
 2. **Multiple Images**
@@ -38,7 +38,7 @@
 ### Website #2: [Selected Website](https://selectedbase.com/)
 1. **Large font size** 
 
-<p align = "justify">I want to use relatively large font sizes for my website because not only does it make the text legible, but it also makes it readable for the users to read. For example, a 12pt font size may be legible, however, it is not large enough to make the users actually stay in your website and read the whole text as readability takes emotions and ease of reading into consideration. As a result, I am going to make the text to have a larger font size, but not too large that it takes up a lot of space in the website. This is so that it catches users’ attention and I will also try to display less text as people do not want to read a long, daunting paragraph with a very small font size.
+<p align = "justify">I want to use relatively large font sizes to make the text easy to read but not too large that it takes up a lot of space in the website. This is so that it catches users’ attention. I will also try to display less text as people do not want to read a long, daunting paragraph.
 </p>
 
 2. **Black & White colors** 
@@ -49,7 +49,7 @@
 ### Website #3: [Ana Deufont - Portfolio Photography Website](https://polite-hill-00eb08f10.1.azurestaticapps.net/)
 1. **Navigation Buttons**
 
-<p align = "justify">Buttons increase interactivity between the users and the site. For my website, I will make a ‘Next’ button in order for the user to go to the next page as well as a ‘Go Back’ button so that the user can go back to the previous page whenever they like which supports one of the usability heuristics known as ‘User Control & Freedom’, meaning the user can undo an action or a mistake, allowing them to have more control and freedom. This feature will make my website to behave more like a magazine which is what I intended to do. Also, I am going to set the cursor to a 'pointer' to make the buttons appear clickable.
+<p align = "justify">Buttons increase interactivity between the users and the site. For my website, I will make a ‘Next’ button in order for the user to go to the next page as well as a ‘Go Back’ button so that the user can go back to the previous page whenever they like which supports one of the usability heuristics known as ‘User Control & Freedom’. This feature will make my website to behave more like a magazine which is what I intended to do. Also, I am going to set the cursor to a 'pointer' to make the buttons appear clickable.
 </p>
 
 2. **Slideshow**
