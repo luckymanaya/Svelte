@@ -19,12 +19,9 @@
 </div>
 
 <section class="slideshow">
-  <!-- {#if slideImages.length > 0}
-    <img src={slideImages[currentSlide]} />
-  {/if} -->
   {#each [slideImages[currentSlide]] as src (currentSlide)}
-	<img in:fade={{ delay: 200 }} {src}/>	
-{/each}
+    <img in:fade={{ delay: 200 }} {src} />
+  {/each}
 </section>
 
 <style>

@@ -19,6 +19,11 @@
     <h2>1</h2>
   </section>
 {:else if $page.url.pathname === "/secondPage"}
+  <section class="BackToTop">
+    <a href="#">
+      <button>Back to top &uarr;</button>
+    </a>
+  </section>
   <section class="button-container">
     <a href="/">
       <button>Go Back</button>
