@@ -16,39 +16,43 @@
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
-      <section class="dropdown">
-        <button on:click={handlePageDropDown} class="dropdownBtn"
-          >Pages&#9660
-          {#if isClicked1}
-            <section class="dropdown-content">
-              <a href="/">Page 1</a>
-              <a href="/secondPage">Page 2</a>
-              <a href="/thirdPage">Page 3</a>
-            </section>
-          {/if}
-        </button>
-      </section>
-      <section class="dropdown">
-        <button on:click={handleSocialsDropDown} class="dropdownBtn"
-          >Socials&#9660
-          {#if isClicked2}
-            <section class="dropdown-content">
-              <a href="#0">
-                <SocialIcons network="instagram" />
-              </a>
-              <a href="#0">
-                <SocialIcons network="facebook" />
-              </a>
-              <a href="#0">
-                <SocialIcons network="youtube" />
-              </a>
-              <a href="https://github.com/luckymanaya">
-                <SocialIcons network="github" />
-              </a>
-            </section>
-          {/if}
-        </button>
-      </section>
+      <li>
+        <section class="dropdown">
+          <button on:click={handlePageDropDown} class="dropdownBtn"
+            >Pages&#9660
+            {#if isClicked1}
+              <section class="dropdown-content">
+                <a href="/">Page 1</a>
+                <a href="/secondPage">Page 2</a>
+                <a href="/thirdPage">Page 3</a>
+              </section>
+            {/if}
+          </button>
+        </section>
+      </li>
+      <li>
+        <section class="dropdown">
+          <button on:click={handleSocialsDropDown} class="dropdownBtn"
+            >Socials&#9660
+            {#if isClicked2}
+              <section class="dropdown-content">
+                <a href="#0">
+                  <SocialIcons network="instagram" />
+                </a>
+                <a href="#0">
+                  <SocialIcons network="facebook" />
+                </a>
+                <a href="#0">
+                  <SocialIcons network="youtube" />
+                </a>
+                <a href="https://github.com/luckymanaya">
+                  <SocialIcons network="github" />
+                </a>
+              </section>
+            {/if}
+          </button>
+        </section>
+      </li>
       <li><a href="/contact">Contact Me</a></li>
     </ul>
   </nav>

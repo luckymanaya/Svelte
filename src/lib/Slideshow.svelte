@@ -29,14 +29,13 @@
     align-self: center;
   }
   .slideshow img {
-    width: 25vw;
+    width: 100%;
     height: 75vh;
     border-radius: 1rem;
   }
   @media screen and (max-width: 375px) {
     .slideshow img {
-      width: 75vw;
-      height: 70vh;
+      height: 50vh;
     }
   }
 </style>

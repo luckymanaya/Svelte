@@ -25,14 +25,13 @@
     -webkit-text-stroke-width: 0.12vw;
     -webkit-text-stroke-color: var(--otherColor);
     transition: transform 0.5s;
-    word-wrap: break-word;
   }
   .text:hover {
     transform: scale(1.1);
   }
   @media screen and (max-width: 375px) {
     .picture {
-      height: 30vh; 
+      height: 30vh;
     }
     .text {
       font-size: 6vw;
