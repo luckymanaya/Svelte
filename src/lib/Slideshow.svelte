@@ -23,7 +23,7 @@
     <img src={slideImages[currentSlide]} />
   {/if} -->
   {#each [slideImages[currentSlide]] as src (currentSlide)}
-	<img transition:fade {src} alt="" />	
+	<img in:fade={{ delay: 200 }} {src}/>	
 {/each}
 </section>
 
