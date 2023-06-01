@@ -7,13 +7,6 @@
   </p>
 </section>
 
-<section class="contact-container">
-  <p>Contact Me</p>
-  <p>Phone Number: 12345</p>
-  <p>Email: email@address.com</p>
-</section>
-<style>
-  .contact-container p {
-    text-align: justify;
-  }
-</style>
+<h2>Got any questions? I'd love to hear from you!</h2>
+<p>Phone Number: 12345</p>
+<p>Email: email@address.com</p>
