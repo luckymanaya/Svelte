@@ -1,22 +1,9 @@
-<script>
-  import { page } from "$app/stores";
-</script>
-
 <footer>
-  {#if $page.url.pathname === "/contact"}
-    Images:
-    <a href="https://unsplash.com/">Unsplash Website</a> | Privacy Policy Link:
-    <a href="#0">Privacy Policy</a>
-    <br />
-    &copy; 2023, Lucky Manaya
-  {:else}
-    Images:
-    <a href="https://unsplash.com/">Unsplash Website</a> | Contact Link:
-    <a href="/contact">Contact Me</a> | Privacy Policy Link:
-    <a href="#0">Privacy Policy</a>
-    <br />
-    &copy; 2023, Lucky Manaya
-  {/if}
+  Images:
+  <a href="https://unsplash.com/">Unsplash Website</a> | Privacy Policy:
+  <a href="#0">Privacy Policy</a>
+  <br />
+  &copy; 2023, Lucky Manaya
 </footer>
 
 <style>

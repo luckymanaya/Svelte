@@ -1,13 +1,7 @@
 <script>
-  import SocialIcons from "@rodneylab/svelte-social-icons";
-  let isClicked1 = false;
-  let isClicked2 = false;
-
+  let isClicked = false;
   const handlePageDropDown = () => {
-    isClicked1 = !isClicked1;
-  };
-  const handleSocialsDropDown = () => {
-    isClicked2 = !isClicked2;
+    isClicked = !isClicked;
   };
 </script>
 
@@ -15,12 +9,11 @@
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
       <li>
         <section class="dropdown">
           <button on:click={handlePageDropDown} class="dropdownBtn"
-            >Pages&#9660
-            {#if isClicked1}
+            >Pages <i class="fa-solid fa-chevron-down fa-xs" />
+            {#if isClicked}
               <section class="dropdown-content">
                 <a href="/">Page 1</a>
                 <a href="/secondPage">Page 2</a>
@@ -30,30 +23,7 @@
           </button>
         </section>
       </li>
-      <li>
-        <section class="dropdown">
-          <button on:click={handleSocialsDropDown} class="dropdownBtn"
-            >Socials&#9660
-            {#if isClicked2}
-              <section class="dropdown-content">
-                <a href="#0">
-                  <SocialIcons network="instagram" />
-                </a>
-                <a href="#0">
-                  <SocialIcons network="facebook" />
-                </a>
-                <a href="#0">
-                  <SocialIcons network="youtube" />
-                </a>
-                <a href="https://github.com/luckymanaya">
-                  <SocialIcons network="github" />
-                </a>
-              </section>
-            {/if}
-          </button>
-        </section>
-      </li>
-      <li><a href="/contact">Contact Me</a></li>
+      <li><a href="/about">About</a></li>
     </ul>
   </nav>
 </section>

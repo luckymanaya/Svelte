@@ -9,7 +9,7 @@
     </a>
   </section>
 
-  <section class="button-container">
+  <section class="row-container">
     <a href="/secondPage">
       <button>Next</button>
     </a>
@@ -24,7 +24,7 @@
       <button>Back to top &uarr;</button>
     </a>
   </section>
-  <section class="button-container">
+  <section class="row-container">
     <a href="/">
       <button>Go Back</button>
     </a>
@@ -42,7 +42,7 @@
       <button>Back to top &uarr;</button>
     </a>
   </section>
-  <section class="button-container">
+  <section class="row-container">
     <a href="/">
       <button>Go Back to 1</button>
     </a>

@@ -53,7 +53,7 @@
     to Lucky's Website! &#x2661
   </h2>
 
-  <section class="button-container">
+  <section class="row-container">
     <a href="#nextSection">
       <button on:click={scrollFunction}>Continue</button>
     </a>

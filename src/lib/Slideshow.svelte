@@ -13,7 +13,7 @@
   };
 </script>
 
-<div class="button-container">
+<div class="row-container">
   <button on:click={previousSlide}>&#60</button>
   <button on:click={nextSlide}>&#62</button>
 </div>
