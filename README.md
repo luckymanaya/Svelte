@@ -125,3 +125,6 @@ https://rodneylab.com/svelte-social-icons/ (Social Media Icons)
 
 ### Media Queries
 https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
+### Icons
+https://fontawesome.com/
