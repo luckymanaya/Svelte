@@ -41,15 +41,18 @@
     display: flex;
     justify-content: space-evenly;
   }
-  nav ul li a{
-    color: var(--textColor)
+  nav ul li a {
+    color:var(--bgColor);
+  }
+  nav ul li a:hover {
+    color: var(--textColor);
   }
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
     font-size: 2.3vw;
     border: none;
-    color: var(--textColor);
+    color: var(--bgColor);
     margin: 0;
     padding: 0;
     width: auto;
