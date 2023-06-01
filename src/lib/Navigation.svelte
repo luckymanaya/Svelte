@@ -1,13 +1,8 @@
 <script>
   let isClicked = false;
-  // let isClicked2 = false;
-
   const handlePageDropDown = () => {
     isClicked = !isClicked;
   };
-  // const handleSocialsDropDown = () => {
-  //   isClicked2 = !isClicked2;
-  // };
 </script>
 
 <section class="nav-container">
@@ -17,7 +12,7 @@
       <li>
         <section class="dropdown">
           <button on:click={handlePageDropDown} class="dropdownBtn"
-            >Pages&#9660
+            >Pages <i class="fa-solid fa-chevron-down fa-xs" />
             {#if isClicked}
               <section class="dropdown-content">
                 <a href="/">Page 1</a>
