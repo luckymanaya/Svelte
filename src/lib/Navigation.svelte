@@ -30,7 +30,8 @@
 
 <style>
   .nav-container {
-    background: gray;
+    position: fixed;
+    width: 100vw;
   }
   nav ul {
     padding: 1rem;
@@ -40,12 +41,15 @@
     display: flex;
     justify-content: space-evenly;
   }
+  nav ul li a{
+    color: var(--textColor)
+  }
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
     font-size: 2.3vw;
     border: none;
-    color: var(--otherColor);
+    color: var(--textColor);
     margin: 0;
     padding: 0;
     width: auto;

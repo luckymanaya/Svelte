@@ -5,7 +5,7 @@
 {#if $page.url.pathname === "/"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top &uarr;</button>
+      <button>Back to top</button>
     </a>
   </section>
 
@@ -21,7 +21,7 @@
 {:else if $page.url.pathname === "/secondPage"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top &uarr;</button>
+      <button>Back to top</button>
     </a>
   </section>
   <section class="row-container">
@@ -39,7 +39,7 @@
 {:else if $page.url.pathname === "/thirdPage"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top &uarr;</button>
+      <button>Back to top</button>
     </a>
   </section>
   <section class="row-container">
