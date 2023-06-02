@@ -6,22 +6,24 @@
 </script>
 
 <section class="nav-container">
+  <div class="veil">
+  </div>
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
       <li>
-        <section class="dropdown">
+        <div class="dropdown">
           <button on:click={handlePageDropDown} class="dropdownBtn"
             >Pages <i class="fa-solid fa-chevron-down fa-xs" />
             {#if isClicked}
-              <section class="dropdown-content">
+              <div class="dropdown-content">
                 <a href="/">Page 1</a>
                 <a href="/secondPage">Page 2</a>
                 <a href="/thirdPage">Page 3</a>
-              </section>
+              </div>
             {/if}
           </button>
-        </section>
+        </div>
       </li>
       <li><a href="/about">About</a></li>
     </ul>
@@ -32,6 +34,7 @@
   .nav-container {
     position: fixed;
     width: 100vw;
+    z-index:1000;
   }
   nav ul {
     padding: 1rem;
@@ -46,6 +49,16 @@
   }
   nav ul li a:hover {
     color: var(--textColor);
+  }
+  .veil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: -1;
   }
   /*Dropdown Styling*/
   .dropdownBtn {
