@@ -32,8 +32,7 @@
 
 <style>
   .nav-container {
-    position: fixed;
-    width: 100vw;
+    position: relative;
     z-index:1000;
   }
   nav ul {
