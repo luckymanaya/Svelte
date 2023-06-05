@@ -61,13 +61,16 @@
     display: flex;
     justify-content: right;
   }
-  .BackToTop button{
+  .BackToTop button {
     border-radius: 2rem;
-    width:3vw;
+    width: 3vw;
   }
   @media screen and (max-width: 375px) {
     .pageNum h2 {
       font-size: 8vw;
+    }
+    .BackToTop button {
+      width: 10vw;
     }
   }
 </style>

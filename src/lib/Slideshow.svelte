@@ -33,9 +33,15 @@
     height: 75vh;
     border-radius: 1rem;
   }
+  .row-container button {
+    width: 3vw;
+  }
   @media screen and (max-width: 375px) {
     .slideshow img {
       height: 50vh;
+    }
+    .row-container button {
+      width: 15vw;
     }
   }
 </style>
