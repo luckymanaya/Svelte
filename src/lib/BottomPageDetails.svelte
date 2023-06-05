@@ -3,9 +3,9 @@
 </script>
 
 {#if $page.url.pathname === "/"}
-  <section class="BackToTop">
+  <section class="BackToTop"> 
     <a href="#">
-      <button>Back to top &uarr;</button>
+      <button>Back to top <i class="fa-solid fa-arrow-up fa-xs"></i></button>
     </a>
   </section>
 
@@ -21,7 +21,7 @@
 {:else if $page.url.pathname === "/secondPage"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top &uarr;</button>
+      <button>Back to top <i class="fa-solid fa-arrow-up fa-xs"></i></button>
     </a>
   </section>
   <section class="row-container">
@@ -39,7 +39,7 @@
 {:else if $page.url.pathname === "/thirdPage"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top &uarr;</button>
+      <button>Back to top <i class="fa-solid fa-arrow-up fa-xs"></i></button>
     </a>
   </section>
   <section class="row-container">
