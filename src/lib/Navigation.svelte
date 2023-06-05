@@ -1,20 +1,23 @@
 <script>
+  let chevron = "fa-solid fa-chevron-down fa-xs";
   let isClicked = false;
   const handlePageDropDown = () => {
     isClicked = !isClicked;
+    chevron == "fa-solid fa-chevron-down fa-xs"
+      ? (chevron = "fa-solid fa-chevron-up fa-xs")
+      : (chevron = "fa-solid fa-chevron-down fa-xs");
   };
 </script>
 
 <section class="nav-container">
-  <div class="veil">
-  </div>
+  <div class="veil" />
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
       <li>
         <div class="dropdown">
           <button on:click={handlePageDropDown} class="dropdownBtn"
-            >Pages <i class="fa-solid fa-chevron-down fa-xs" />
+            >Pages <i class={chevron} />
             {#if isClicked}
               <div class="dropdown-content">
                 <a href="/">Page 1</a>
@@ -33,7 +36,7 @@
 <style>
   .nav-container {
     position: relative;
-    z-index:1000;
+    z-index: 1000;
   }
   nav ul {
     padding: 1rem;
@@ -44,12 +47,12 @@
     justify-content: space-evenly;
   }
   nav ul li a {
-    color:var(--bgColor);
+    color: var(--bgColor);
   }
   nav ul li a:hover {
     color: var(--textColor);
   }
-  .veil{
+  .veil {
     position: absolute;
     top: 0;
     left: 0;
