@@ -23,10 +23,6 @@
   .text {
     color: var(--textColor);
     text-shadow: 1px 1px 3px black;
-    transition: transform 0.5s;
-  }
-  .text:hover {
-    transform: scale(1.1);
   }
   @media screen and (max-width: 375px) {
     .picture {
