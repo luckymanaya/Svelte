@@ -3,9 +3,9 @@
 </script>
 
 {#if $page.url.pathname === "/"}
-  <section class="BackToTop"> 
+  <section class="BackToTop">
     <a href="#">
-      <button>Back to top <i class="fa-solid fa-arrow-up fa-xs"></i></button>
+      <button><i class="fa-solid fa-arrow-up fa-xs" /></button>
     </a>
   </section>
 
@@ -21,7 +21,7 @@
 {:else if $page.url.pathname === "/secondPage"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top <i class="fa-solid fa-arrow-up fa-xs"></i></button>
+      <button><i class="fa-solid fa-arrow-up fa-xs" /></button>
     </a>
   </section>
   <section class="row-container">
@@ -39,7 +39,7 @@
 {:else if $page.url.pathname === "/thirdPage"}
   <section class="BackToTop">
     <a href="#">
-      <button>Back to top <i class="fa-solid fa-arrow-up fa-xs"></i></button>
+      <button><i class="fa-solid fa-arrow-up fa-xs" /></button>
     </a>
   </section>
   <section class="row-container">
@@ -60,6 +60,10 @@
   .BackToTop {
     display: flex;
     justify-content: right;
+  }
+  .BackToTop button{
+    border-radius: 2rem;
+    width:3vw;
   }
   @media screen and (max-width: 375px) {
     .pageNum h2 {
