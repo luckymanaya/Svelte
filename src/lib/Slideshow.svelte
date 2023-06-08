@@ -36,6 +36,7 @@
   .row-container button {
     width: 3vw;
     font-size: var(--h2Size);
+    margin: 5rem 5rem 2rem;
   }
   @media screen and (max-width: 375px) {
     .slideshow img {
