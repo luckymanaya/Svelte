@@ -6,8 +6,9 @@
   <h1>About</h1>
   <h2>Hi There!</h2>
   <p>
-    Welcome to <big><em>Lucky's website</em></big>! where fashion related
-    content is given to you &#x2661
+    Welcome to Lucky's website! where fashion related content is given to you <i
+      class="fa-regular fa-heart fa-sm"
+    />
   </p>
 </section>
 
@@ -15,24 +16,48 @@
 <p>Phone Number: 12345</p>
 <p>Email: email@address.com</p>
 
-<h2>Follow my socials! &#x2661</h2>
+<h2>Follow my socials! <i class="fa-regular fa-heart fa-sm" /></h2>
 <section class="row-container">
   <a href="#0">
-    <SocialIcons network="instagram" />
-  </a>
-  <a href="#0">
-    <SocialIcons network="facebook" />
-  </a>
-  <a href="#0">
-    <SocialIcons network="youtube" />
-  </a>
-  <a href="https://github.com/luckymanaya">
-    <SocialIcons network="github" />
+    <SocialIcons
+      network="instagram"
+      width="85"
+      height="85"
+      fgColor="#eeeeee"
+      bgColor="#111111"
+    />
+    <a href="#0">
+      <SocialIcons
+        network="youtube"
+        width="85"
+        vw
+        height="85"
+        fgColor="#eeeeee"
+        bgColor="#111111"
+      />
+    </a>
+    <a href="https://github.com/luckymanaya">
+      <SocialIcons
+        network="github"
+        width="85"
+        vw
+        height="85"
+        fgColor="#eeeeee"
+        bgColor="#111111"
+      />
+    </a>
   </a>
 </section>
 
 <style>
   a {
     margin: 0 1rem 1rem;
+  }
+  @media screen and (max-width: 375px) {
+    h1,
+    h2,
+    p {
+      font-size: 6vw;
+    }
   }
 </style>

@@ -50,7 +50,7 @@
   <Greeting {greeting} />
   <h2>
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
-    to Lucky's Website! &#x2661
+    to Lucky's Website! <i class="fa-regular fa-heart fa-bounce"></i>
   </h2>
 
   <section class="row-container">
@@ -81,7 +81,7 @@
   .mainPicture input {
     text-align: center;
     margin-inline: auto;
-    font-size: 1.8vw;
+    font-size: var(--pSize);
   }
   .firstPageText h2 {
     opacity: 0.7;

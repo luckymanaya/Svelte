@@ -41,7 +41,6 @@
   nav ul {
     padding: 1rem;
     margin: 0;
-    font-size: 2.3vw;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -65,12 +64,15 @@
   /*Dropdown Styling*/
   .dropdownBtn {
     background-color: transparent;
-    font-size: 2.3vw;
     border: none;
     color: var(--bgColor);
     margin: 0;
     padding: 0;
     width: auto;
+  }
+  .dropdownBtn,
+  nav ul {
+    font-size: var(--h2Size);
   }
   .dropdownBtn:hover {
     color: var(--textColor);
@@ -82,7 +84,7 @@
   .dropdown-content a {
     color: var(--otherColor);
     display: block;
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .dropdown-content a:hover {
     background-color: var(--otherColor);

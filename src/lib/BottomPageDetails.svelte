@@ -43,14 +43,10 @@
     </a>
   </section>
   <section class="row-container">
-    <a href="/">
-      <button>Go Back to 1</button>
-    </a>
     <a href="/secondPage">
       <button>Go Back</button>
     </a>
   </section>
-
   <section class="pageNum">
     <h2>3</h2>
   </section>
@@ -62,15 +58,17 @@
     justify-content: right;
   }
   .BackToTop button {
-    border-radius: 2rem;
-    width: 3vw;
+    border-radius: 4rem;
+    width: 4vw;
+    font-size: var(--h2Size);
   }
   @media screen and (max-width: 375px) {
     .pageNum h2 {
       font-size: 8vw;
     }
     .BackToTop button {
-      width: 10vw;
+      width: 14vw;
+      font-size: 7vw;
     }
   }
 </style>
