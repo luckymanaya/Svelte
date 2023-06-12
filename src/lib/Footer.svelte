@@ -19,7 +19,7 @@
   footer a:hover {
     color: var(--textColor);
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 728px) {
     footer {
       font-size: 5vw;
     }

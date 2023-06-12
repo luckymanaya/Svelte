@@ -62,12 +62,12 @@
     width: 4vw;
     font-size: var(--h2Size);
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 728px) {
     .pageNum h2 {
       font-size: 8vw;
     }
     .BackToTop button {
-      width: 14vw;
+      width: 12vw;
       font-size: 7vw;
     }
   }

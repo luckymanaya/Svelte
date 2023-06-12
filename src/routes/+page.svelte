@@ -50,12 +50,15 @@
   <Greeting {greeting} />
   <h2>
     Welcome {name.charAt(0).toUpperCase() + name.slice(1) || "Stranger"}
-    to Lucky's Website! <i class="fa-regular fa-heart fa-bounce"></i>
+    to Lucky's Website! <i class="fa-regular fa-heart fa-bounce" />
   </h2>
 
   <section class="row-container">
     <a href="#nextSection">
-      <button on:click={scrollFunction}>Continue</button>
+      <button class="desktop" on:click={scrollFunction}>Continue</button>
+      <button class="mobile" on:click={scrollFunction}
+        ><i class="fa-sharp fa-solid fa-arrow-down" /></button
+      >
     </a>
   </section>
 </section>
@@ -78,11 +81,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .mainPicture input {
-    text-align: center;
-    margin-inline: auto;
-    font-size: var(--pSize);
-  }
+
   .firstPageText h2 {
     opacity: 0.7;
   }
@@ -90,14 +89,9 @@
     opacity: 1;
   }
   .firstPageText .tooltipText {
-    visibility: hidden;
+    display: none;
   }
   .firstPageText:hover .tooltipText {
-    visibility: visible;
-  }
-  @media screen and (max-width: 375px) {
-    .mainPicture input {
-      font-size: 4vw;
-    }
+    display: block;
   }
 </style>

@@ -24,7 +24,7 @@
     color: var(--textColor);
     text-shadow: 1px 1px 3px black;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 728px) {
     .picture {
       height: 30vh;
       width: 50vw;

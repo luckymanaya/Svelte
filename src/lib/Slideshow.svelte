@@ -34,17 +34,17 @@
     border-radius: 1rem;
   }
   .row-container button {
-    width: 3vw;
+    width: 5vw;
     font-size: var(--h2Size);
     margin: 5rem 5rem 2rem;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 728px) {
     .slideshow img {
       height: 50vh;
     }
     .row-container button {
       width: 15vw;
-      font-size:5vw;
+      font-size: 5vw;
     }
   }
 </style>

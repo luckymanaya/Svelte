@@ -57,7 +57,6 @@ button {
   margin: 1rem;
   font-size: var(--pSize);
   border-radius: 2rem;
-  width: 8vw;
   cursor: pointer;
 }
 .backgroundPic {
@@ -71,7 +70,15 @@ button {
   flex-direction: column;
   min-height: 100vh;
 }
-@media screen and (max-width: 375px) {
+.mobile {
+  display: none;
+}
+.mainPicture input {
+  text-align: center;
+  margin-inline: auto;
+  font-size: var(--pSize);
+}
+@media screen and (max-width: 728px) {
   h1 {
     font-size: 5vw;
   }
@@ -81,7 +88,20 @@ button {
     font-size: 4vw;
   }
   button {
-    width: 25vw;
+    width: 20vw;
     padding: 0.5rem;
+  }
+  .mainPicture input {
+    font-size: 4vw;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  input {
+    font-size: var(--h2Size);
   }
 }
