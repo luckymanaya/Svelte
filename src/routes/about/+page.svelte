@@ -30,7 +30,6 @@
       <SocialIcons
         network="youtube"
         width="85"
-        vw
         height="85"
         fgColor="#eeeeee"
         bgColor="#111111"
@@ -40,7 +39,6 @@
       <SocialIcons
         network="github"
         width="85"
-        vw
         height="85"
         fgColor="#eeeeee"
         bgColor="#111111"
