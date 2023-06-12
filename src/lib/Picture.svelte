@@ -10,7 +10,7 @@
 
 <style>
   .picture {
-    width: 25vw;
+    width: 22vw;
     padding: 3rem;
     border-radius: var(--border-radius);
     margin-inline: auto;
