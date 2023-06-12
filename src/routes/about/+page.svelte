@@ -17,7 +17,7 @@
 <p>Email: email@address.com</p>
 
 <h2>Follow my socials! <i class="fa-regular fa-heart fa-sm" /></h2>
-<section class="row-container">
+<section class="flex-container">
   <a href="#0">
     <SocialIcons
       network="instagram"
@@ -51,7 +51,7 @@
 
 <style>
   a {
-    margin: 0 1rem 1rem;
+    margin: 0 auto 1rem;
   }
   @media screen and (max-width: 375px) {
     h1,
